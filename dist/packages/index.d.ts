@@ -1,0 +1,10 @@
+import { Plugin } from 'vue';
+declare const AstarUIPlugin: Plugin;
+export default AstarUIPlugin;
+export * from './Button';
+export * from './Foo';
+export * from './Text';
+export * from './Modals';
+export * from './IconButtons';
+export * from './Header';
+export * from './Buttons';
