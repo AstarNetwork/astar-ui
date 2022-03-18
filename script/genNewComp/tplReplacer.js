@@ -55,7 +55,7 @@ const routerTplReplacer = (listFileContent) => {
   const routerMeta = {
     routes: listFileContent.map(comp => {
       return `{
-    title: '${comp.compZhName}',
+    title: '${comp.compName}',
     name: '${comp.compName}',
     path: '/components/${comp.compName}',
     component: () => import('packages/${comp.compName}/docs/README.md'),

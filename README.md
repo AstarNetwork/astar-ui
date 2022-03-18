@@ -17,6 +17,11 @@ yarn dev
 yarn build:lib
 ```
 
+### Run script for generating package (Todo)
+```
+yarn gen
+```
+
 ### Build Docs
 ```
 yarn build:doc

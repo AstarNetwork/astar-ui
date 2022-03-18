@@ -2,7 +2,7 @@
 import demo from './demo.vue'
 </script>
 
-# 按钮组件
+# Button
 
 <Preview comp-name="Button" demo-name="demo">
   <demo />

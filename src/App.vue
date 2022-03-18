@@ -1,24 +1,86 @@
 <template>
-  <div class="my-kit-doc">
+  <div class="astar-kit-doc">
     <aside>
       <router-link v-for="(link, index) in data.links" :key="index" :to="link.path">{{ link.name }}</router-link>
     </aside>
     <main>
-      <router-view></router-view>
+      <Button @click="clickBtn">button</Button>
+      <ActionBtn>ActionBtn</ActionBtn>
+      <ActionBtn disabled>disabledBtn</ActionBtn>
+      <div v-for="(n, i) in 7" :key="i">
+        <Text :type="`H${i + 1}`">H {{ i + 1 }}</Text>
+      </div>
+      <IconCopyBtn />
+      <IconShareBtn />
+      <IconCloseBtn />
+
+      <Header title="Test">
+        <Button>button1</Button>
+        <Button>button2</Button>
+      </Header>
+
+      <SideNav title="Assets">
+        <img :src="testImg" />
+      </SideNav>
+      <SideNav title="Assets" selected>
+        <img :src="testImg" />
+      </SideNav>
+
+      <SimpleModal title="Network" show>
+        <img :src="testImg" />
+      </SimpleModal>
+
+      <!-- <router-view></router-view> -->
     </main>
   </div>
 </template>
 
-<script setup>
+<script>
 import ComponentList from 'packages/list.json';
 import { reactive } from 'vue'
+import testImg from "./assets/astr.png";
+import Button from "packages/Buttons/src/Button.vue";
+import ActionBtn from "packages/Buttons/src/ActionBtn.vue";
+import Text from "packages/Text/src/Text.vue";
+import IconCopyBtn from "packages/IconButtons/src/IconCopyBtn.vue";
+import IconShareBtn from "packages/IconButtons/src/IconShareBtn.vue";
+import IconCloseBtn from "packages/IconButtons/src/IconCloseBtn.vue";
+import Header from "packages/Header/src/Header.vue";
+import SideNav from "packages/Buttons/src/SideNav.vue";
+import SimpleModal from "packages/Modals/src/SimpleModal.vue";
 
-const data = reactive({
-  links: ComponentList.map(item => ({
-    path: `/components/${item.compName}`,
-    name: item.compZhName
-  }))
-})
+export default {
+  name: "App",
+  components: {
+    Button,
+    ActionBtn,
+    Text,
+    IconCopyBtn,
+    IconShareBtn,
+    IconCloseBtn,
+    Header,
+    SideNav,
+    SimpleModal
+  },
+  setup() {
+    const clickBtn = () => {
+      alert("click");
+    };
+
+    const data = reactive({
+      links: ComponentList.map(item => ({
+        path: `/components/${item.compName}`,
+        name: item.compName
+      }))
+    })
+
+    return {
+      testImg,
+      data,
+      clickBtn
+    };
+  }
+};
 </script>
 
 <style lang="less">
@@ -27,7 +89,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.my-kit-doc {
+.astar-kit-doc {
   display: flex;
   min-height: 100vh;
   aside {

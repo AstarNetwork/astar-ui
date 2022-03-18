@@ -1,6 +1,6 @@
 <template>
   <div class="my-foo">
-    我是测试组件组件
+    Foo Astar
   </div>
 </template>
 
@@ -10,6 +10,6 @@
 
 <style scoped>
 .my-foo {
-  
+  color: #b1b1b1
 }
 </style>
