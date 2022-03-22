@@ -14,7 +14,7 @@ var __spreadValues = (a, b) => {
     }
   return a;
 };
-import { defineComponent, openBlock, createElementBlock, renderSlot, toRefs, normalizeClass, ref, createElementVNode, toDisplayString, pushScopeId, popScopeId } from "vue";
+import { defineComponent, openBlock, createElementBlock, renderSlot, toRefs, normalizeClass, ref, watchEffect, createElementVNode, toDisplayString, pushScopeId, popScopeId } from "vue";
 var index_vue_vue_type_style_index_0_scoped_true_lang$1 = "";
 var _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -103,10 +103,16 @@ const _sfc_main$7 = defineComponent({
       type: String
     }
   },
-  setup(props) {
+  emits: ["close"],
+  setup(props, { emit }) {
     const isShow = ref(props.show);
+    watchEffect(() => {
+      if (isShow.value !== props.show) {
+        isShow.value = props.show;
+      }
+    });
     const close = () => {
-      isShow.value = false;
+      emit("close");
     };
     return {
       isShow,
@@ -130,7 +136,7 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-1f39f5d9"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-3bf40420"]]);
 const ModalsPlugin = {
   install(app) {
     app.component("astar-simple-modal", SimpleModal);
@@ -234,7 +240,7 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var Header = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-55567722"]]);
+var Header = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-c6d6d994"]]);
 const HeaderPlugin = {
   install(app) {
     app.component("astar-header", Header);
