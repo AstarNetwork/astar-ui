@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref, watchEffect } from "vue";
 
 export default defineComponent({
   name: "SimpleModal",
@@ -22,10 +22,18 @@ export default defineComponent({
       type: String
     }
   },
-  setup(props) {
+  emits: ['close'],
+  setup(props, { emit }) {
     const isShow = ref(props.show);
+
+    watchEffect(() => {
+      if (isShow.value !== props.show) {
+        isShow.value = props.show;
+      }
+    })
+
     const close = () => {
-      isShow.value = false;
+      emit('close');
     };
 
     return {

@@ -32,7 +32,10 @@ export default defineComponent({
   overflow: hidden;
   height: 6rem;
   padding: 1.25rem 0.625rem;
-  background-color: #5F656F;
+  background: #191D1F;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  backdrop-filter: blur(200px);
 }
 
 .header-left {

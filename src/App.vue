@@ -26,7 +26,7 @@
         <img :src="testImg" />
       </SideNav>
 
-      <SimpleModal title="Network" show>
+      <SimpleModal title="Network" :show="showModal" @close="showModal = false">
         <img :src="testImg" />
       </SimpleModal>
 
@@ -37,7 +37,7 @@
 
 <script>
 import ComponentList from 'packages/list.json';
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
 import testImg from "./assets/astr.png";
 import Button from "packages/Buttons/src/Button.vue";
 import ActionBtn from "packages/Buttons/src/ActionBtn.vue";
@@ -63,8 +63,9 @@ export default {
     SimpleModal
   },
   setup() {
+    const showModal = ref(false);
     const clickBtn = () => {
-      alert("click");
+      showModal.value = true;
     };
 
     const data = reactive({
@@ -77,6 +78,7 @@ export default {
     return {
       testImg,
       data,
+      showModal,
       clickBtn
     };
   }
