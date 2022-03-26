@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :disabled="disabled">
+  <button type="button" :style="`width: ${width}; height: ${height};`" :disabled="disabled">
     <slot></slot>
   </button>
 </template>
@@ -13,7 +13,13 @@ export default defineComponent({
     disabled: {
       type: Boolean,
       default: false
-    }
+    },
+    width: {
+      type: Number
+    },
+    height: {
+      type: Number
+    },
   },
   setup(props) {
     return {

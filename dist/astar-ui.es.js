@@ -1,4 +1,6 @@
 var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __propIsEnum = Object.prototype.propertyIsEnumerable;
@@ -14,7 +16,8 @@ var __spreadValues = (a, b) => {
     }
   return a;
 };
-import { defineComponent, openBlock, createElementBlock, renderSlot, toRefs, normalizeClass, ref, watchEffect, createElementVNode, toDisplayString, pushScopeId, popScopeId } from "vue";
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+import { defineComponent, openBlock, createElementBlock, renderSlot, toRefs, normalizeClass, ref, watchEffect, createElementVNode, normalizeStyle, toDisplayString, pushScopeId, popScopeId } from "vue";
 var index_vue_vue_type_style_index_0_scoped_true_lang$1 = "";
 var _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -101,6 +104,12 @@ const _sfc_main$7 = defineComponent({
     },
     title: {
       type: String
+    },
+    width: {
+      type: Number
+    },
+    height: {
+      type: Number
     }
   },
   emits: ["close"],
@@ -114,29 +123,31 @@ const _sfc_main$7 = defineComponent({
     const close = () => {
       emit("close");
     };
-    return {
+    return __spreadProps(__spreadValues({}, toRefs(props)), {
       isShow,
       close
-    };
+    });
   }
 });
-const _hoisted_1$7 = { class: "modal-content" };
-const _hoisted_2$4 = { class: "title" };
+const _hoisted_1$7 = { class: "title" };
 function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(`modal ${_ctx.isShow ? "show" : ""}`)
   }, [
-    createElementVNode("div", _hoisted_1$7, [
+    createElementVNode("div", {
+      class: "modal-content",
+      style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`)
+    }, [
       createElementVNode("span", {
         class: "close",
         onClick: _cache[0] || (_cache[0] = (...args) => _ctx.close && _ctx.close(...args))
       }, "\xD7"),
-      createElementVNode("p", _hoisted_2$4, toDisplayString(_ctx.title), 1),
+      createElementVNode("div", _hoisted_1$7, toDisplayString(_ctx.title), 1),
       renderSlot(_ctx.$slots, "default", {}, void 0, true)
-    ])
+    ], 4)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-3bf40420"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-7560bdf9"]]);
 const ModalsPlugin = {
   install(app) {
     app.component("astar-simple-modal", SimpleModal);
@@ -240,7 +251,7 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var Header = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-c6d6d994"]]);
+var Header = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-af9729de"]]);
 const HeaderPlugin = {
   install(app) {
     app.component("astar-header", Header);
@@ -253,6 +264,12 @@ const _sfc_main$2 = defineComponent({
     disabled: {
       type: Boolean,
       default: false
+    },
+    width: {
+      type: Number
+    },
+    height: {
+      type: Number
     }
   },
   setup(props) {
@@ -263,12 +280,13 @@ const _hoisted_1$2 = ["disabled"];
 function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", {
     type: "button",
+    style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`),
     disabled: _ctx.disabled
   }, [
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
-  ], 8, _hoisted_1$2);
+  ], 12, _hoisted_1$2);
 }
-var ActionBtn = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2], ["__scopeId", "data-v-0fc3d816"]]);
+var ActionBtn = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2], ["__scopeId", "data-v-7e509d33"]]);
 var Button_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$1 = defineComponent({
   name: "Button",
@@ -276,6 +294,12 @@ const _sfc_main$1 = defineComponent({
     disabled: {
       type: Boolean,
       default: false
+    },
+    width: {
+      type: Number
+    },
+    height: {
+      type: Number
     }
   },
   setup(props) {
@@ -286,12 +310,13 @@ const _hoisted_1$1 = ["disabled"];
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", {
     type: "button",
+    style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`),
     disabled: _ctx.disabled
   }, [
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
-  ], 8, _hoisted_1$1);
+  ], 12, _hoisted_1$1);
 }
-var Button = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-1dd6b214"]]);
+var Button = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-6cbde29f"]]);
 var SideNav_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main = defineComponent({
   name: "SideNav",

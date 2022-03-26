@@ -30,6 +30,8 @@ export default defineComponent({
 <style lang="css" scoped>
 .header {
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
   height: 6rem;
   padding: 1.25rem 0.625rem;
   background: #191D1F;
@@ -39,19 +41,16 @@ export default defineComponent({
 }
 
 .header-left {
-  float: left;
   display: flex;
   height: 100%;
   align-items: center;
   font-weight: 590;
   font-size: 1.625rem;
   padding: 0.75rem;
-
   color: #F7F7F8;
 }
 
 .header-right {
-  float: right;
   display: flex;
   height: 100%;
   align-items: center;

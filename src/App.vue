@@ -5,7 +5,7 @@
     </aside>
     <main>
       <Button @click="clickBtn">button</Button>
-      <ActionBtn>ActionBtn</ActionBtn>
+      <ActionBtn width="328">ActionBtn</ActionBtn>
       <ActionBtn disabled>disabledBtn</ActionBtn>
       <div v-for="(n, i) in 7" :key="i">
         <Text :type="`H${i + 1}`">H {{ i + 1 }}</Text>
@@ -26,8 +26,10 @@
         <img :src="testImg" />
       </SideNav>
 
-      <SimpleModal title="Network" :show="showModal" @close="showModal = false">
-        <img :src="testImg" />
+      <SimpleModal title="Network" width="375" :show="showModal" @close="showModal = false">
+        <!-- <img :src="testImg" /> -->
+        <div>Test</div>
+        <ActionBtn width="328">ActionBtn</ActionBtn>
       </SimpleModal>
 
       <!-- <router-view></router-view> -->
@@ -63,7 +65,7 @@ export default {
     SimpleModal
   },
   setup() {
-    const showModal = ref(false);
+    const showModal = ref(true);
     const clickBtn = () => {
       showModal.value = true;
     };
