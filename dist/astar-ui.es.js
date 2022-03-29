@@ -242,16 +242,22 @@ const _sfc_main$3 = defineComponent({
 });
 const _hoisted_1$3 = { class: "header" };
 const _hoisted_2$1 = { class: "header-left" };
-const _hoisted_3 = { class: "header-right" };
+const _hoisted_3 = { key: 0 };
+const _hoisted_4 = { key: 1 };
+const _hoisted_5 = { class: "header-right" };
 function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$3, [
-    createElementVNode("div", _hoisted_2$1, toDisplayString(_ctx.title), 1),
-    createElementVNode("div", _hoisted_3, [
+    createElementVNode("div", _hoisted_2$1, [
+      _ctx.title ? (openBlock(), createElementBlock("div", _hoisted_3, toDisplayString(_ctx.title), 1)) : (openBlock(), createElementBlock("div", _hoisted_4, [
+        renderSlot(_ctx.$slots, "left", {}, void 0, true)
+      ]))
+    ]),
+    createElementVNode("div", _hoisted_5, [
       renderSlot(_ctx.$slots, "default", {}, void 0, true)
     ])
   ]);
 }
-var Header = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-af9729de"]]);
+var Header = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-58d722d4"]]);
 const HeaderPlugin = {
   install(app) {
     app.component("astar-header", Header);

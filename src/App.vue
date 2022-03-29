@@ -14,7 +14,10 @@
       <IconShareBtn />
       <IconCloseBtn />
 
-      <Header title="Test">
+      <Header>
+        <template v-slot:left>
+          Logo
+        </template>
         <Button>button1</Button>
         <Button>button2</Button>
       </Header>

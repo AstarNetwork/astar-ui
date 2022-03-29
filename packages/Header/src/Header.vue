@@ -1,7 +1,10 @@
 <template>
   <div class="header">
     <div class="header-left">
-      {{ title }}
+      <div v-if="title">{{ title }}</div>
+      <div v-else>
+        <slot name="left"></slot>
+      </div>
     </div>
     <div class="header-right">
       <slot></slot>
