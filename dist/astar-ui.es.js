@@ -120,8 +120,10 @@ const _sfc_main$7 = defineComponent({
         isShow.value = props.show;
       }
     });
-    const close = () => {
-      emit("close");
+    const close = (e) => {
+      if (e.target.className === "modal show" || e.target.className === "close") {
+        emit("close");
+      }
     };
     return __spreadProps(__spreadValues({}, toRefs(props)), {
       isShow,
@@ -132,7 +134,8 @@ const _sfc_main$7 = defineComponent({
 const _hoisted_1$7 = { class: "title" };
 function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
-    class: normalizeClass(`modal ${_ctx.isShow ? "show" : ""}`)
+    class: normalizeClass(`modal ${_ctx.isShow ? "show" : ""}`),
+    onClick: _cache[1] || (_cache[1] = (...args) => _ctx.close && _ctx.close(...args))
   }, [
     createElementVNode("div", {
       class: "modal-content",
@@ -147,7 +150,7 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     ], 4)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-7560bdf9"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-1a4b7f1e"]]);
 const ModalsPlugin = {
   install(app) {
     app.component("astar-simple-modal", SimpleModal);

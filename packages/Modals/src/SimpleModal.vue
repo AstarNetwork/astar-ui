@@ -1,5 +1,5 @@
 <template>
-  <div :class="`modal ${isShow ? 'show' : ''}`">
+  <div :class="`modal ${isShow ? 'show' : ''}`" @click="close">
     <div class="modal-content" :style="`width: ${width}px; height: ${height}px;`">
       <span class="close" @click="close">&times;</span>
       <div class="title">{{ title }}</div>
@@ -38,8 +38,10 @@ export default defineComponent({
       }
     })
 
-    const close = () => {
-      emit('close');
+    const close = (e: any) => {
+      if (e.target.className === 'modal show' || e.target.className === 'close') {
+        emit('close');
+      }
     };
 
     return {

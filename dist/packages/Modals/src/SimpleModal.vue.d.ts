@@ -14,7 +14,7 @@ declare const _default: import("vue").DefineComponent<{
     };
 }, {
     isShow: import("vue").Ref<boolean>;
-    close: () => void;
+    close: (e: any) => void;
     width: import("vue").Ref<number | undefined>;
     height: import("vue").Ref<number | undefined>;
     title: import("vue").Ref<string | undefined>;
