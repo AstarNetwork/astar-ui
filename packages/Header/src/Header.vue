@@ -30,17 +30,23 @@ export default defineComponent({
 });
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import '../../styles/main.scss';
+
 .header {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   height: 6rem;
   padding: 1.25rem 0.625rem;
-  background: #191D1F;
+  background: $gray-1;
   mix-blend-mode: normal;
   opacity: 0.8;
   backdrop-filter: blur(200px);
+  @media (min-width: $lg) {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 }
 
 .header-left {
@@ -50,7 +56,7 @@ export default defineComponent({
   font-weight: 590;
   font-size: 1.625rem;
   padding: 0.75rem;
-  color: #F7F7F8;
+  color: $gray-5;
 }
 
 .header-right {
@@ -58,6 +64,15 @@ export default defineComponent({
   height: 100%;
   align-items: center;
   padding: 0.75rem;
+}
+
+.body--dark {
+  .header {
+    background: $gray-6;
+  }
+  .header-left {
+    color: $gray-1;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -74,4 +89,5 @@ export default defineComponent({
     padding: 0rem;
   }
 }
+
 </style>

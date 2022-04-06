@@ -53,7 +53,9 @@ export default defineComponent({
 });
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import '../../styles/main.scss';
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
@@ -64,8 +66,7 @@ export default defineComponent({
   height: 100%;
   overflow: auto;
   text-align: center;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.5);
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
   @supports (-moz-appearance: none) {
     background: $backdrop-transparent-dark-firefox !important;
@@ -78,12 +79,19 @@ export default defineComponent({
 .modal-content {
   box-shadow: 0 0 15px 4px #00000030;
   border-radius: 6px;
-  background: #2C3335;
+  background-color: $gray-1;
   margin: auto;
   padding: 20px;
   border: 0px solid transparent;
-  width: 24.688rem;
+  width: 22.5rem;
   height: auto;
+
+  @media (min-width: $xs) {
+    width: 375px;
+  }
+  @media (min-width: $sm) {
+    width: 395px;
+  }
 }
 
 .title {
@@ -95,7 +103,7 @@ export default defineComponent({
   line-height: 1.625rem;
   letter-spacing: -0.02em;
   margin-top: -0.6rem;
-  color: #F7F7F8;
+  color: $gray-5;
 }
 
 .close {
@@ -107,8 +115,39 @@ export default defineComponent({
   cursor: pointer;
   margin-top: 0.2rem;
   margin-right: 0.8rem;
+  @media (min-width: $sm) {
+    margin-right: 12.8px;
+  }
 }
 .close:hover {
   color: #d8e2f1;
+}
+
+.body--dark {
+  .modal {
+    background: rgba(25, 29, 31, 0.5);
+
+    .modal-content {
+      box-shadow: 0 0 15px 4px #00000080;
+      background-color: $gray-5;
+
+      .title {
+        color: $gray-1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal-content {
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+    box-shadow: -5px 2px 8px 4px rgba(0, 0, 0, 0.5);
+  }
 }
 </style>

@@ -1,5 +1,10 @@
 <template>
   <div class="astar-kit-doc">
+    <div>
+      <button @click="setLightMode">Light</button>
+      <button @click="setDarkMode">Dark</button>
+    </div>
+
     <aside>
       <router-link v-for="(link, index) in data.links" :key="index" :to="link.path">{{ link.name }}</router-link>
     </aside>
@@ -68,7 +73,7 @@ export default {
     SimpleModal
   },
   setup() {
-    const showModal = ref(true);
+    const showModal = ref(false);
     const clickBtn = () => {
       showModal.value = true;
     };
@@ -80,10 +85,20 @@ export default {
       }))
     })
 
+    const setLightMode = () => {
+      document.body.classList.remove('body--dark')
+    }
+
+    const setDarkMode = () => {
+      document.body.classList.add('body--dark')
+    }
+
     return {
       testImg,
       data,
       showModal,
+      setLightMode,
+      setDarkMode,
       clickBtn
     };
   }
