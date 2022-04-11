@@ -1,6 +1,10 @@
 <template>
-  <div :class="`modal ${isShow ? 'show' : ''}`" @click="close">
-    <div class="modal-content" :style="`width: ${width}px; height: ${height}px;`">
+  <div :class="`modal ${isShow ? 'show' : ''} ${fadeClass}`" @click="close">
+    <div
+      class="modal-content"
+      :class="isAnimation && zoomInClass"
+      :style="`width: ${width}px; height: ${height}px;`"
+    >
       <span class="close" @click="close">&times;</span>
       <div class="title">{{ title }}</div>
       <slot />
@@ -11,50 +15,77 @@
 <script lang="ts">
 import { defineComponent, ref, watchEffect, toRefs } from "vue";
 
+const fadeInClass = "fade-in";
+const fadeOutClass = "fade-out";
+const zoomInClass = "zoom-in";
+
 export default defineComponent({
   name: "SimpleModal",
   props: {
     show: {
       type: Boolean,
-      default: false
+      default: false,
     },
     title: {
-      type: String
+      type: String,
     },
     width: {
-      type: Number
+      type: Number,
     },
     height: {
-      type: Number
-    }
+      type: Number,
+    },
+    isAnimation: {
+      type: Boolean,
+      default: false,
+    },
   },
-  emits: ['close'],
+  emits: ["close"],
   setup(props, { emit }) {
     const isShow = ref(props.show);
+    const fadeClass = ref<string>(props.isAnimation ? fadeInClass : "");
 
     watchEffect(() => {
       if (isShow.value !== props.show) {
         isShow.value = props.show;
       }
-    })
+    });
 
     const close = (e: any) => {
-      if (e.target.className === 'modal show' || e.target.className === 'close') {
-        emit('close');
+      const openClass = `modal show${
+        props.isAnimation ? " " + fadeInClass : ""
+      }`;
+
+      if (e.target.className === openClass || e.target.className === "close") {
+        if (props.isAnimation) {
+          fadeClass.value = fadeOutClass;
+          // Memo: defined in scss
+          const animatedDuration = 200;
+          setTimeout(() => {
+            emit("close");
+            fadeClass.value = fadeInClass;
+          }, animatedDuration);
+          return;
+        } else {
+          emit("close");
+        }
       }
     };
 
     return {
       ...toRefs(props),
       isShow,
-      close
+      close,
+      fadeClass,
+      zoomInClass,
     };
-  }
+  },
 });
 </script>
 
 <style lang="scss" scoped>
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
+@import "../../styles/animation.scss";
 
 .modal {
   display: none; /* Hidden by default */
@@ -108,7 +139,7 @@ export default defineComponent({
 
 .close {
   display: flex;
-  color: #B1B7C1;
+  color: #b1b7c1;
   justify-content: flex-end;
   font-size: 1.775rem;
   font-weight: 330;
@@ -119,8 +150,21 @@ export default defineComponent({
     margin-right: 12.8px;
   }
 }
+
 .close:hover {
   color: #d8e2f1;
+}
+
+.fade-in {
+  @include fade-in-animation;
+}
+
+.fade-out {
+  @include fade-out-animation;
+}
+
+.zoom-in {
+  animation: zoom-in-animation 0.2s ease-in;
 }
 
 .body--dark {

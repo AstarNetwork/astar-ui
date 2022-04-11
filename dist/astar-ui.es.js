@@ -95,6 +95,9 @@ const TextPlugin = {
   }
 };
 var SimpleModal_vue_vue_type_style_index_0_scoped_true_lang = "";
+const fadeInClass = "fade-in";
+const fadeOutClass = "fade-out";
+const zoomInClass = "zoom-in";
 const _sfc_main$7 = defineComponent({
   name: "SimpleModal",
   props: {
@@ -110,35 +113,53 @@ const _sfc_main$7 = defineComponent({
     },
     height: {
       type: Number
+    },
+    isAnimation: {
+      type: Boolean,
+      default: false
     }
   },
   emits: ["close"],
   setup(props, { emit }) {
     const isShow = ref(props.show);
+    const fadeClass = ref(props.isAnimation ? fadeInClass : "");
     watchEffect(() => {
       if (isShow.value !== props.show) {
         isShow.value = props.show;
       }
     });
     const close = (e) => {
-      if (e.target.className === "modal show" || e.target.className === "close") {
-        emit("close");
+      const openClass = `modal show${props.isAnimation ? " " + fadeInClass : ""}`;
+      if (e.target.className === openClass || e.target.className === "close") {
+        if (props.isAnimation) {
+          fadeClass.value = fadeOutClass;
+          const animatedDuration = 200;
+          setTimeout(() => {
+            emit("close");
+            fadeClass.value = fadeInClass;
+          }, animatedDuration);
+          return;
+        } else {
+          emit("close");
+        }
       }
     };
     return __spreadProps(__spreadValues({}, toRefs(props)), {
       isShow,
-      close
+      close,
+      fadeClass,
+      zoomInClass
     });
   }
 });
 const _hoisted_1$7 = { class: "title" };
 function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
-    class: normalizeClass(`modal ${_ctx.isShow ? "show" : ""}`),
+    class: normalizeClass(`modal ${_ctx.isShow ? "show" : ""} ${_ctx.fadeClass}`),
     onClick: _cache[1] || (_cache[1] = (...args) => _ctx.close && _ctx.close(...args))
   }, [
     createElementVNode("div", {
-      class: "modal-content",
+      class: normalizeClass(["modal-content", _ctx.isAnimation && _ctx.zoomInClass]),
       style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`)
     }, [
       createElementVNode("span", {
@@ -147,10 +168,10 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
       }, "\xD7"),
       createElementVNode("div", _hoisted_1$7, toDisplayString(_ctx.title), 1),
       renderSlot(_ctx.$slots, "default", {}, void 0, true)
-    ], 4)
+    ], 6)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-4890728c"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-5e36aaa0"]]);
 const ModalsPlugin = {
   install(app) {
     app.component("astar-simple-modal", SimpleModal);
