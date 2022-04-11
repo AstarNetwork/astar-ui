@@ -10,7 +10,7 @@
     </aside>
     <main>
       <Button @click="clickBtn">button</Button>
-      <ActionBtn width="328">ActionBtn</ActionBtn>
+      <ActionBtn @click="openAnimatedModal" width="328">ActionBtn</ActionBtn>
       <ActionBtn disabled>disabledBtn</ActionBtn>
       <div v-for="(n, i) in 7" :key="i">
         <Text :type="`H${i + 1}`">H {{ i + 1 }}</Text>
@@ -39,6 +39,12 @@
         <div>Test</div>
         <ActionBtn width="328">ActionBtn</ActionBtn>
       </SimpleModal>
+
+      <SimpleModal title="Network" width="375" :show="isAnimatedModal" @close="isAnimatedModal = false" :isAnimation = "true">
+        <div>Animated Modal</div>
+        <ActionBtn width="328">ActionBtn</ActionBtn>
+      </SimpleModal>
+
 
       <!-- <router-view></router-view> -->
     </main>
@@ -74,8 +80,14 @@ export default {
   },
   setup() {
     const showModal = ref(false);
+    const isAnimatedModal = ref(false);
+
     const clickBtn = () => {
       showModal.value = true;
+    };
+
+    const openAnimatedModal = () => {
+      isAnimatedModal.value = true;
     };
 
     const data = reactive({
@@ -99,7 +111,9 @@ export default {
       showModal,
       setLightMode,
       setDarkMode,
-      clickBtn
+      clickBtn,
+      openAnimatedModal,
+      isAnimatedModal
     };
   }
 };
