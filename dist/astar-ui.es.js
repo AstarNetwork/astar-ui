@@ -17,7 +17,7 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-import { defineComponent, openBlock, createElementBlock, renderSlot, toRefs, normalizeClass, ref, watchEffect, createElementVNode, normalizeStyle, toDisplayString, pushScopeId, popScopeId } from "vue";
+import { defineComponent, openBlock, createElementBlock, renderSlot, toRefs, normalizeClass, ref, watchEffect, createElementVNode, normalizeStyle, createCommentVNode, toDisplayString, pushScopeId, popScopeId } from "vue";
 var index_vue_vue_type_style_index_0_scoped_true_lang$1 = "";
 var _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -117,6 +117,11 @@ const _sfc_main$7 = defineComponent({
     isAnimation: {
       type: Boolean,
       default: false
+    },
+    isCloseIcon: {
+      type: Boolean,
+      require: false,
+      default: true
     }
   },
   emits: ["close"],
@@ -162,16 +167,17 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
       class: normalizeClass(["modal-content", _ctx.isAnimation && _ctx.zoomInClass]),
       style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`)
     }, [
-      createElementVNode("span", {
+      _ctx.isCloseIcon ? (openBlock(), createElementBlock("span", {
+        key: 0,
         class: "close",
         onClick: _cache[0] || (_cache[0] = (...args) => _ctx.close && _ctx.close(...args))
-      }, "\xD7"),
+      }, "\xD7")) : createCommentVNode("", true),
       createElementVNode("div", _hoisted_1$7, toDisplayString(_ctx.title), 1),
       renderSlot(_ctx.$slots, "default", {}, void 0, true)
     ], 6)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-79f4d578"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-490556c8"]]);
 const ModalsPlugin = {
   install(app) {
     app.component("astar-simple-modal", SimpleModal);
