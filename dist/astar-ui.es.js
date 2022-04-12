@@ -17,7 +17,7 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-import { defineComponent, openBlock, createElementBlock, renderSlot, toRefs, normalizeClass, ref, watchEffect, createElementVNode, normalizeStyle, createCommentVNode, toDisplayString, pushScopeId, popScopeId } from "vue";
+import { defineComponent, openBlock, createElementBlock, renderSlot, toRefs, normalizeClass, createElementVNode, ref, watchEffect, resolveComponent, normalizeStyle, createVNode, createCommentVNode, toDisplayString, pushScopeId, popScopeId } from "vue";
 var index_vue_vue_type_style_index_0_scoped_true_lang$1 = "";
 var _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -26,7 +26,7 @@ var _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$a = /* @__PURE__ */ defineComponent({
+const _sfc_main$b = /* @__PURE__ */ defineComponent({
   emits: ["click"],
   setup(__props) {
     return (_ctx, _cache) => {
@@ -39,19 +39,19 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var TestButton = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-5102a2ab"]]);
+var TestButton = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-5102a2ab"]]);
 const ButtonPlugin = {
   install(app) {
     app.component("my-button", TestButton);
   }
 };
 var index_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$9 = {};
-const _hoisted_1$7 = { class: "my-foo" };
-function _sfc_render$9(_ctx, _cache) {
-  return openBlock(), createElementBlock("div", _hoisted_1$7, " Foo Astar ");
+const _sfc_main$a = {};
+const _hoisted_1$9 = { class: "my-foo" };
+function _sfc_render$a(_ctx, _cache) {
+  return openBlock(), createElementBlock("div", _hoisted_1$9, " Foo Astar ");
 }
-var Foo = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9], ["__scopeId", "data-v-21e6b128"]]);
+var Foo = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a], ["__scopeId", "data-v-21e6b128"]]);
 const FooPlugin = {
   install(app) {
     app.component("my-foo", Foo);
@@ -68,7 +68,7 @@ var EnumType;
   EnumType2[EnumType2["H6"] = 5] = "H6";
   EnumType2[EnumType2["H7"] = 6] = "H7";
 })(EnumType || (EnumType = {}));
-const _sfc_main$8 = defineComponent({
+const _sfc_main$9 = defineComponent({
   name: "Text",
   props: {
     type: {
@@ -81,24 +81,44 @@ const _sfc_main$8 = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("span", {
     class: normalizeClass(`text_${_ctx.type}`)
   }, [
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 2);
 }
-var Text = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8], ["__scopeId", "data-v-e7c95fbe"]]);
+var Text = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9], ["__scopeId", "data-v-e7c95fbe"]]);
 const TextPlugin = {
   install(app) {
     app.component("astar-text", Text);
   }
 };
+const _sfc_main$8 = {};
+const _hoisted_1$8 = {
+  width: "24",
+  height: "24",
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg"
+};
+const _hoisted_2$5 = /* @__PURE__ */ createElementVNode("path", {
+  d: "M12.9399 11.9995L18.4666 6.47281C18.5758 6.34527 18.6329 6.18122 18.6264 6.01344C18.6199 5.84565 18.5504 5.68649 18.4317 5.56776C18.3129 5.44903 18.1538 5.37948 17.986 5.373C17.8182 5.36652 17.6541 5.42359 17.5266 5.53281L11.9999 11.0595L6.47327 5.52614C6.34774 5.4006 6.17748 5.33008 5.99994 5.33008C5.82241 5.33008 5.65214 5.4006 5.52661 5.52614C5.40107 5.65168 5.33055 5.82194 5.33055 5.99947C5.33055 6.17701 5.40107 6.34727 5.52661 6.47281L11.0599 11.9995L5.52661 17.5261C5.45682 17.5859 5.40014 17.6594 5.36012 17.7422C5.32011 17.8249 5.29762 17.915 5.29408 18.0068C5.29053 18.0986 5.306 18.1901 5.33952 18.2757C5.37303 18.3612 5.42387 18.4389 5.48884 18.5039C5.55381 18.5689 5.63151 18.6197 5.71706 18.6532C5.80261 18.6867 5.89416 18.7022 5.98598 18.6987C6.07779 18.6951 6.16788 18.6726 6.25059 18.6326C6.3333 18.5926 6.40684 18.5359 6.46661 18.4661L11.9999 12.9395L17.5266 18.4661C17.6541 18.5754 17.8182 18.6324 17.986 18.6259C18.1538 18.6195 18.3129 18.5499 18.4317 18.4312C18.5504 18.3125 18.6199 18.1533 18.6264 17.9855C18.6329 17.8177 18.5758 17.6537 18.4666 17.5261L12.9399 11.9995Z",
+  fill: "#B1B7C1"
+}, null, -1);
+const _hoisted_3$3 = [
+  _hoisted_2$5
+];
+function _sfc_render$8(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$8, _hoisted_3$3);
+}
+var IconClose = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8]]);
 var SimpleModal_vue_vue_type_style_index_0_scoped_true_lang = "";
 const fadeInClass = "fade-in";
 const fadeOutClass = "fade-out";
 const zoomInClass = "zoom-in";
 const _sfc_main$7 = defineComponent({
+  components: { IconClose },
   name: "SimpleModal",
   props: {
     show: {
@@ -134,10 +154,11 @@ const _sfc_main$7 = defineComponent({
       }
     });
     const close = (e) => {
+      console.log("e.target.className", e.target.className);
       if (!props.isCloseIcon)
         return;
       const openClass = `modal show${props.isAnimation ? " " + fadeInClass : ""}`;
-      if (e.target.className === openClass || e.target.className === "close") {
+      if (e.target.className === openClass || e.target.className.baseVal === "" || e.target.className === "column--close") {
         if (props.isAnimation) {
           fadeClass.value = fadeOutClass;
           const animatedDuration = 200;
@@ -159,20 +180,26 @@ const _sfc_main$7 = defineComponent({
     });
   }
 });
+const _hoisted_1$7 = {
+  key: 0,
+  class: "row--close"
+};
+const _hoisted_2$4 = { class: "column--close" };
 function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_IconClose = resolveComponent("IconClose");
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(`modal ${_ctx.isShow ? "show" : ""} ${_ctx.fadeClass}`),
-    onClick: _cache[1] || (_cache[1] = (...args) => _ctx.close && _ctx.close(...args))
+    onClick: _cache[0] || (_cache[0] = (...args) => _ctx.close && _ctx.close(...args))
   }, [
     createElementVNode("div", {
       class: normalizeClass(["modal-content", _ctx.isAnimation && _ctx.zoomInClass]),
       style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`)
     }, [
-      _ctx.isCloseIcon ? (openBlock(), createElementBlock("span", {
-        key: 0,
-        class: "close",
-        onClick: _cache[0] || (_cache[0] = (...args) => _ctx.close && _ctx.close(...args))
-      }, "\xD7")) : createCommentVNode("", true),
+      _ctx.isCloseIcon ? (openBlock(), createElementBlock("div", _hoisted_1$7, [
+        createElementVNode("div", _hoisted_2$4, [
+          createVNode(_component_IconClose)
+        ])
+      ])) : createCommentVNode("", true),
       createElementVNode("div", {
         class: normalizeClass(["title", !_ctx.isCloseIcon && "title--no-close-icon"])
       }, toDisplayString(_ctx.title), 3),
@@ -180,7 +207,7 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     ], 6)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-5f14dd4d"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-0985a889"]]);
 const ModalsPlugin = {
   install(app) {
     app.component("astar-simple-modal", SimpleModal);
