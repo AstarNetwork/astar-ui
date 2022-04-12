@@ -5,7 +5,7 @@
       :class="isAnimation && zoomInClass"
       :style="`width: ${width}px; height: ${height}px;`"
     >
-      <span class="close" @click="close">&times;</span>
+      <span v-if="isCloseIcon" class="close" @click="close">&times;</span>
       <div class="title">{{ title }}</div>
       <slot />
     </div>
@@ -38,6 +38,11 @@ export default defineComponent({
     isAnimation: {
       type: Boolean,
       default: false,
+    },
+    isCloseIcon: {
+      type: Boolean,
+      require: false,
+      default: true,
     },
   },
   emits: ["close"],
