@@ -6,7 +6,7 @@
       :style="`width: ${width}px; height: ${height}px;`"
     >
       <span v-if="isCloseIcon" class="close" @click="close">&times;</span>
-      <div class="title">{{ title }}</div>
+      <div class="title" :class="!isCloseIcon && 'title--no-close-icon'">{{ title }}</div>
       <slot />
     </div>
   </div>
@@ -57,6 +57,8 @@ export default defineComponent({
     });
 
     const close = (e: any) => {
+      if(!props.isCloseIcon) return;
+
       const openClass = `modal show${
         props.isAnimation ? " " + fadeInClass : ""
       }`;
@@ -91,6 +93,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../../styles/main.scss";
 @import "../../styles/animation.scss";
+@import "../../styles/utils.scss";
 
 .modal {
   display: none; /* Hidden by default */
@@ -140,6 +143,10 @@ export default defineComponent({
   letter-spacing: -0.02em;
   margin-top: -0.6rem;
   color: $gray-5;
+}
+
+.title--no-close-icon {
+  margin-top: rem(16);
 }
 
 .close {

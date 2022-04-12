@@ -47,9 +47,9 @@ const ButtonPlugin = {
 };
 var index_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$9 = {};
-const _hoisted_1$8 = { class: "my-foo" };
+const _hoisted_1$7 = { class: "my-foo" };
 function _sfc_render$9(_ctx, _cache) {
-  return openBlock(), createElementBlock("div", _hoisted_1$8, " Foo Astar ");
+  return openBlock(), createElementBlock("div", _hoisted_1$7, " Foo Astar ");
 }
 var Foo = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9], ["__scopeId", "data-v-21e6b128"]]);
 const FooPlugin = {
@@ -134,6 +134,8 @@ const _sfc_main$7 = defineComponent({
       }
     });
     const close = (e) => {
+      if (!props.isCloseIcon)
+        return;
       const openClass = `modal show${props.isAnimation ? " " + fadeInClass : ""}`;
       if (e.target.className === openClass || e.target.className === "close") {
         if (props.isAnimation) {
@@ -157,7 +159,6 @@ const _sfc_main$7 = defineComponent({
     });
   }
 });
-const _hoisted_1$7 = { class: "title" };
 function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(`modal ${_ctx.isShow ? "show" : ""} ${_ctx.fadeClass}`),
@@ -172,12 +173,14 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
         class: "close",
         onClick: _cache[0] || (_cache[0] = (...args) => _ctx.close && _ctx.close(...args))
       }, "\xD7")) : createCommentVNode("", true),
-      createElementVNode("div", _hoisted_1$7, toDisplayString(_ctx.title), 1),
+      createElementVNode("div", {
+        class: normalizeClass(["title", !_ctx.isCloseIcon && "title--no-close-icon"])
+      }, toDisplayString(_ctx.title), 3),
       renderSlot(_ctx.$slots, "default", {}, void 0, true)
     ], 6)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-490556c8"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-5f14dd4d"]]);
 const ModalsPlugin = {
   install(app) {
     app.component("astar-simple-modal", SimpleModal);
