@@ -164,7 +164,9 @@ export default defineComponent({
 }
 
 .zoom-in {
-  animation: zoom-in-animation 0.2s ease-in;
+  @media screen and (min-width: $sm) {
+    animation: zoom-in-animation 0.2s ease-in;
+  }
 }
 
 .body--dark {
@@ -182,7 +184,7 @@ export default defineComponent({
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $sm) {
   .modal-content {
     width: 100% !important;
     position: absolute;
