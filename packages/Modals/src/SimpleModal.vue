@@ -5,8 +5,14 @@
       :class="isAnimation && zoomInClass"
       :style="`width: ${width}px; height: ${height}px;`"
     >
-      <span v-if="isCloseIcon" class="close" @click="close">&times;</span>
-      <div class="title">{{ title }}</div>
+      <div v-if="isCloseIcon" class="row--close">
+        <div class="column--close">
+          <IconClose  />
+        </div>
+      </div>
+      <div class="title" :class="!isCloseIcon && 'title--no-close-icon'">
+        {{ title }}
+      </div>
       <slot />
     </div>
   </div>
@@ -14,12 +20,14 @@
 
 <script lang="ts">
 import { defineComponent, ref, watchEffect, toRefs } from "vue";
+import IconClose from "./IconClose.vue";
 
 const fadeInClass = "fade-in";
 const fadeOutClass = "fade-out";
 const zoomInClass = "zoom-in";
 
 export default defineComponent({
+  components: { IconClose },
   name: "SimpleModal",
   props: {
     show: {
@@ -57,11 +65,19 @@ export default defineComponent({
     });
 
     const close = (e: any) => {
+      console.log('e.target.className',e.target.className)
+      if (!props.isCloseIcon) return;
+
       const openClass = `modal show${
         props.isAnimation ? " " + fadeInClass : ""
       }`;
 
-      if (e.target.className === openClass || e.target.className === "close") {
+      if (
+        e.target.className === openClass ||
+        // Memo: svg object
+        e.target.className.baseVal === "" ||
+        e.target.className === "column--close"
+      ) {
         if (props.isAnimation) {
           fadeClass.value = fadeOutClass;
           // Memo: defined in scss
@@ -91,6 +107,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../../styles/main.scss";
 @import "../../styles/animation.scss";
+@import "../../styles/utils.scss";
 
 .modal {
   display: none; /* Hidden by default */
@@ -108,6 +125,7 @@ export default defineComponent({
     background: $backdrop-transparent-dark-firefox !important;
   }
 }
+
 .modal.show {
   display: flex;
 }
@@ -119,7 +137,7 @@ export default defineComponent({
   margin: auto;
   padding: 20px;
   border: 0px solid transparent;
-  width: 22.5rem;
+  width: rem(360);
   height: auto;
 
   @media (min-width: $xs) {
@@ -135,25 +153,32 @@ export default defineComponent({
   justify-content: center;
   font-style: normal;
   font-weight: 590;
-  font-size: 1.375rem;
-  line-height: 1.625rem;
+  font-size: rem(22);
+  line-height: rem(26);
   letter-spacing: -0.02em;
-  margin-top: -0.6rem;
+  margin-top: rem(-8);
   color: $gray-5;
 }
 
-.close {
+.title--no-close-icon {
+  margin-top: rem(24);
+}
+
+.row--close {
   display: flex;
   color: #b1b7c1;
   justify-content: flex-end;
-  font-size: 1.775rem;
   font-weight: 330;
-  cursor: pointer;
-  margin-top: 0.2rem;
-  margin-right: 0.8rem;
+  margin-right: rem(12.8);
+  height: rem(30);
   @media (min-width: $sm) {
-    margin-right: 12.8px;
+    margin-right: 0px;
   }
+}
+
+.column--close {
+  cursor: pointer;
+  padding-top: 6px;
 }
 
 .close:hover {
