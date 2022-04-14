@@ -34,7 +34,7 @@
         <img :src="testImg" />
       </SideNav>
 
-      <SimpleModal title="Network" width="375" :show="showModal" @close="showModal = false">
+      <SimpleModal :isCloseIcon="false" title="Network" width="375" :show="showModal" @close="showModal = false">
         <!-- <img :src="testImg" /> -->
         <div>Test</div>
         <ActionBtn width="328">ActionBtn</ActionBtn>
