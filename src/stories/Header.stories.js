@@ -1,28 +1,20 @@
-import MyHeader from './Header.vue';
+import Header from "../../packages/Header/src/Header.vue";
 
 export default {
-  title: 'Example/Header',
-  component: MyHeader,
+  title: 'Header',
+  component: Header,
 };
 
 const Template = (args) => ({
-  // Components used in your story `template` are defined in the `components` object
-  components: { MyHeader },
-  // The story's `args` need to be mapped into the template through the `setup()` method
+  components: { Header },
   setup() {
-    // Story args can be spread into the returned object
     return { ...args };
   },
   // Then, the spread values can be accessed directly in the template
-  template: '<my-header :user="user" />',
+  template: '<Header :title="title" />',
 });
 
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {},
-};
-
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {
-  user: null,
+export const DefaultHeader = Template.bind({});
+DefaultHeader.args = {
+  title: 'header title',
 };

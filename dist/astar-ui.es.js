@@ -17,8 +17,8 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-import { defineComponent, openBlock, createElementBlock, renderSlot, toRefs, normalizeClass, createElementVNode, ref, watchEffect, resolveComponent, normalizeStyle, createVNode, createCommentVNode, toDisplayString, pushScopeId, popScopeId } from "vue";
-var index_vue_vue_type_style_index_0_scoped_true_lang$1 = "";
+import { defineComponent, toRefs, openBlock, createElementBlock, normalizeClass, renderSlot, createElementVNode, ref, watchEffect, resolveComponent, normalizeStyle, createVNode, createCommentVNode, toDisplayString, pushScopeId, popScopeId } from "vue";
+var Text_vue_vue_type_style_index_0_scoped_true_lang = "";
 var _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -26,38 +26,6 @@ var _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$b = /* @__PURE__ */ defineComponent({
-  emits: ["click"],
-  setup(__props) {
-    return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("button", {
-        class: "my-button",
-        onClick: _cache[0] || (_cache[0] = ($event) => _ctx.$emit("click", $event))
-      }, [
-        renderSlot(_ctx.$slots, "default", {}, void 0, true)
-      ]);
-    };
-  }
-});
-var TestButton = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-5102a2ab"]]);
-const ButtonPlugin = {
-  install(app) {
-    app.component("my-button", TestButton);
-  }
-};
-var index_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$a = {};
-const _hoisted_1$9 = { class: "my-foo" };
-function _sfc_render$a(_ctx, _cache) {
-  return openBlock(), createElementBlock("div", _hoisted_1$9, " Foo Astar ");
-}
-var Foo = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a], ["__scopeId", "data-v-21e6b128"]]);
-const FooPlugin = {
-  install(app) {
-    app.component("my-foo", Foo);
-  }
-};
-var Text_vue_vue_type_style_index_0_scoped_true_lang = "";
 var EnumType;
 (function(EnumType2) {
   EnumType2[EnumType2["H1"] = 0] = "H1";
@@ -422,14 +390,12 @@ const ButtonsPlugin = {
 };
 const AstarUIPlugin = {
   install(app) {
-    var _a, _b, _c, _d, _e, _f, _g;
-    (_a = ButtonPlugin.install) == null ? void 0 : _a.call(ButtonPlugin, app);
-    (_b = FooPlugin.install) == null ? void 0 : _b.call(FooPlugin, app);
-    (_c = TextPlugin.install) == null ? void 0 : _c.call(TextPlugin, app);
-    (_d = ModalsPlugin.install) == null ? void 0 : _d.call(ModalsPlugin, app);
-    (_e = IconButtonsPlugin.install) == null ? void 0 : _e.call(IconButtonsPlugin, app);
-    (_f = HeaderPlugin.install) == null ? void 0 : _f.call(HeaderPlugin, app);
-    (_g = ButtonsPlugin.install) == null ? void 0 : _g.call(ButtonsPlugin, app);
+    var _a, _b, _c, _d, _e;
+    (_a = TextPlugin.install) == null ? void 0 : _a.call(TextPlugin, app);
+    (_b = ModalsPlugin.install) == null ? void 0 : _b.call(ModalsPlugin, app);
+    (_c = IconButtonsPlugin.install) == null ? void 0 : _c.call(IconButtonsPlugin, app);
+    (_d = HeaderPlugin.install) == null ? void 0 : _d.call(HeaderPlugin, app);
+    (_e = ButtonsPlugin.install) == null ? void 0 : _e.call(ButtonsPlugin, app);
   }
 };
-export { ActionBtn, Button, ButtonPlugin, ButtonsPlugin, Foo, FooPlugin, Header, HeaderPlugin, IconButtonsPlugin, IconCloseBtn, IconCopyBtn, IconShareBtn, ModalsPlugin, SideNav, SimpleModal, TestButton, Text, TextPlugin, AstarUIPlugin as default };
+export { ActionBtn, Button, ButtonsPlugin, Header, HeaderPlugin, IconButtonsPlugin, IconCloseBtn, IconCopyBtn, IconShareBtn, ModalsPlugin, SideNav, SimpleModal, Text, TextPlugin, AstarUIPlugin as default };
