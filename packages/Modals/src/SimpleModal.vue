@@ -1,8 +1,8 @@
 <template>
-  <div :class="`modal ${isShow ? 'show' : ''} ${fadeClass}`" @click="close">
+  <div class="modal" :class="[isShow && 'show', isClosing? fadeOutClass: fadeInClass]" @click="close">
     <div
       class="modal-content"
-      :class="isAnimation && zoomInClass"
+      :class="zoomInClass"
       :style="`width: ${width}px; height: ${height}px;`"
     >
       <div v-if="isCloseIcon" class="row--close">
@@ -43,20 +43,20 @@ export default defineComponent({
     height: {
       type: Number,
     },
-    isAnimation: {
-      type: Boolean,
-      default: false,
-    },
     isCloseIcon: {
       type: Boolean,
       require: false,
       default: true,
     },
+    isClosing: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
   },
   emits: ["close"],
   setup(props, { emit }) {
     const isShow = ref(props.show);
-    const fadeClass = ref<string>(props.isAnimation ? fadeInClass : "");
 
     watchEffect(() => {
       if (isShow.value !== props.show) {
@@ -65,31 +65,15 @@ export default defineComponent({
     });
 
     const close = (e: any) => {
-      console.log('e.target.className',e.target.className)
       if (!props.isCloseIcon) return;
-
-      const openClass = `modal show${
-        props.isAnimation ? " " + fadeInClass : ""
-      }`;
-
+      const openClass = "modal show fade-in";
       if (
         e.target.className === openClass ||
         // Memo: svg object
         e.target.className.baseVal === "" ||
         e.target.className === "column--close"
       ) {
-        if (props.isAnimation) {
-          fadeClass.value = fadeOutClass;
-          // Memo: defined in scss
-          const animatedDuration = 200;
-          setTimeout(() => {
-            emit("close");
-            fadeClass.value = fadeInClass;
-          }, animatedDuration);
-          return;
-        } else {
-          emit("close");
-        }
+        emit("close");
       }
     };
 
@@ -97,8 +81,9 @@ export default defineComponent({
       ...toRefs(props),
       isShow,
       close,
-      fadeClass,
       zoomInClass,
+      fadeInClass,
+      fadeOutClass
     };
   },
 });

@@ -102,49 +102,39 @@ const _sfc_main$7 = defineComponent({
     height: {
       type: Number
     },
-    isAnimation: {
-      type: Boolean,
-      default: false
-    },
     isCloseIcon: {
       type: Boolean,
       require: false,
       default: true
+    },
+    isClosing: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   },
   emits: ["close"],
   setup(props, { emit }) {
     const isShow = ref(props.show);
-    const fadeClass = ref(props.isAnimation ? fadeInClass : "");
     watchEffect(() => {
       if (isShow.value !== props.show) {
         isShow.value = props.show;
       }
     });
     const close = (e) => {
-      console.log("e.target.className", e.target.className);
       if (!props.isCloseIcon)
         return;
-      const openClass = `modal show${props.isAnimation ? " " + fadeInClass : ""}`;
+      const openClass = "modal show fade-in";
       if (e.target.className === openClass || e.target.className.baseVal === "" || e.target.className === "column--close") {
-        if (props.isAnimation) {
-          fadeClass.value = fadeOutClass;
-          const animatedDuration = 200;
-          setTimeout(() => {
-            emit("close");
-            fadeClass.value = fadeInClass;
-          }, animatedDuration);
-          return;
-        } else {
-          emit("close");
-        }
+        emit("close");
       }
     };
     return __spreadProps(__spreadValues({}, toRefs(props)), {
       isShow,
       close,
-      fadeClass,
-      zoomInClass
+      zoomInClass,
+      fadeInClass,
+      fadeOutClass
     });
   }
 });
@@ -156,11 +146,11 @@ const _hoisted_2$4 = { class: "column--close" };
 function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_IconClose = resolveComponent("IconClose");
   return openBlock(), createElementBlock("div", {
-    class: normalizeClass(`modal ${_ctx.isShow ? "show" : ""} ${_ctx.fadeClass}`),
+    class: normalizeClass(["modal", [_ctx.isShow && "show", _ctx.isClosing ? _ctx.fadeOutClass : _ctx.fadeInClass]]),
     onClick: _cache[0] || (_cache[0] = (...args) => _ctx.close && _ctx.close(...args))
   }, [
     createElementVNode("div", {
-      class: normalizeClass(["modal-content", _ctx.isAnimation && _ctx.zoomInClass]),
+      class: normalizeClass(["modal-content", _ctx.zoomInClass]),
       style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`)
     }, [
       _ctx.isCloseIcon ? (openBlock(), createElementBlock("div", _hoisted_1$7, [
@@ -175,7 +165,8 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     ], 6)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-0985a889"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-64f62f17"]]);
+const fadeDuration = 200;
 const ModalsPlugin = {
   install(app) {
     app.component("astar-simple-modal", SimpleModal);
@@ -398,4 +389,4 @@ const AstarUIPlugin = {
     (_e = ButtonsPlugin.install) == null ? void 0 : _e.call(ButtonsPlugin, app);
   }
 };
-export { ActionBtn, Button, ButtonsPlugin, Header, HeaderPlugin, IconButtonsPlugin, IconCloseBtn, IconCopyBtn, IconShareBtn, ModalsPlugin, SideNav, SimpleModal, Text, TextPlugin, AstarUIPlugin as default };
+export { ActionBtn, Button, ButtonsPlugin, Header, HeaderPlugin, IconButtonsPlugin, IconCloseBtn, IconCopyBtn, IconShareBtn, ModalsPlugin, SideNav, SimpleModal, Text, TextPlugin, AstarUIPlugin as default, fadeDuration };
