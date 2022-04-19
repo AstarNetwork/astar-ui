@@ -6,3 +6,4 @@ export * from './Modals';
 export * from './IconButtons';
 export * from './Header';
 export * from './Buttons';
+export * from './Icons';

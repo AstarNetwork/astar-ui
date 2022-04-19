@@ -11,7 +11,7 @@ import IconNetwork from './src/IconNetwork.vue';
 import IconSearch from './src/IconSearch.vue';
 import IconWallet from './src/IconWallet.vue';
  
-export const IconButtonsPlugin: Plugin = {
+export const IconsPlugin: Plugin = {
   install(app: App) {
     app.component('astar-icon-base', IconBase);
     app.component('astar-icon-3dots', Icon3dots);
