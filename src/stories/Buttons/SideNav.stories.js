@@ -1,4 +1,4 @@
-import SideNav from "../../../packages/Buttons/src/SideNav.vue";
+import SideNav from "packages/Buttons/src/SideNav.vue";
 
 export default {
   title: 'Buttons/SideNav',

@@ -1,4 +1,4 @@
-import ActionBtn from "../../../packages/Buttons/src/ActionBtn.vue";
+import ActionBtn from "packages/Buttons/src/ActionBtn.vue";
 
 export default {
   title: 'Buttons/ActionBtn',

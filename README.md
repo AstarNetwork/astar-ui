@@ -7,22 +7,32 @@
 yarn install
 ```
 
-### Run Demo page
-```
-yarn dev
-```
-
 ### Build Library
 ```
 yarn build:lib
 ```
 
-### Run script for generating package (Todo)
+### Run Storybook
+```
+yarn storybook
+```
+
+### Build Storybook
+```
+yarn build-storybook
+```
+
+### Run Demo page (DEPRECATED)
+```
+yarn dev
+```
+
+### Run script for generating package (DEPRECATED)
 ```
 yarn gen
 ```
 
-### Build Docs
+### Build Docs (DEPRECATED)
 ```
 yarn build:doc
 ```
@@ -42,4 +52,10 @@ yarn build:doc
   import astarUI from 'astar-ui';
     ...
   app.use(astarUI)
+```
+
+then use like
+```
+  <astar-button @click="click" />
+  <astar-simple-modal>Test</astar-simple-modal>
 ```
