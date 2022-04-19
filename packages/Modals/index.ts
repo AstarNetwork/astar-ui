@@ -1,5 +1,6 @@
 import { App, Plugin } from 'vue';
 import SimpleModal from './src/SimpleModal.vue';
+import { fadeDuration } from './src/index'
 
 export const ModalsPlugin: Plugin = {
   install(app: App) {
@@ -9,4 +10,5 @@ export const ModalsPlugin: Plugin = {
 
 export {
   SimpleModal,
+  fadeDuration
 };

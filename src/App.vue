@@ -40,9 +40,9 @@
         <ActionBtn width="328">ActionBtn</ActionBtn>
       </SimpleModal>
 
-      <SimpleModal title="Network" width="375" :show="isAnimatedModal" @close="isAnimatedModal = false" :isAnimation = "true">
+      <SimpleModal title="Network" width="375" :show="isAnimatedModal" @close="closeAnimatedModal" :isClosing="isClosing">
         <div>Animated Modal</div>
-        <ActionBtn width="328">ActionBtn</ActionBtn>
+        <ActionBtn width="328" @click="closeAnimatedModal">ActionBtn</ActionBtn>
       </SimpleModal>
 
 
@@ -64,6 +64,7 @@ import IconCloseBtn from "packages/IconButtons/src/IconCloseBtn.vue";
 import Header from "packages/Header/src/Header.vue";
 import SideNav from "packages/Buttons/src/SideNav.vue";
 import SimpleModal from "packages/Modals/src/SimpleModal.vue";
+import { fadeDuration } from "packages/Modals";
 
 export default {
   name: "App",
@@ -81,6 +82,7 @@ export default {
   setup() {
     const showModal = ref(false);
     const isAnimatedModal = ref(false);
+    const isClosing = ref(false);
 
     const clickBtn = () => {
       showModal.value = true;
@@ -89,6 +91,14 @@ export default {
     const openAnimatedModal = () => {
       isAnimatedModal.value = true;
     };
+
+    const closeAnimatedModal = () => {
+      isClosing.value = true;
+      setTimeout(()=>{
+        isAnimatedModal.value = false;
+        isClosing.value = false
+      }, fadeDuration)
+    }
 
     const data = reactive({
       links: ComponentList.map(item => ({
@@ -113,7 +123,9 @@ export default {
       setDarkMode,
       clickBtn,
       openAnimatedModal,
-      isAnimatedModal
+      isAnimatedModal,
+      closeAnimatedModal,
+      isClosing
     };
   }
 };
