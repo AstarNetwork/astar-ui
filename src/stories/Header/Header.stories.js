@@ -1,7 +1,7 @@
-import Header from "../../packages/Header/src/Header.vue";
+import Header from "packages/Header/src/Header.vue";
 
 export default {
-  title: 'Header',
+  title: 'Header/Header',
   component: Header,
 };
 
@@ -10,7 +10,6 @@ const Template = (args) => ({
   setup() {
     return { ...args };
   },
-  // Then, the spread values can be accessed directly in the template
   template: '<Header :title="title" />',
 });
 
