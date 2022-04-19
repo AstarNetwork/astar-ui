@@ -3,10 +3,5 @@
     "compName": "Button",
     "compDesc": "Button",
     "compClassName": "button"
-  },
-  {
-    "compName": "Foo",
-    "compDesc": "Foo",
-    "compClassName": "foo"
   }
 ]
