@@ -16,7 +16,8 @@
     "build:doc": "vue-tsc --noEmit && vite build --config ./build/doc.config.ts && node script/copyDir.js",
     "gen": "node ./script/genNewComp/index.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=af2bfd147de5"
   },
   "dependencies": {
     "prismjs": "^1.25.0",
@@ -32,6 +33,7 @@
     "@types/node": "^16.11.12",
     "@vitejs/plugin-vue": "^1.10.2",
     "babel-loader": "^8.2.4",
+    "chromatic": "^6.5.4",
     "fs-extra": "^10.0.0",
     "handlebars": "^4.7.7",
     "inquirer": "^8.2.0",

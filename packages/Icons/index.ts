@@ -2,6 +2,7 @@ import { App, Plugin } from 'vue';
 import IconBase from './src/IconBase.vue';
 import Icon3dots from './src/Icon3dots.vue';
 import IconAssets from './src/IconAssets.vue';
+import IconBridge from './src/IconBridge.vue';
 import IconClose from './src/IconClose.vue';
 import IconCopy from './src/IconCopy.vue';
 import IconDappStaking from './src/IconDappStaking.vue';
@@ -16,6 +17,7 @@ export const IconsPlugin: Plugin = {
     app.component('astar-icon-base', IconBase);
     app.component('astar-icon-3dots', Icon3dots);
     app.component('astar-icon-assets', IconAssets);
+    app.component('astar-icon-bridge', IconBridge);
     app.component('astar-icon-close', IconClose);
     app.component('astar-icon-copy', IconCopy);
     app.component('astar-icon-dapp-staking', IconDappStaking);
@@ -31,6 +33,7 @@ export {
   IconBase,
   Icon3dots,
   IconAssets,
+  IconBridge,
   IconClose,
   IconCopy,
   IconDappStaking,
