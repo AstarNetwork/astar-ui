@@ -2,3 +2,4 @@
 .DS_Store
 /dist
 /storybook-static
+build-storybook.log
