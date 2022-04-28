@@ -45,7 +45,6 @@ jobs:
           scope: '@astar-network'
       - run: npm install
       - run: npm run build:lib
-      - run: npm run build-storybook
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
