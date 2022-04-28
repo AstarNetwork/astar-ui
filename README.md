@@ -4,7 +4,7 @@
 Vue3, SCSS, Storybook, Typescript, Vite
 
 ## Storybook
-https://625fa762a035be003a9814c1-dmcehevpsl.chromatic.com/
+https://main--625fa762a035be003a9814c1.chromatic.com/
 
 ## Project setup
 
@@ -89,7 +89,7 @@ Once it merged to `main`, it automatically deploy & publish to npm with new vers
 **there's no need to update version manually or build library & storybook before sending PR.**
 
 ### View updated storybook
-https://625fa762a035be003a9814c1-dmcehevpsl.chromatic.com/
+https://main--625fa762a035be003a9814c1.chromatic.com/
 
 ### Use component
 Update ui library version
