@@ -1,17 +1,17 @@
 import IconBase from "packages/Icons/src/IconBase.vue";
-import IconCopy from "packages/Icons/src/IconCopy.vue";
+import IconOutlineSun from "packages/Icons/src/IconOutlineSun.vue";
 
 export default {
-  title: 'Icons/IconCopy',
-  component: IconCopy
+  title: 'Icons/IconOutlineSun',
+  component: IconOutlineSun
 };
 
 const Template = (args) => ({
-  components: { IconBase, IconCopy },
+  components: { IconBase, IconOutlineSun },
   setup() {
     return { args };
   },
-  template: '<IconBase v-bind="args"><IconCopy /></IconBase>',
+  template: '<IconBase v-bind="args"><IconOutlineSun /></IconBase>',
 });
 
 export const DefaultIconBase = Template.bind({});

@@ -1,17 +1,17 @@
 import IconBase from "packages/Icons/src/IconBase.vue";
-import IconCopy from "packages/Icons/src/IconCopy.vue";
+import IconDocument from "packages/Icons/src/IconDocument.vue";
 
 export default {
-  title: 'Icons/IconCopy',
-  component: IconCopy
+  title: 'Icons/IconDocument',
+  component: IconDocument
 };
 
 const Template = (args) => ({
-  components: { IconBase, IconCopy },
+  components: { IconBase, IconDocument },
   setup() {
     return { args };
   },
-  template: '<IconBase v-bind="args"><IconCopy /></IconBase>',
+  template: '<IconBase v-bind="args"><IconDocument /></IconBase>',
 });
 
 export const DefaultIconBase = Template.bind({});
