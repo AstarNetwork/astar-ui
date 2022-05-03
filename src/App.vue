@@ -45,7 +45,7 @@
         <ActionBtn width="328" @click="closeAnimatedModal">ActionBtn</ActionBtn>
       </SimpleModal>
 
-
+      <RadioBtn @change="changeRadio" />
       <!-- <router-view></router-view> -->
     </main>
   </div>
@@ -64,6 +64,7 @@ import IconCloseBtn from "packages/IconButtons/src/IconCloseBtn.vue";
 import Header from "packages/Header/src/Header.vue";
 import SideNav from "packages/Buttons/src/SideNav.vue";
 import SimpleModal from "packages/Modals/src/SimpleModal.vue";
+import RadioBtn from "packages/Buttons/src/RadioBtn.vue";
 import { fadeDuration } from "packages/Modals";
 
 export default {
@@ -77,7 +78,8 @@ export default {
     IconCloseBtn,
     Header,
     SideNav,
-    SimpleModal
+    SimpleModal,
+    RadioBtn
   },
   setup() {
     const showModal = ref(false);
@@ -115,6 +117,10 @@ export default {
       document.body.classList.add('body--dark')
     }
 
+    const changeRadio = () => {
+      console.log('changeRadio')
+    }
+
     return {
       testImg,
       data,
@@ -125,7 +131,8 @@ export default {
       openAnimatedModal,
       isAnimatedModal,
       closeAnimatedModal,
-      isClosing
+      isClosing,
+      changeRadio
     };
   }
 };
