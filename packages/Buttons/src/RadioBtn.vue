@@ -53,7 +53,7 @@ input[type='radio'] {
 }
 
 .body--dark {
-  .ip--account[type='radio'] {
+  input[type='radio'] {
     box-shadow: 0 0 0 1px white;
 
     &:checked {
