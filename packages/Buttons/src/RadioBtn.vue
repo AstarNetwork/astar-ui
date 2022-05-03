@@ -51,4 +51,15 @@ input[type='radio'] {
     box-shadow: 0 0 0 2px $astar-blue;
   }
 }
+
+.body--dark {
+  .ip--account[type='radio'] {
+    box-shadow: 0 0 0 1px white;
+
+    &:checked {
+      box-shadow: 0 0 0 2px $astar-blue;
+      border: 3px solid $gray-5;
+    }
+  }
+}
 </style>
