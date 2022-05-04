@@ -43,9 +43,9 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
           scope: '@astar-network'
-      - run: npm run clean
-      - run: npm install
-      - run: npm run build:lib
+      - run: yarn clean
+      - run: yarn
+      - run: yarn build:lib
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
