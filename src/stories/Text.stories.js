@@ -1,4 +1,4 @@
-import Text from "../../packages/Text/src/Text.vue";
+import Text from "packages/Text/src/Text.vue";
 
 export default {
   title: 'Text',
