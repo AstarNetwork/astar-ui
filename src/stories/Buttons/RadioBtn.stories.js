@@ -5,7 +5,12 @@ export default {
   component: RadioBtn
 };
 
-export const DefaultButton = () => ({
+const Template = () => ({
   components: { RadioBtn },
   template: '<RadioBtn @change="changeRadio" />',
 });
+
+export const DefaultButton = Template.bind({});
+
+export const DefaultButtonDark = Template.bind({});
+DefaultButtonDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];

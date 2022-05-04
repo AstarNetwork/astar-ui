@@ -21,3 +21,7 @@ DefaultModal.args = {
   show: true,
   isAnimation: true
 };
+
+export const DefaultModalDark = Template.bind({});
+DefaultModalDark.args = DefaultModal.args;
+DefaultModalDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
