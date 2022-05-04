@@ -17,3 +17,7 @@ export const DefaultHeader = Template.bind({});
 DefaultHeader.args = {
   title: 'header title',
 };
+
+export const DefaultHeaderDark = Template.bind({});
+DefaultHeaderDark.args = DefaultHeader.args;
+DefaultHeaderDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
