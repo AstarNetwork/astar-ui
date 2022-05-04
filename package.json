@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "dev": "vite --config ./build/base.config.ts",
+    "clean": "rm -rf node_modules",
     "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.config.ts",
     "build:doc": "vue-tsc --noEmit && vite build --config ./build/doc.config.ts && node script/copyDir.js",
     "gen": "node ./script/genNewComp/index.js",
