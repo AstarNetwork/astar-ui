@@ -146,6 +146,7 @@ export default defineComponent({
 }
 
 .title--no-close-icon {
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   margin-top: rem(24);
 }
 

@@ -23,7 +23,7 @@ export default defineComponent({
   props: {
     type: {
       required: true,
-      type: Object as PropType<TextType>,
+      type: String as PropType<TextType>,
       default: "H1"
     }
   },
@@ -38,7 +38,7 @@ export default defineComponent({
 <style lang="css" scoped>
 .text_H1 {
   /* 26 semibold */
-  font-family: "SF Pro Text", "Noto Sans KR", sans-serif;
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   font-style: normal;
   font-weight: 590;
   font-size: 1.625rem;
@@ -48,7 +48,7 @@ export default defineComponent({
 
 .text_H2 {
   /* 26 semibold */
-  font-family: "SF Pro Text", "Noto Sans KR", sans-serif;
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   font-style: normal;
   font-weight: 590;
   font-size: 1.375rem;
@@ -59,7 +59,7 @@ export default defineComponent({
 
 .text_H3 {
   /* 26 semibold */
-  font-family: "SF Pro Text", "Noto Sans KR", sans-serif;
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
@@ -69,7 +69,7 @@ export default defineComponent({
 
 .text_H4 {
   /* 26 semibold */
-  font-family: "SF Pro Text", "Noto Sans KR", sans-serif;
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -79,7 +79,7 @@ export default defineComponent({
 
 .text_H5 {
   /* 26 semibold */
-  font-family: "SF Pro Text", "Noto Sans KR", sans-serif;
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 0.875rem;
@@ -89,7 +89,7 @@ export default defineComponent({
 
 .text_H6 {
   /* 26 semibold */
-  font-family: "SF Pro Text", "Noto Sans KR", sans-serif;
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 0.875rem;
@@ -99,7 +99,7 @@ export default defineComponent({
 
 .text_H7 {
   /* 26 semibold */
-  font-family: "SF Pro Text", "Noto Sans KR", sans-serif;
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   font-style: normal;
   font-weight: 590;
   font-size: 0.75rem;

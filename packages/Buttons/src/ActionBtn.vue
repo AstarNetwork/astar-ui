@@ -37,7 +37,7 @@ button {
   margin: 0;
   padding: 0.5rem 2rem;
 
-  font-family: "SF Pro Text", "Noto Sans KR", sans-serif;
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;

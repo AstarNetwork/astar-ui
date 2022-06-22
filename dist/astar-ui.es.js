@@ -41,7 +41,7 @@ const _sfc_main$z = defineComponent({
   props: {
     type: {
       required: true,
-      type: Object,
+      type: String,
       default: "H1"
     }
   },
@@ -56,7 +56,7 @@ function _sfc_render$z(_ctx, _cache, $props, $setup, $data, $options) {
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 2);
 }
-var Text = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["render", _sfc_render$z], ["__scopeId", "data-v-e7c95fbe"]]);
+var Text = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["render", _sfc_render$z], ["__scopeId", "data-v-76874ba1"]]);
 const TextPlugin = {
   install(app) {
     app.component("astar-text", Text);
@@ -188,7 +188,7 @@ function _sfc_render$w(_ctx, _cache, $props, $setup, $data, $options) {
     ], 6)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$w], ["__scopeId", "data-v-64f62f17"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$w], ["__scopeId", "data-v-1c83a04c"]]);
 var ModalDrawer_vue_vue_type_style_index_0_scoped_true_lang = "";
 const slideInClass = "animate__slideInRight";
 const slideOutClass = "animate__slideOutRight";
@@ -226,7 +226,7 @@ const _sfc_main$v = defineComponent({
     });
   }
 });
-const _withScopeId$2 = (n) => (pushScopeId("data-v-0add435c"), n = n(), popScopeId(), n);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-ec15507a"), n = n(), popScopeId(), n);
 const _hoisted_1$v = { class: "modal-content" };
 const _hoisted_2$i = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createElementVNode("div", { class: "row--close" }, [
   /* @__PURE__ */ createElementVNode("span", { class: "close" }, "\xD7")
@@ -248,7 +248,7 @@ function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
     ], 2)
   ], 2);
 }
-var ModalDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$v], ["__scopeId", "data-v-0add435c"]]);
+var ModalDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$v], ["__scopeId", "data-v-ec15507a"]]);
 const fadeDuration = 200;
 const ModalsPlugin = {
   install(app) {
@@ -451,7 +451,7 @@ function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 12, _hoisted_1$p);
 }
-var ActionBtn = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$p], ["__scopeId", "data-v-7e509d33"]]);
+var ActionBtn = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$p], ["__scopeId", "data-v-056ab269"]]);
 var Button_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$o = defineComponent({
   name: "Button",
@@ -481,7 +481,7 @@ function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 12, _hoisted_1$o);
 }
-var Button = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o], ["__scopeId", "data-v-6cbde29f"]]);
+var Button = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o], ["__scopeId", "data-v-4630c03f"]]);
 var RadioBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$n = defineComponent({
   name: "RadioBtn",
@@ -539,7 +539,7 @@ function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", _hoisted_2$d, toDisplayString(_ctx.title), 1)
   ], 2);
 }
-var SideNav = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$m], ["__scopeId", "data-v-f78a116a"]]);
+var SideNav = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$m], ["__scopeId", "data-v-1b9dbc97"]]);
 const ButtonsPlugin = {
   install(app) {
     app.component("astar-action-btn", ActionBtn);
