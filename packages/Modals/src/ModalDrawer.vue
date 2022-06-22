@@ -114,6 +114,7 @@ export default defineComponent({
 }
 
 .title {
+  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   display: flex;
   justify-content: flex-start;
   font-style: normal;
