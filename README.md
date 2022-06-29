@@ -28,19 +28,9 @@ yarn storybook
 yarn build-storybook
 ```
 
-### Run Demo page (DEPRECATED)
+### Run Play ground for testing (option)
 ```
 yarn dev
-```
-
-### Run script for generating package (DEPRECATED)
-```
-yarn gen
-```
-
-### Build Docs (DEPRECATED)
-```
-yarn build:doc
 ```
 
 ## Usage Of Components Built
@@ -77,22 +67,28 @@ then use like
 ```
 
 ### Implement story for the component in `/src/stories`
-refer: https://storybook.js.org/docs/vue/writing-stories/introduction
+```
+stories
+> [DirectoryName]
+>> [Component].stories.js
+```
+refer to: https://storybook.js.org/docs/vue/writing-stories/introduction
 
 ### Run storybook in local
 ```
 yarn storybook
 ```
+Hot reloading support
 
 ### Send PR for reviewing
-Once it merged to `main`, it automatically deploy & publish to npm with new version in github action workflow.
+Once it merged to `main`, it automatically deploy & publish to npm with new version in github action workflow and deployed storybook as well.
 **there's no need to update version manually or build library & storybook before sending PR.**
 
 ### View updated storybook
 https://main--625fa762a035be003a9814c1.chromatic.com/
 
-### Use component
-Update ui library version
+### Use component in Vue project
+Update latest ui library(astar-ui) version
 then use like
 ```
   <astar-button @click="click" />
