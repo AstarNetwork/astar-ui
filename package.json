@@ -1,6 +1,6 @@
 {
   "name": "@astar-network/astar-ui",
-  "version": "0.0.42",
+  "version": "0.0.43",
   "repository": {
     "type": "git",
     "url": "https://github.com/AstarNetwork/astar-ui.git"
@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
-    "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.config.ts",    
+    "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.config.ts",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic --project-token=af2bfd147de5",
