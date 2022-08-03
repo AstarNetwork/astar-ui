@@ -25,6 +25,10 @@ import IconHide from "./src/IconHide.vue";
 import IconUnhide from "./src/IconUnhide.vue";
 import IconHelp from "./src/IconHelp.vue";
 import IconVert from "./src/IconVert.vue";
+import IconGroup from "./src/IconGroup.vue";
+import IconHistory from "./src/IconHistory.vue";
+import IconSync from "./src/IconSync.vue";
+import IconCircleCheck from "./src/IconCircleCheck.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -54,6 +58,10 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-unhide", IconUnhide);
     app.component("astar-icon-help", IconHelp);
     app.component("astar-icon-vert", IconVert);
+    app.component("astar-icon-history", IconHistory);
+    app.component("astar-icon-group", IconGroup);
+    app.component("astar-icon-sync", IconSync);
+    app.component("astar-icon-circle-check", IconCircleCheck);
   },
 };
 
@@ -84,4 +92,8 @@ export {
   IconUnhide,
   IconHelp,
   IconVert,
+  IconHistory,
+  IconGroup,
+  IconSync,
+  IconCircleCheck,
 };

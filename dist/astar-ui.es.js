@@ -36,7 +36,7 @@ var EnumType;
   EnumType2[EnumType2["H6"] = 5] = "H6";
   EnumType2[EnumType2["H7"] = 6] = "H7";
 })(EnumType || (EnumType = {}));
-const _sfc_main$E = defineComponent({
+const _sfc_main$I = defineComponent({
   name: "Text",
   props: {
     type: {
@@ -49,21 +49,21 @@ const _sfc_main$E = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-function _sfc_render$E(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$I(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("span", {
     class: normalizeClass(`text_${_ctx.type}`)
   }, [
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 2);
 }
-var Text = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["render", _sfc_render$E], ["__scopeId", "data-v-76874ba1"]]);
+var Text = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["render", _sfc_render$I], ["__scopeId", "data-v-76874ba1"]]);
 const TextPlugin = {
   install(app) {
     app.component("astar-text", Text);
   }
 };
 var Spinner_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$D = defineComponent({});
+const _sfc_main$H = defineComponent({});
 const _withScopeId$3 = (n) => (pushScopeId("data-v-6b0ec7d8"), n = n(), popScopeId(), n);
 const _hoisted_1$z = { class: "loader" };
 const _hoisted_2$m = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createElementVNode("div", { class: "one" }, null, -1));
@@ -76,16 +76,16 @@ const _hoisted_6$1 = [
   _hoisted_4$5,
   _hoisted_5$3
 ];
-function _sfc_render$D(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$H(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$z, _hoisted_6$1);
 }
-var Spinner = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["render", _sfc_render$D], ["__scopeId", "data-v-6b0ec7d8"]]);
+var Spinner = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["render", _sfc_render$H], ["__scopeId", "data-v-6b0ec7d8"]]);
 const SpinnerPlugin = {
   install(app) {
     app.component("astar-spinner", Spinner);
   }
 };
-const _sfc_main$C = {};
+const _sfc_main$G = {};
 const _hoisted_1$y = {
   width: "24",
   height: "24",
@@ -100,15 +100,15 @@ const _hoisted_2$l = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$g = [
   _hoisted_2$l
 ];
-function _sfc_render$C(_ctx, _cache) {
+function _sfc_render$G(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$y, _hoisted_3$g);
 }
-var IconClose$1 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["render", _sfc_render$C]]);
+var IconClose$1 = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["render", _sfc_render$G]]);
 var SimpleModal_vue_vue_type_style_index_0_scoped_true_lang = "";
 const fadeInClass = "fade-in";
 const fadeOutClass = "fade-out";
 const zoomInClass = "zoom-in";
-const _sfc_main$B = defineComponent({
+const _sfc_main$F = defineComponent({
   components: { IconClose: IconClose$1 },
   name: "SimpleModal",
   props: {
@@ -166,7 +166,7 @@ const _hoisted_1$x = {
   class: "row--close"
 };
 const _hoisted_2$k = { class: "column--close" };
-function _sfc_render$B(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$F(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_IconClose = resolveComponent("IconClose");
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(["modal", [_ctx.isShow && "show", _ctx.isClosing ? _ctx.fadeOutClass : _ctx.fadeInClass]]),
@@ -188,11 +188,11 @@ function _sfc_render$B(_ctx, _cache, $props, $setup, $data, $options) {
     ], 6)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["render", _sfc_render$B], ["__scopeId", "data-v-1c83a04c"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["render", _sfc_render$F], ["__scopeId", "data-v-1c83a04c"]]);
 var ModalDrawer_vue_vue_type_style_index_0_scoped_true_lang = "";
 const slideInClass = "animate__slideInRight";
 const slideOutClass = "animate__slideOutRight";
-const _sfc_main$A = defineComponent({
+const _sfc_main$E = defineComponent({
   name: "ModalDrawer",
   props: {
     show: {
@@ -232,7 +232,7 @@ const _hoisted_2$j = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ create
   /* @__PURE__ */ createElementVNode("span", { class: "close" }, "\xD7")
 ], -1));
 const _hoisted_3$f = { class: "title" };
-function _sfc_render$A(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$E(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(_ctx.show && "wrapper--modal-drawer"),
     onClick: _cache[0] || (_cache[0] = (...args) => _ctx.closeHandler && _ctx.closeHandler(...args))
@@ -248,7 +248,7 @@ function _sfc_render$A(_ctx, _cache, $props, $setup, $data, $options) {
     ], 2)
   ], 2);
 }
-var ModalDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["render", _sfc_render$A], ["__scopeId", "data-v-ec15507a"]]);
+var ModalDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["render", _sfc_render$E], ["__scopeId", "data-v-ec15507a"]]);
 const fadeDuration = 200;
 const ModalsPlugin = {
   install(app) {
@@ -257,19 +257,19 @@ const ModalsPlugin = {
   }
 };
 var IconCloseBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$z = defineComponent({
+const _sfc_main$D = defineComponent({
   name: "IconCloseBtn",
   setup(props) {
     return __spreadValues({}, toRefs(props));
   }
 });
 const _hoisted_1$v = { type: "button" };
-function _sfc_render$z(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$D(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", _hoisted_1$v, " \xD7 ");
 }
-var IconCloseBtn = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["render", _sfc_render$z], ["__scopeId", "data-v-6d08595c"]]);
+var IconCloseBtn = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["render", _sfc_render$D], ["__scopeId", "data-v-6d08595c"]]);
 var IconCopyBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$y = defineComponent({
+const _sfc_main$C = defineComponent({
   name: "IconCopyBtn",
   setup(props) {
     return __spreadValues({}, toRefs(props));
@@ -293,12 +293,12 @@ const _hoisted_2$i = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ create
 const _hoisted_3$e = [
   _hoisted_2$i
 ];
-function _sfc_render$y(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$C(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", _hoisted_1$u, _hoisted_3$e);
 }
-var IconCopyBtn = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["render", _sfc_render$y], ["__scopeId", "data-v-03b4d7e4"]]);
+var IconCopyBtn = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["render", _sfc_render$C], ["__scopeId", "data-v-03b4d7e4"]]);
 var IconShareBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$x = defineComponent({
+const _sfc_main$B = defineComponent({
   name: "IconShareBtn",
   setup(props) {
     return __spreadValues({}, toRefs(props));
@@ -320,10 +320,10 @@ const _hoisted_2$h = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createEl
 const _hoisted_3$d = [
   _hoisted_2$h
 ];
-function _sfc_render$x(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$B(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", _hoisted_1$t, _hoisted_3$d);
 }
-var IconShareBtn = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["render", _sfc_render$x], ["__scopeId", "data-v-4c791d2f"]]);
+var IconShareBtn = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["render", _sfc_render$B], ["__scopeId", "data-v-4c791d2f"]]);
 const IconButtonsPlugin = {
   install(app) {
     app.component("astar-icon-close-btn", IconCloseBtn);
@@ -332,7 +332,7 @@ const IconButtonsPlugin = {
   }
 };
 var Header_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$w = defineComponent({
+const _sfc_main$A = defineComponent({
   name: "Header",
   props: {
     title: {
@@ -348,7 +348,7 @@ const _hoisted_2$g = { class: "header-left" };
 const _hoisted_3$c = { key: 0 };
 const _hoisted_4$4 = { key: 1 };
 const _hoisted_5$2 = { class: "header-right" };
-function _sfc_render$w(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$A(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$s, [
     createElementVNode("div", _hoisted_2$g, [
       _ctx.title ? (openBlock(), createElementBlock("div", _hoisted_3$c, toDisplayString(_ctx.title), 1)) : (openBlock(), createElementBlock("div", _hoisted_4$4, [
@@ -360,9 +360,9 @@ function _sfc_render$w(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var Header = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$w], ["__scopeId", "data-v-672b02e9"]]);
+var Header = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["render", _sfc_render$A], ["__scopeId", "data-v-672b02e9"]]);
 var ConnectionIndicator_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$v = defineComponent({
+const _sfc_main$z = defineComponent({
   props: {
     connectionType: {
       type: String,
@@ -398,7 +398,7 @@ const _sfc_main$v = defineComponent({
 });
 const _hoisted_1$r = { class: "wrapper--indicator" };
 const _hoisted_2$f = { key: 0 };
-function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$z(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$r, [
     createElementVNode("div", {
       class: normalizeClass(["dot", _ctx.getDotClass(_ctx.connectionType)])
@@ -415,7 +415,7 @@ function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
     ], 2)
   ]);
 }
-var ConnectionIndicator = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$v], ["__scopeId", "data-v-7663861b"]]);
+var ConnectionIndicator = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["render", _sfc_render$z], ["__scopeId", "data-v-7663861b"]]);
 const HeaderPlugin = {
   install(app) {
     app.component("astar-header", Header);
@@ -423,7 +423,7 @@ const HeaderPlugin = {
   }
 };
 var ActionBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$u = defineComponent({
+const _sfc_main$y = defineComponent({
   name: "ActionBtn",
   props: {
     disabled: {
@@ -442,7 +442,7 @@ const _sfc_main$u = defineComponent({
   }
 });
 const _hoisted_1$q = ["disabled"];
-function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$y(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", {
     type: "button",
     style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`),
@@ -451,9 +451,9 @@ function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 12, _hoisted_1$q);
 }
-var ActionBtn = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$u], ["__scopeId", "data-v-056ab269"]]);
+var ActionBtn = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["render", _sfc_render$y], ["__scopeId", "data-v-056ab269"]]);
 var Button_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$t = defineComponent({
+const _sfc_main$x = defineComponent({
   name: "Button",
   props: {
     disabled: {
@@ -472,7 +472,7 @@ const _sfc_main$t = defineComponent({
   }
 });
 const _hoisted_1$p = ["disabled"];
-function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$x(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", {
     type: "button",
     style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`),
@@ -481,9 +481,9 @@ function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 12, _hoisted_1$p);
 }
-var Button = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$t], ["__scopeId", "data-v-4630c03f"]]);
+var Button = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["render", _sfc_render$x], ["__scopeId", "data-v-4630c03f"]]);
 var RadioBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$s = defineComponent({
+const _sfc_main$w = defineComponent({
   name: "RadioBtn",
   props: {
     checked: {
@@ -502,16 +502,16 @@ const _sfc_main$s = defineComponent({
   }
 });
 const _hoisted_1$o = ["checked"];
-function _sfc_render$s(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$w(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("input", {
     type: "radio",
     checked: _ctx.checked,
     onChange: _cache[0] || (_cache[0] = (...args) => _ctx.change && _ctx.change(...args))
   }, null, 40, _hoisted_1$o);
 }
-var RadioBtn = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$s], ["__scopeId", "data-v-3c63e1a2"]]);
+var RadioBtn = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$w], ["__scopeId", "data-v-3c63e1a2"]]);
 var SideNav_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$r = defineComponent({
+const _sfc_main$v = defineComponent({
   name: "SideNav",
   props: {
     title: {
@@ -528,7 +528,7 @@ const _sfc_main$r = defineComponent({
 });
 const _hoisted_1$n = { class: "fa" };
 const _hoisted_2$e = { class: "title" };
-function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", {
     type: "button",
     class: normalizeClass(_ctx.selected ? "selected" : "")
@@ -539,7 +539,7 @@ function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", _hoisted_2$e, toDisplayString(_ctx.title), 1)
   ], 2);
 }
-var SideNav = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$r], ["__scopeId", "data-v-1b9dbc97"]]);
+var SideNav = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$v], ["__scopeId", "data-v-1b9dbc97"]]);
 const ButtonsPlugin = {
   install(app) {
     app.component("astar-action-btn", ActionBtn);
@@ -548,7 +548,7 @@ const ButtonsPlugin = {
     app.component("astar-side-nav", SideNav);
   }
 };
-const _sfc_main$q = defineComponent({
+const _sfc_main$u = defineComponent({
   props: {
     iconName: {
       type: String,
@@ -579,7 +579,7 @@ const _sfc_main$q = defineComponent({
 const _hoisted_1$m = ["width", "height", "viewBox", "fill", "aria-labelledby"];
 const _hoisted_2$d = ["id"];
 const _hoisted_3$b = ["fill"];
-function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$u(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: _ctx.width,
@@ -598,8 +598,8 @@ function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
     ], 8, _hoisted_3$b)
   ], 8, _hoisted_1$m);
 }
-var IconBase = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$q]]);
-const _sfc_main$p = {};
+var IconBase = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$u]]);
+const _sfc_main$t = {};
 const _hoisted_1$l = {
   width: "24",
   height: "24",
@@ -614,20 +614,20 @@ const _hoisted_2$c = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$a = [
   _hoisted_2$c
 ];
-function _sfc_render$p(_ctx, _cache) {
+function _sfc_render$t(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$l, _hoisted_3$a);
 }
-var Icon3dots = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$p]]);
-const _sfc_main$o = {};
+var Icon3dots = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$t]]);
+const _sfc_main$s = {};
 const _hoisted_1$k = /* @__PURE__ */ createStaticVNode('<circle cx="32" cy="32" fill="#eee" r="32"></circle><circle cx="32" cy="8" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="32" cy="20" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="14" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="11.215390309173472" cy="20" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="26" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="11.215390309173472" cy="32" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="11.215390309173472" cy="44" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="38" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="50" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="32" cy="56" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="32" cy="44" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="50" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="52.78460969082653" cy="44" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="38" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="52.78460969082653" cy="32" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="52.78460969082653" cy="20" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="26" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="14" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="32" cy="32" fill="hsl(151, 93%, 35%)" r="5"></circle>', 20);
 const _hoisted_21 = [
   _hoisted_1$k
 ];
-function _sfc_render$o(_ctx, _cache) {
+function _sfc_render$s(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", null, _hoisted_21);
 }
-var IconAccountSample = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o]]);
-const _sfc_main$n = {};
+var IconAccountSample = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$s]]);
+const _sfc_main$r = {};
 const _hoisted_1$j = {
   width: "22",
   height: "22",
@@ -645,11 +645,11 @@ const _hoisted_2$b = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$9 = [
   _hoisted_2$b
 ];
-function _sfc_render$n(_ctx, _cache) {
+function _sfc_render$r(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$j, _hoisted_3$9);
 }
-var IconAssets = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$n]]);
-const _sfc_main$m = {};
+var IconAssets = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$r]]);
+const _sfc_main$q = {};
 const _hoisted_1$i = {
   width: "24",
   height: "20",
@@ -667,11 +667,11 @@ const _hoisted_2$a = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$8 = [
   _hoisted_2$a
 ];
-function _sfc_render$m(_ctx, _cache) {
+function _sfc_render$q(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$i, _hoisted_3$8);
 }
-var IconBridge = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$m]]);
-const _sfc_main$l = {};
+var IconBridge = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$q]]);
+const _sfc_main$p = {};
 const _hoisted_1$h = {
   width: "24",
   height: "24",
@@ -686,11 +686,11 @@ const _hoisted_2$9 = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$7 = [
   _hoisted_2$9
 ];
-function _sfc_render$l(_ctx, _cache) {
+function _sfc_render$p(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$h, _hoisted_3$7);
 }
-var IconClose = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$l]]);
-const _sfc_main$k = {};
+var IconClose = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$p]]);
+const _sfc_main$o = {};
 const _hoisted_1$g = {
   width: "32",
   height: "32",
@@ -714,11 +714,11 @@ const _hoisted_4$3 = [
   _hoisted_2$8,
   _hoisted_3$6
 ];
-function _sfc_render$k(_ctx, _cache) {
+function _sfc_render$o(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$g, _hoisted_4$3);
 }
-var IconCopy = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k]]);
-const _sfc_main$j = {};
+var IconCopy = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o]]);
+const _sfc_main$n = {};
 const _hoisted_1$f = {
   width: "22",
   height: "22",
@@ -736,11 +736,11 @@ const _hoisted_2$7 = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$5 = [
   _hoisted_2$7
 ];
-function _sfc_render$j(_ctx, _cache) {
+function _sfc_render$n(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$f, _hoisted_3$5);
 }
-var IconDappStaking = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$j]]);
-const _sfc_main$i = {};
+var IconDappStaking = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$n]]);
+const _sfc_main$m = {};
 const _hoisted_1$e = {
   width: "22",
   height: "22",
@@ -752,20 +752,20 @@ const _hoisted_2$6 = /* @__PURE__ */ createStaticVNode('<path d="M2.75 8.25V4.12
 const _hoisted_7 = [
   _hoisted_2$6
 ];
-function _sfc_render$i(_ctx, _cache) {
+function _sfc_render$m(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$e, _hoisted_7);
 }
-var IconDashboard = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$i]]);
-const _sfc_main$h = {};
+var IconDashboard = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$m]]);
+const _sfc_main$l = {};
 const _hoisted_1$d = {
   fill: "currentColor",
   d: "M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"
 };
-function _sfc_render$h(_ctx, _cache) {
+function _sfc_render$l(_ctx, _cache) {
   return openBlock(), createElementBlock("path", _hoisted_1$d);
 }
-var IconDiscord = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$h]]);
-const _sfc_main$g = {};
+var IconDiscord = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$l]]);
+const _sfc_main$k = {};
 const _hoisted_1$c = {
   width: "24",
   height: "24",
@@ -780,11 +780,11 @@ const _hoisted_2$5 = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$4 = [
   _hoisted_2$5
 ];
-function _sfc_render$g(_ctx, _cache) {
+function _sfc_render$k(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$c, _hoisted_3$4);
 }
-var IconDocument = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$g]]);
-const _sfc_main$f = {};
+var IconDocument = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k]]);
+const _sfc_main$j = {};
 const _hoisted_1$b = {
   width: "32",
   height: "32",
@@ -798,20 +798,20 @@ const _hoisted_4$2 = [
   _hoisted_2$4,
   _hoisted_3$3
 ];
-function _sfc_render$f(_ctx, _cache) {
+function _sfc_render$j(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$b, _hoisted_4$2);
 }
-var IconExternalLink = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f]]);
-const _sfc_main$e = {};
+var IconExternalLink = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$j]]);
+const _sfc_main$i = {};
 const _hoisted_1$a = {
   fill: "currentColor",
   d: "M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
 };
-function _sfc_render$e(_ctx, _cache) {
+function _sfc_render$i(_ctx, _cache) {
   return openBlock(), createElementBlock("path", _hoisted_1$a);
 }
-var IconGithub = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$e]]);
-const _sfc_main$d = {};
+var IconGithub = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$i]]);
+const _sfc_main$h = {};
 const _hoisted_1$9 = {
   width: "24",
   height: "24",
@@ -847,44 +847,44 @@ const _hoisted_6 = [
   _hoisted_4$1,
   _hoisted_5$1
 ];
-function _sfc_render$d(_ctx, _cache) {
+function _sfc_render$h(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$9, _hoisted_6);
 }
-var IconNetwork = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$d]]);
-const _sfc_main$c = {};
+var IconNetwork = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$h]]);
+const _sfc_main$g = {};
 const _hoisted_1$8 = {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   "stroke-width": "2",
   d: "M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
 };
-function _sfc_render$c(_ctx, _cache) {
+function _sfc_render$g(_ctx, _cache) {
   return openBlock(), createElementBlock("path", _hoisted_1$8);
 }
-var IconOutlineMoon = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$c]]);
-const _sfc_main$b = {};
+var IconOutlineMoon = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$g]]);
+const _sfc_main$f = {};
 const _hoisted_1$7 = {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   "stroke-width": "2",
   d: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
 };
-function _sfc_render$b(_ctx, _cache) {
+function _sfc_render$f(_ctx, _cache) {
   return openBlock(), createElementBlock("path", _hoisted_1$7);
 }
-var IconOutlineSun = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$b]]);
-const _sfc_main$a = {};
+var IconOutlineSun = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f]]);
+const _sfc_main$e = {};
 const _hoisted_1$6 = {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   "stroke-width": "2",
   d: "M12 6v6m0 0v6m0-6h6m-6 0H6"
 };
-function _sfc_render$a(_ctx, _cache) {
+function _sfc_render$e(_ctx, _cache) {
   return openBlock(), createElementBlock("path", _hoisted_1$6);
 }
-var IconPlus = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a]]);
-const _sfc_main$9 = {};
+var IconPlus = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$e]]);
+const _sfc_main$d = {};
 const _hoisted_1$5 = {
   width: "22",
   height: "22",
@@ -901,39 +901,39 @@ const _hoisted_2$2 = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$1 = [
   _hoisted_2$2
 ];
-function _sfc_render$9(_ctx, _cache) {
+function _sfc_render$d(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$5, _hoisted_3$1);
 }
-var IconSearch = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9]]);
-const _sfc_main$8 = {};
+var IconSearch = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$d]]);
+const _sfc_main$c = {};
 const _hoisted_1$4 = {
   "fill-rule": "evenodd",
   d: "M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z",
   "clip-rule": "evenodd"
 };
-function _sfc_render$8(_ctx, _cache) {
+function _sfc_render$c(_ctx, _cache) {
   return openBlock(), createElementBlock("path", _hoisted_1$4);
 }
-var IconSolidSelector = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8]]);
-const _sfc_main$7 = {};
+var IconSolidSelector = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$c]]);
+const _sfc_main$b = {};
 const _hoisted_1$3 = {
   fill: "currentColor",
   d: "M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
 };
-function _sfc_render$7(_ctx, _cache) {
+function _sfc_render$b(_ctx, _cache) {
   return openBlock(), createElementBlock("path", _hoisted_1$3);
 }
-var IconTelegram = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7]]);
-const _sfc_main$6 = {};
+var IconTelegram = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$b]]);
+const _sfc_main$a = {};
 const _hoisted_1$2 = {
   fill: "currentColor",
   d: "M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
 };
-function _sfc_render$6(_ctx, _cache) {
+function _sfc_render$a(_ctx, _cache) {
   return openBlock(), createElementBlock("path", _hoisted_1$2);
 }
-var IconTwitter = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$6]]);
-const _sfc_main$5 = {};
+var IconTwitter = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a]]);
+const _sfc_main$9 = {};
 const _hoisted_1$1 = {
   width: "24",
   height: "24",
@@ -961,11 +961,11 @@ const _hoisted_5 = [
   _hoisted_3,
   _hoisted_4
 ];
-function _sfc_render$5(_ctx, _cache) {
+function _sfc_render$9(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", _hoisted_1$1, _hoisted_5);
 }
-var IconWallet = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$5]]);
-const _sfc_main$4 = {};
+var IconWallet = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9]]);
+const _sfc_main$8 = {};
 const _hoisted_1 = /* @__PURE__ */ createElementVNode("link", {
   rel: "stylesheet",
   href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -973,11 +973,99 @@ const _hoisted_1 = /* @__PURE__ */ createElementVNode("link", {
 const _hoisted_2 = [
   _hoisted_1
 ];
-function _sfc_render$4(_ctx, _cache) {
+function _sfc_render$8(_ctx, _cache) {
   return openBlock(), createElementBlock("head", null, _hoisted_2);
 }
-var GoogleMaterialIcon = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$4]]);
+var GoogleMaterialIcon = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8]]);
 var IconHide_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$7 = defineComponent({
+  components: { GoogleMaterialIcon },
+  props: {
+    size: {
+      type: String,
+      required: false,
+      default: ""
+    }
+  }
+});
+function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_GoogleMaterialIcon = resolveComponent("GoogleMaterialIcon");
+  return openBlock(), createElementBlock(Fragment, null, [
+    createVNode(_component_GoogleMaterialIcon),
+    createElementVNode("span", {
+      class: "material-symbols-outlined icon",
+      style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
+    }, " visibility_off ", 4)
+  ], 64);
+}
+var IconHide = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-de41f99c"]]);
+var IconUnhide_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$6 = defineComponent({
+  components: { GoogleMaterialIcon },
+  props: {
+    size: {
+      type: String,
+      required: false,
+      default: ""
+    }
+  }
+});
+function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_GoogleMaterialIcon = resolveComponent("GoogleMaterialIcon");
+  return openBlock(), createElementBlock(Fragment, null, [
+    createVNode(_component_GoogleMaterialIcon),
+    createElementVNode("span", {
+      class: "material-symbols-outlined icon",
+      style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
+    }, " visibility ", 4)
+  ], 64);
+}
+var IconUnhide = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$6], ["__scopeId", "data-v-3c696569"]]);
+var IconHelp_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$5 = defineComponent({
+  components: { GoogleMaterialIcon },
+  props: {
+    size: {
+      type: String,
+      required: false,
+      default: ""
+    }
+  }
+});
+function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_GoogleMaterialIcon = resolveComponent("GoogleMaterialIcon");
+  return openBlock(), createElementBlock(Fragment, null, [
+    createVNode(_component_GoogleMaterialIcon),
+    createElementVNode("span", {
+      class: "material-symbols-outlined icon",
+      style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
+    }, " help ", 4)
+  ], 64);
+}
+var IconHelp = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$5], ["__scopeId", "data-v-4ebdb290"]]);
+var IconVert_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$4 = defineComponent({
+  components: { GoogleMaterialIcon },
+  props: {
+    size: {
+      type: String,
+      required: false,
+      default: ""
+    }
+  }
+});
+function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_GoogleMaterialIcon = resolveComponent("GoogleMaterialIcon");
+  return openBlock(), createElementBlock(Fragment, null, [
+    createVNode(_component_GoogleMaterialIcon),
+    createElementVNode("span", {
+      class: "material-symbols-outlined icon",
+      style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
+    }, " more_vert ", 4)
+  ], 64);
+}
+var IconVert = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$4], ["__scopeId", "data-v-1e3f3540"]]);
+var IconGroup_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$3 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -995,11 +1083,11 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined icon",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " visibility_off ", 4)
+    }, " group ", 4)
   ], 64);
 }
-var IconHide = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-de41f99c"]]);
-var IconUnhide_vue_vue_type_style_index_0_scoped_true_lang = "";
+var IconGroup = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-b6204a88"]]);
+var IconHistory_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$2 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1017,11 +1105,11 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined icon",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " visibility ", 4)
+    }, " history ", 4)
   ], 64);
 }
-var IconUnhide = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2], ["__scopeId", "data-v-3c696569"]]);
-var IconHelp_vue_vue_type_style_index_0_scoped_true_lang = "";
+var IconHistory = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2], ["__scopeId", "data-v-18e12448"]]);
+var IconSync_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$1 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1039,11 +1127,11 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined icon",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " help ", 4)
+    }, " sync ", 4)
   ], 64);
 }
-var IconHelp = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-4ebdb290"]]);
-var IconVert_vue_vue_type_style_index_0_scoped_true_lang = "";
+var IconSync = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-43dbf748"]]);
+var IconCircleCheck_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1061,10 +1149,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined icon",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " more_vert ", 4)
+    }, " check_circle ", 4)
   ], 64);
 }
-var IconVert = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1e3f3540"]]);
+var IconCircleCheck = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-7133019d"]]);
 const IconsPlugin = {
   install(app) {
     app.component("astar-icon-base", IconBase);
@@ -1093,6 +1181,10 @@ const IconsPlugin = {
     app.component("astar-icon-unhide", IconUnhide);
     app.component("astar-icon-help", IconHelp);
     app.component("astar-icon-vert", IconVert);
+    app.component("astar-icon-history", IconHistory);
+    app.component("astar-icon-group", IconGroup);
+    app.component("astar-icon-sync", IconSync);
+    app.component("astar-icon-circle-check", IconCircleCheck);
   }
 };
 const AstarUIPlugin = {
@@ -1107,4 +1199,4 @@ const AstarUIPlugin = {
     (_g = IconsPlugin.install) == null ? void 0 : _g.call(IconsPlugin, app);
   }
 };
-export { ActionBtn, Button, ButtonsPlugin, ConnectionIndicator, Header, HeaderPlugin, Icon3dots, IconAccountSample, IconAssets, IconBase, IconBridge, IconButtonsPlugin, IconClose, IconCloseBtn, IconCopy, IconCopyBtn, IconDappStaking, IconDashboard, IconDiscord, IconDocument, IconExternalLink, IconGithub, IconHelp, IconHide, IconNetwork, IconOutlineMoon, IconOutlineSun, IconPlus, IconSearch, IconShareBtn, IconSolidSelector, IconTelegram, IconTwitter, IconUnhide, IconVert, IconWallet, IconsPlugin, ModalDrawer, ModalsPlugin, RadioBtn, SideNav, SimpleModal, Spinner, SpinnerPlugin, Text, TextPlugin, AstarUIPlugin as default, fadeDuration };
+export { ActionBtn, Button, ButtonsPlugin, ConnectionIndicator, Header, HeaderPlugin, Icon3dots, IconAccountSample, IconAssets, IconBase, IconBridge, IconButtonsPlugin, IconCircleCheck, IconClose, IconCloseBtn, IconCopy, IconCopyBtn, IconDappStaking, IconDashboard, IconDiscord, IconDocument, IconExternalLink, IconGithub, IconGroup, IconHelp, IconHide, IconHistory, IconNetwork, IconOutlineMoon, IconOutlineSun, IconPlus, IconSearch, IconShareBtn, IconSolidSelector, IconSync, IconTelegram, IconTwitter, IconUnhide, IconVert, IconWallet, IconsPlugin, ModalDrawer, ModalsPlugin, RadioBtn, SideNav, SimpleModal, Spinner, SpinnerPlugin, Text, TextPlugin, AstarUIPlugin as default, fadeDuration };
