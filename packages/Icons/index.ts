@@ -29,6 +29,7 @@ import IconGroup from "./src/IconGroup.vue";
 import IconHistory from "./src/IconHistory.vue";
 import IconSync from "./src/IconSync.vue";
 import IconCircleCheck from "./src/IconCircleCheck.vue";
+import IconExpand from "./src/IconExpand.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -61,6 +62,7 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-history", IconHistory);
     app.component("astar-icon-group", IconGroup);
     app.component("astar-icon-sync", IconSync);
+    app.component("astar-icon-expand", IconExpand);
     app.component("astar-icon-circle-check", IconCircleCheck);
   },
 };
@@ -96,4 +98,5 @@ export {
   IconGroup,
   IconSync,
   IconCircleCheck,
+  IconExpand,
 };
