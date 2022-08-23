@@ -43,6 +43,7 @@ export default defineComponent({
   mix-blend-mode: normal;
   opacity: 0.8;
   backdrop-filter: blur(200px);
+  border-bottom: 1px solid $gray-3;
   @media (min-width: $lg) {
     padding-left: 28px;
     padding-right: 28px;
@@ -69,16 +70,20 @@ export default defineComponent({
 .body--dark {
   .header {
     background: $gray-6;
+    opacity: 0.8;
+    border-bottom: 1px solid $gray-6;
   }
   .header-left {
     color: $gray-1;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
   .header {
-    height: 3rem;
+    height: 4rem;
     padding: 0.5rem 1rem;
+    padding-left: 20px;
+    padding-right: 16px
   }
 
   .header-left {
