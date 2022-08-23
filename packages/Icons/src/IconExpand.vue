@@ -1,6 +1,6 @@
 <template>
   <GoogleMaterialIcon />
-  <span class="material-symbols-outlined" :style="size && `font-size: ${size}px`"> sync </span>
+  <span class="material-symbols-outlined" :style="size && `font-size: ${size}px`"> expand_more </span>
 </template>
 
 <script lang="ts">
