@@ -29,34 +29,32 @@ export default defineComponent({
 });
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import '../../styles/main.scss';
+
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
-  padding: 0.5rem 1rem;
 
   font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
   font-style: normal;
-  text-align: center;
-  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
 
   display: inline-block;
   width: auto;
 
   border: none;
   cursor: pointer;
-  background: #191D1F;
-  border-radius: 30px;
-  color: #05B6FD;
+  background: $astar-blue;
+  border-radius: 500px;
+  color: $gray-1;
 }
 
 button:hover {
-  background: #05B6FD;
-  color: #fff;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), $astar-blue;
 }
 
 button:focus {
@@ -65,7 +63,15 @@ button:focus {
 }
 
 button:disabled {
-  background: #191D1F;
-  color: #B1B7C1;
+  border: 1px solid $gray-3;
+  background: transparent;
+  color: $gray-3;
+}
+
+.body--dark {
+  button:disabled {
+    border: 1px solid $gray-4;
+    color: $gray-4;
+  }
 }
 </style>
