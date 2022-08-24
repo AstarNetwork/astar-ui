@@ -73,7 +73,7 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-sync", IconSync);
     app.component("astar-icon-expand", IconExpand);
     app.component("astar-icon-circle-check", IconCircleCheck);
-    app.component("astar-youtube", IconYoutube);
+    app.component("astar-icon-youtube", IconYoutube);
   },
 };
 
