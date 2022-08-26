@@ -51,10 +51,14 @@ button {
   background: $astar-blue;
   border-radius: 500px;
   color: $gray-1;
+
+  transition: 0.5s;
+  background: linear-gradient(100.62deg, var(--c1, $astar-blue), var(--c2, #0297FB) 51%, var(--c1, #0070EB)) var(--x, 0)/ 200%;
 }
 
 button:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), $astar-blue;
+  // background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), $astar-blue;
+  --x: 100%;
 }
 
 button:focus {
