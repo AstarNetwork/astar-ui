@@ -8,7 +8,7 @@
 import { defineComponent, toRefs } from "vue";
 
 export default defineComponent({
-  name: "ActionBtn",
+  name: "IrregularButton",
   props: {
     disabled: {
       type: Boolean,
@@ -29,38 +29,50 @@ export default defineComponent({
 });
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import '../../styles/main.scss';
+
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
-  padding: 0.5rem 2rem;
 
   font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
   font-style: normal;
-  text-align: center;
-  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
 
   display: inline-block;
   width: auto;
 
   border: none;
   cursor: pointer;
-  background: #0085FF;
-  border-radius: 30px;
-  color: #FFFFFF;
+  background: transparent;
+  border-radius: 500px;
+  color: $astar-blue;
+
+  transition: 0.5s;
 }
 
-button:hover,
+button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), $astar-blue;
+  color: $gray-1;
+}
+
 button:focus {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #0085FF;
+  background: $astar-blue;
+  color: #fff;
 }
 
 button:disabled {
-  background: #191D1F;
-  color: #B1B7C1;
+  background: transparent;
+  color: $gray-3;
+}
+
+.body--dark {
+  button:disabled {
+    color: $gray-4;
+  }
 }
 </style>
