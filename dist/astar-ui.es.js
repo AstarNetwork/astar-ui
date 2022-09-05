@@ -36,7 +36,7 @@ var EnumType;
   EnumType2[EnumType2["H6"] = 5] = "H6";
   EnumType2[EnumType2["H7"] = 6] = "H7";
 })(EnumType || (EnumType = {}));
-const _sfc_main$J = defineComponent({
+const _sfc_main$P = defineComponent({
   name: "Text",
   props: {
     type: {
@@ -49,23 +49,23 @@ const _sfc_main$J = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-function _sfc_render$J(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$P(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("span", {
     class: normalizeClass(`text_${_ctx.type}`)
   }, [
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 2);
 }
-var Text = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["render", _sfc_render$J], ["__scopeId", "data-v-76874ba1"]]);
+var Text = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["render", _sfc_render$P], ["__scopeId", "data-v-76874ba1"]]);
 const TextPlugin = {
   install(app) {
     app.component("astar-text", Text);
   }
 };
 var Spinner_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$I = defineComponent({});
+const _sfc_main$O = defineComponent({});
 const _withScopeId$3 = (n) => (pushScopeId("data-v-6b0ec7d8"), n = n(), popScopeId(), n);
-const _hoisted_1$z = { class: "loader" };
+const _hoisted_1$E = { class: "loader" };
 const _hoisted_2$m = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createElementVNode("div", { class: "one" }, null, -1));
 const _hoisted_3$h = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createElementVNode("div", { class: "two" }, null, -1));
 const _hoisted_4$5 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createElementVNode("div", { class: "three" }, null, -1));
@@ -76,17 +76,17 @@ const _hoisted_6$1 = [
   _hoisted_4$5,
   _hoisted_5$3
 ];
-function _sfc_render$I(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$z, _hoisted_6$1);
+function _sfc_render$O(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$E, _hoisted_6$1);
 }
-var Spinner = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["render", _sfc_render$I], ["__scopeId", "data-v-6b0ec7d8"]]);
+var Spinner = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["render", _sfc_render$O], ["__scopeId", "data-v-6b0ec7d8"]]);
 const SpinnerPlugin = {
   install(app) {
     app.component("astar-spinner", Spinner);
   }
 };
-const _sfc_main$H = {};
-const _hoisted_1$y = {
+const _sfc_main$N = {};
+const _hoisted_1$D = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -100,15 +100,15 @@ const _hoisted_2$l = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$g = [
   _hoisted_2$l
 ];
-function _sfc_render$H(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$y, _hoisted_3$g);
+function _sfc_render$N(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$D, _hoisted_3$g);
 }
-var IconClose$1 = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["render", _sfc_render$H]]);
+var IconClose$1 = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["render", _sfc_render$N]]);
 var SimpleModal_vue_vue_type_style_index_0_scoped_true_lang = "";
 const fadeInClass = "fade-in";
 const fadeOutClass = "fade-out";
 const zoomInClass = "zoom-in";
-const _sfc_main$G = defineComponent({
+const _sfc_main$M = defineComponent({
   components: { IconClose: IconClose$1 },
   name: "SimpleModal",
   props: {
@@ -161,12 +161,12 @@ const _sfc_main$G = defineComponent({
     });
   }
 });
-const _hoisted_1$x = {
+const _hoisted_1$C = {
   key: 0,
   class: "row--close"
 };
 const _hoisted_2$k = { class: "column--close" };
-function _sfc_render$G(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$M(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_IconClose = resolveComponent("IconClose");
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(["modal", [_ctx.isShow && "show", _ctx.isClosing ? _ctx.fadeOutClass : _ctx.fadeInClass]]),
@@ -176,7 +176,7 @@ function _sfc_render$G(_ctx, _cache, $props, $setup, $data, $options) {
       class: normalizeClass(["modal-content", _ctx.zoomInClass]),
       style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`)
     }, [
-      _ctx.isCloseIcon ? (openBlock(), createElementBlock("div", _hoisted_1$x, [
+      _ctx.isCloseIcon ? (openBlock(), createElementBlock("div", _hoisted_1$C, [
         createElementVNode("div", _hoisted_2$k, [
           createVNode(_component_IconClose)
         ])
@@ -188,11 +188,11 @@ function _sfc_render$G(_ctx, _cache, $props, $setup, $data, $options) {
     ], 6)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["render", _sfc_render$G], ["__scopeId", "data-v-1c83a04c"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["render", _sfc_render$M], ["__scopeId", "data-v-1c83a04c"]]);
 var ModalDrawer_vue_vue_type_style_index_0_scoped_true_lang = "";
 const slideInClass = "animate__slideInRight";
 const slideOutClass = "animate__slideOutRight";
-const _sfc_main$F = defineComponent({
+const _sfc_main$L = defineComponent({
   name: "ModalDrawer",
   props: {
     show: {
@@ -227,12 +227,12 @@ const _sfc_main$F = defineComponent({
   }
 });
 const _withScopeId$2 = (n) => (pushScopeId("data-v-ec15507a"), n = n(), popScopeId(), n);
-const _hoisted_1$w = { class: "modal-content" };
+const _hoisted_1$B = { class: "modal-content" };
 const _hoisted_2$j = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createElementVNode("div", { class: "row--close" }, [
   /* @__PURE__ */ createElementVNode("span", { class: "close" }, "\xD7")
 ], -1));
 const _hoisted_3$f = { class: "title" };
-function _sfc_render$F(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$L(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(_ctx.show && "wrapper--modal-drawer"),
     onClick: _cache[0] || (_cache[0] = (...args) => _ctx.closeHandler && _ctx.closeHandler(...args))
@@ -240,7 +240,7 @@ function _sfc_render$F(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("div", {
       class: normalizeClass(["animate__animated animate__faster modal", [_ctx.isClosing ? _ctx.slideOutClass : _ctx.slideInClass, _ctx.show && "show"]])
     }, [
-      createElementVNode("div", _hoisted_1$w, [
+      createElementVNode("div", _hoisted_1$B, [
         _hoisted_2$j,
         createElementVNode("div", _hoisted_3$f, toDisplayString(_ctx.title), 1),
         renderSlot(_ctx.$slots, "default", {}, void 0, true)
@@ -248,7 +248,7 @@ function _sfc_render$F(_ctx, _cache, $props, $setup, $data, $options) {
     ], 2)
   ], 2);
 }
-var ModalDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["render", _sfc_render$F], ["__scopeId", "data-v-ec15507a"]]);
+var ModalDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["render", _sfc_render$L], ["__scopeId", "data-v-ec15507a"]]);
 const fadeDuration = 200;
 const ModalsPlugin = {
   install(app) {
@@ -257,26 +257,26 @@ const ModalsPlugin = {
   }
 };
 var IconCloseBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$E = defineComponent({
+const _sfc_main$K = defineComponent({
   name: "IconCloseBtn",
   setup(props) {
     return __spreadValues({}, toRefs(props));
   }
 });
-const _hoisted_1$v = { type: "button" };
-function _sfc_render$E(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", _hoisted_1$v, " \xD7 ");
+const _hoisted_1$A = { type: "button" };
+function _sfc_render$K(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("button", _hoisted_1$A, " \xD7 ");
 }
-var IconCloseBtn = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["render", _sfc_render$E], ["__scopeId", "data-v-6d08595c"]]);
+var IconCloseBtn = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["render", _sfc_render$K], ["__scopeId", "data-v-6d08595c"]]);
 var IconCopyBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$D = defineComponent({
+const _sfc_main$J = defineComponent({
   name: "IconCopyBtn",
   setup(props) {
     return __spreadValues({}, toRefs(props));
   }
 });
 const _withScopeId$1 = (n) => (pushScopeId("data-v-03b4d7e4"), n = n(), popScopeId(), n);
-const _hoisted_1$u = { type: "button" };
+const _hoisted_1$z = { type: "button" };
 const _hoisted_2$i = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   fill: "none",
@@ -293,19 +293,19 @@ const _hoisted_2$i = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ create
 const _hoisted_3$e = [
   _hoisted_2$i
 ];
-function _sfc_render$D(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", _hoisted_1$u, _hoisted_3$e);
+function _sfc_render$J(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("button", _hoisted_1$z, _hoisted_3$e);
 }
-var IconCopyBtn = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["render", _sfc_render$D], ["__scopeId", "data-v-03b4d7e4"]]);
+var IconCopyBtn = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["render", _sfc_render$J], ["__scopeId", "data-v-03b4d7e4"]]);
 var IconShareBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$C = defineComponent({
+const _sfc_main$I = defineComponent({
   name: "IconShareBtn",
   setup(props) {
     return __spreadValues({}, toRefs(props));
   }
 });
 const _withScopeId = (n) => (pushScopeId("data-v-4c791d2f"), n = n(), popScopeId(), n);
-const _hoisted_1$t = { type: "button" };
+const _hoisted_1$y = { type: "button" };
 const _hoisted_2$h = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createElementVNode("svg", {
   viewBox: "0 0 24 22",
   fill: "none",
@@ -320,10 +320,10 @@ const _hoisted_2$h = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createEl
 const _hoisted_3$d = [
   _hoisted_2$h
 ];
-function _sfc_render$C(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", _hoisted_1$t, _hoisted_3$d);
+function _sfc_render$I(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("button", _hoisted_1$y, _hoisted_3$d);
 }
-var IconShareBtn = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["render", _sfc_render$C], ["__scopeId", "data-v-4c791d2f"]]);
+var IconShareBtn = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["render", _sfc_render$I], ["__scopeId", "data-v-4c791d2f"]]);
 const IconButtonsPlugin = {
   install(app) {
     app.component("astar-icon-close-btn", IconCloseBtn);
@@ -332,7 +332,7 @@ const IconButtonsPlugin = {
   }
 };
 var Header_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$B = defineComponent({
+const _sfc_main$H = defineComponent({
   name: "Header",
   props: {
     title: {
@@ -343,13 +343,13 @@ const _sfc_main$B = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-const _hoisted_1$s = { class: "header" };
+const _hoisted_1$x = { class: "header" };
 const _hoisted_2$g = { class: "header-left" };
 const _hoisted_3$c = { key: 0 };
 const _hoisted_4$4 = { key: 1 };
 const _hoisted_5$2 = { class: "header-right" };
-function _sfc_render$B(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$s, [
+function _sfc_render$H(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$x, [
     createElementVNode("div", _hoisted_2$g, [
       _ctx.title ? (openBlock(), createElementBlock("div", _hoisted_3$c, toDisplayString(_ctx.title), 1)) : (openBlock(), createElementBlock("div", _hoisted_4$4, [
         renderSlot(_ctx.$slots, "left", {}, void 0, true)
@@ -360,9 +360,9 @@ function _sfc_render$B(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var Header = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["render", _sfc_render$B], ["__scopeId", "data-v-672b02e9"]]);
+var Header = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["render", _sfc_render$H], ["__scopeId", "data-v-14d375ca"]]);
 var ConnectionIndicator_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$A = defineComponent({
+const _sfc_main$G = defineComponent({
   props: {
     connectionType: {
       type: String,
@@ -396,10 +396,10 @@ const _sfc_main$A = defineComponent({
     }
   }
 });
-const _hoisted_1$r = { class: "wrapper--indicator" };
+const _hoisted_1$w = { class: "wrapper--indicator" };
 const _hoisted_2$f = { key: 0 };
-function _sfc_render$A(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$r, [
+function _sfc_render$G(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$w, [
     createElementVNode("div", {
       class: normalizeClass(["dot", _ctx.getDotClass(_ctx.connectionType)])
     }, null, 2),
@@ -415,7 +415,7 @@ function _sfc_render$A(_ctx, _cache, $props, $setup, $data, $options) {
     ], 2)
   ]);
 }
-var ConnectionIndicator = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["render", _sfc_render$A], ["__scopeId", "data-v-7663861b"]]);
+var ConnectionIndicator = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["render", _sfc_render$G], ["__scopeId", "data-v-7663861b"]]);
 const HeaderPlugin = {
   install(app) {
     app.component("astar-header", Header);
@@ -423,7 +423,7 @@ const HeaderPlugin = {
   }
 };
 var ActionBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$z = defineComponent({
+const _sfc_main$F = defineComponent({
   name: "ActionBtn",
   props: {
     disabled: {
@@ -441,19 +441,19 @@ const _sfc_main$z = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-const _hoisted_1$q = ["disabled"];
-function _sfc_render$z(_ctx, _cache, $props, $setup, $data, $options) {
+const _hoisted_1$v = ["disabled"];
+function _sfc_render$F(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", {
     type: "button",
     style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`),
     disabled: _ctx.disabled
   }, [
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
-  ], 12, _hoisted_1$q);
+  ], 12, _hoisted_1$v);
 }
-var ActionBtn = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["render", _sfc_render$z], ["__scopeId", "data-v-056ab269"]]);
+var ActionBtn = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["render", _sfc_render$F], ["__scopeId", "data-v-056ab269"]]);
 var Button_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$y = defineComponent({
+const _sfc_main$E = defineComponent({
   name: "Button",
   props: {
     disabled: {
@@ -471,19 +471,19 @@ const _sfc_main$y = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-const _hoisted_1$p = ["disabled"];
-function _sfc_render$y(_ctx, _cache, $props, $setup, $data, $options) {
+const _hoisted_1$u = ["disabled"];
+function _sfc_render$E(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", {
     type: "button",
     style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`),
     disabled: _ctx.disabled
   }, [
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
-  ], 12, _hoisted_1$p);
+  ], 12, _hoisted_1$u);
 }
-var Button = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["render", _sfc_render$y], ["__scopeId", "data-v-4630c03f"]]);
+var Button = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["render", _sfc_render$E], ["__scopeId", "data-v-0a8720d2"]]);
 var RadioBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$x = defineComponent({
+const _sfc_main$D = defineComponent({
   name: "RadioBtn",
   props: {
     checked: {
@@ -501,17 +501,17 @@ const _sfc_main$x = defineComponent({
     });
   }
 });
-const _hoisted_1$o = ["checked"];
-function _sfc_render$x(_ctx, _cache, $props, $setup, $data, $options) {
+const _hoisted_1$t = ["checked"];
+function _sfc_render$D(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("input", {
     type: "radio",
     checked: _ctx.checked,
     onChange: _cache[0] || (_cache[0] = (...args) => _ctx.change && _ctx.change(...args))
-  }, null, 40, _hoisted_1$o);
+  }, null, 40, _hoisted_1$t);
 }
-var RadioBtn = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["render", _sfc_render$x], ["__scopeId", "data-v-3c63e1a2"]]);
+var RadioBtn = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["render", _sfc_render$D], ["__scopeId", "data-v-3c63e1a2"]]);
 var SideNav_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$w = defineComponent({
+const _sfc_main$C = defineComponent({
   name: "SideNav",
   props: {
     title: {
@@ -526,20 +526,20 @@ const _sfc_main$w = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-const _hoisted_1$n = { class: "fa" };
+const _hoisted_1$s = { class: "fa" };
 const _hoisted_2$e = { class: "title" };
-function _sfc_render$w(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$C(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", {
     type: "button",
     class: normalizeClass(_ctx.selected ? "selected" : "")
   }, [
-    createElementVNode("i", _hoisted_1$n, [
+    createElementVNode("i", _hoisted_1$s, [
       renderSlot(_ctx.$slots, "default", {}, void 0, true)
     ]),
     createElementVNode("span", _hoisted_2$e, toDisplayString(_ctx.title), 1)
   ], 2);
 }
-var SideNav = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$w], ["__scopeId", "data-v-1b9dbc97"]]);
+var SideNav = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["render", _sfc_render$C], ["__scopeId", "data-v-1b9dbc97"]]);
 const ButtonsPlugin = {
   install(app) {
     app.component("astar-action-btn", ActionBtn);
@@ -548,7 +548,7 @@ const ButtonsPlugin = {
     app.component("astar-side-nav", SideNav);
   }
 };
-const _sfc_main$v = defineComponent({
+const _sfc_main$B = defineComponent({
   props: {
     iconName: {
       type: String,
@@ -576,10 +576,10 @@ const _sfc_main$v = defineComponent({
     }
   }
 });
-const _hoisted_1$m = ["width", "height", "viewBox", "fill", "aria-labelledby"];
+const _hoisted_1$r = ["width", "height", "viewBox", "fill", "aria-labelledby"];
 const _hoisted_2$d = ["id"];
 const _hoisted_3$b = ["fill"];
-function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$B(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: _ctx.width,
@@ -596,11 +596,11 @@ function _sfc_render$v(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("g", { fill: _ctx.iconColor }, [
       renderSlot(_ctx.$slots, "default")
     ], 8, _hoisted_3$b)
-  ], 8, _hoisted_1$m);
+  ], 8, _hoisted_1$r);
 }
-var IconBase = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$v]]);
-const _sfc_main$u = {};
-const _hoisted_1$l = {
+var IconBase = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["render", _sfc_render$B]]);
+const _sfc_main$A = {};
+const _hoisted_1$q = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -614,21 +614,21 @@ const _hoisted_2$c = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$a = [
   _hoisted_2$c
 ];
-function _sfc_render$u(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$l, _hoisted_3$a);
+function _sfc_render$A(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$q, _hoisted_3$a);
 }
-var Icon3dots = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$u]]);
-const _sfc_main$t = {};
-const _hoisted_1$k = /* @__PURE__ */ createStaticVNode('<circle cx="32" cy="32" fill="#eee" r="32"></circle><circle cx="32" cy="8" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="32" cy="20" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="14" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="11.215390309173472" cy="20" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="26" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="11.215390309173472" cy="32" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="11.215390309173472" cy="44" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="38" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="50" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="32" cy="56" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="32" cy="44" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="50" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="52.78460969082653" cy="44" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="38" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="52.78460969082653" cy="32" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="52.78460969082653" cy="20" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="26" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="14" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="32" cy="32" fill="hsl(151, 93%, 35%)" r="5"></circle>', 20);
+var Icon3dots = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["render", _sfc_render$A]]);
+const _sfc_main$z = {};
+const _hoisted_1$p = /* @__PURE__ */ createStaticVNode('<circle cx="32" cy="32" fill="#eee" r="32"></circle><circle cx="32" cy="8" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="32" cy="20" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="14" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="11.215390309173472" cy="20" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="26" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="11.215390309173472" cy="32" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="11.215390309173472" cy="44" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="38" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="21.607695154586736" cy="50" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="32" cy="56" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="32" cy="44" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="50" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="52.78460969082653" cy="44" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="38" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="52.78460969082653" cy="32" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="52.78460969082653" cy="20" fill="hsl(230, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="26" fill="hsl(90, 93%, 75%)" r="5"></circle><circle cx="42.392304845413264" cy="14" fill="hsl(320, 93%, 35%)" r="5"></circle><circle cx="32" cy="32" fill="hsl(151, 93%, 35%)" r="5"></circle>', 20);
 const _hoisted_21 = [
-  _hoisted_1$k
+  _hoisted_1$p
 ];
-function _sfc_render$t(_ctx, _cache) {
+function _sfc_render$z(_ctx, _cache) {
   return openBlock(), createElementBlock("svg", null, _hoisted_21);
 }
-var IconAccountSample = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$t]]);
-const _sfc_main$s = {};
-const _hoisted_1$j = {
+var IconAccountSample = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["render", _sfc_render$z]]);
+const _sfc_main$y = {};
+const _hoisted_1$o = {
   width: "22",
   height: "22",
   viewBox: "0 0 22 22",
@@ -645,12 +645,12 @@ const _hoisted_2$b = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$9 = [
   _hoisted_2$b
 ];
-function _sfc_render$s(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$j, _hoisted_3$9);
+function _sfc_render$y(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$o, _hoisted_3$9);
 }
-var IconAssets = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$s]]);
-const _sfc_main$r = {};
-const _hoisted_1$i = {
+var IconAssets = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["render", _sfc_render$y]]);
+const _sfc_main$x = {};
+const _hoisted_1$n = {
   width: "24",
   height: "20",
   viewBox: "0 0 24 20",
@@ -667,12 +667,12 @@ const _hoisted_2$a = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$8 = [
   _hoisted_2$a
 ];
-function _sfc_render$r(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$i, _hoisted_3$8);
+function _sfc_render$x(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$n, _hoisted_3$8);
 }
-var IconBridge = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$r]]);
-const _sfc_main$q = {};
-const _hoisted_1$h = {
+var IconBridge = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["render", _sfc_render$x]]);
+const _sfc_main$w = {};
+const _hoisted_1$m = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -686,12 +686,21 @@ const _hoisted_2$9 = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$7 = [
   _hoisted_2$9
 ];
-function _sfc_render$q(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$h, _hoisted_3$7);
+function _sfc_render$w(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$m, _hoisted_3$7);
 }
-var IconClose = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$q]]);
-const _sfc_main$p = {};
-const _hoisted_1$g = {
+var IconClose = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["render", _sfc_render$w]]);
+const _sfc_main$v = {};
+const _hoisted_1$l = {
+  fill: "currentColor",
+  d: "M1.47539 13.6914C1.24622 13.6914 1.05128 13.615 0.890557 13.4623C0.730446 13.3095 0.650391 13.1109 0.650391 12.8664V11.6519C0.650391 11.1782 0.772613 10.7581 1.01706 10.3914C1.2615 10.0248 1.58997 9.73449 2.00247 9.52061C2.87331 9.10811 3.74811 8.78361 4.62689 8.54711C5.50506 8.30999 6.47122 8.19144 7.52539 8.19144C8.57956 8.19144 9.54603 8.30999 10.4248 8.54711C11.303 8.78361 12.1775 9.10811 13.0483 9.52061C13.4608 9.73449 13.7893 10.0248 14.0337 10.3914C14.2782 10.7581 14.4004 11.1782 14.4004 11.6519V12.8664C14.4004 13.1109 14.3203 13.3095 14.1602 13.4623C13.9995 13.615 13.8046 13.6914 13.5754 13.6914H1.47539ZM15.8671 13.6914C15.9893 13.5998 16.0809 13.4815 16.1421 13.3367C16.2032 13.1912 16.2337 13.0345 16.2337 12.8664V11.5373C16.2337 10.9414 16.0846 10.3722 15.7864 9.82952C15.4888 9.28747 15.0726 8.81783 14.5379 8.42061C15.149 8.51227 15.7296 8.65344 16.2796 8.84411C16.8296 9.03538 17.3566 9.26088 17.8608 9.52061C18.3344 9.78033 18.7011 10.0822 18.9608 10.4263C19.2205 10.7697 19.3504 11.1401 19.3504 11.5373V12.8664C19.3504 13.1109 19.2703 13.3095 19.1102 13.4623C18.9495 13.615 18.7546 13.6914 18.5254 13.6914H15.8671ZM7.52539 6.72477C6.63928 6.72477 5.88303 6.40761 5.25664 5.77327C4.63025 5.13955 4.31706 4.38727 4.31706 3.51644C4.31706 2.63033 4.63025 1.87408 5.25664 1.24769C5.88303 0.6213 6.63928 0.308105 7.52539 0.308105C8.4115 0.308105 9.16775 0.6213 9.79414 1.24769C10.4205 1.87408 10.7337 2.63033 10.7337 3.51644C10.7337 4.38727 10.4205 5.13955 9.79414 5.77327C9.16775 6.40761 8.4115 6.72477 7.52539 6.72477V6.72477ZM15.4316 3.51644C15.4316 4.38727 15.1184 5.13955 14.4921 5.77327C13.8657 6.40761 13.1094 6.72477 12.2233 6.72477C12.1316 6.72477 12.0054 6.71316 11.8447 6.68994C11.6846 6.66733 11.5511 6.64074 11.4441 6.61019C11.8108 6.16713 12.0898 5.68222 12.2811 5.15544C12.4717 4.62805 12.5671 4.08172 12.5671 3.51644C12.5671 2.93588 12.4678 2.38588 12.2691 1.86644C12.0705 1.34699 11.7955 0.865744 11.4441 0.422689C11.5664 0.376855 11.6962 0.3463 11.8337 0.331022C11.9712 0.315744 12.1011 0.308105 12.2233 0.308105C13.1094 0.308105 13.8657 0.6213 14.4921 1.24769C15.1184 1.87408 15.4316 2.63033 15.4316 3.51644V3.51644ZM2.02539 12.3164H13.0254V11.6519C13.0254 11.4685 12.9759 11.3005 12.8769 11.1477C12.7773 10.9949 12.6282 10.865 12.4296 10.7581C11.6657 10.3762 10.8865 10.0819 10.0921 9.87536C9.29761 9.66941 8.44206 9.56644 7.52539 9.56644C6.60872 9.56644 5.7495 9.66941 4.94772 9.87536C4.14534 10.0819 3.36984 10.3762 2.62122 10.7581C2.40734 10.865 2.25456 10.9949 2.16289 11.1477C2.07122 11.3005 2.02539 11.4685 2.02539 11.6519V12.3164ZM7.52539 5.34977C8.02956 5.34977 8.46131 5.17011 8.82064 4.81077C9.17936 4.45205 9.35872 4.02061 9.35872 3.51644C9.35872 3.01227 9.17936 2.58052 8.82064 2.22119C8.46131 1.86247 8.02956 1.68311 7.52539 1.68311C7.02122 1.68311 6.58978 1.86247 6.23106 2.22119C5.87172 2.58052 5.69206 3.01227 5.69206 3.51644C5.69206 4.02061 5.87172 4.45205 6.23106 4.81077C6.58978 5.17011 7.02122 5.34977 7.52539 5.34977V5.34977Z"
+};
+function _sfc_render$v(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$l);
+}
+var IconCommunity = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$v]]);
+const _sfc_main$u = {};
+const _hoisted_1$k = {
   width: "32",
   height: "32",
   viewBox: "0 0 32 32",
@@ -714,12 +723,12 @@ const _hoisted_4$3 = [
   _hoisted_2$8,
   _hoisted_3$6
 ];
-function _sfc_render$p(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$g, _hoisted_4$3);
+function _sfc_render$u(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$k, _hoisted_4$3);
 }
-var IconCopy = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$p]]);
-const _sfc_main$o = {};
-const _hoisted_1$f = {
+var IconCopy = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$u]]);
+const _sfc_main$t = {};
+const _hoisted_1$j = {
   width: "22",
   height: "22",
   viewBox: "0 0 22 22",
@@ -736,12 +745,12 @@ const _hoisted_2$7 = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$5 = [
   _hoisted_2$7
 ];
-function _sfc_render$o(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$f, _hoisted_3$5);
+function _sfc_render$t(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$j, _hoisted_3$5);
 }
-var IconDappStaking = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o]]);
-const _sfc_main$n = {};
-const _hoisted_1$e = {
+var IconDappStaking = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["render", _sfc_render$t]]);
+const _sfc_main$s = {};
+const _hoisted_1$i = {
   width: "22",
   height: "22",
   viewBox: "0 0 22 22",
@@ -752,21 +761,30 @@ const _hoisted_2$6 = /* @__PURE__ */ createStaticVNode('<path d="M2.75 8.25V4.12
 const _hoisted_7 = [
   _hoisted_2$6
 ];
-function _sfc_render$n(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$e, _hoisted_7);
+function _sfc_render$s(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$i, _hoisted_7);
 }
-var IconDashboard = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$n]]);
-const _sfc_main$m = {};
-const _hoisted_1$d = {
+var IconDashboard = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$s]]);
+const _sfc_main$r = {};
+const _hoisted_1$h = {
   fill: "currentColor",
   d: "M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"
 };
-function _sfc_render$m(_ctx, _cache) {
-  return openBlock(), createElementBlock("path", _hoisted_1$d);
+function _sfc_render$r(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$h);
 }
-var IconDiscord = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$m]]);
-const _sfc_main$l = {};
-const _hoisted_1$c = {
+var IconDiscord = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$r]]);
+const _sfc_main$q = {};
+const _hoisted_1$g = {
+  fill: "currentColor",
+  d: "M4.33301 12.3543H8.91634C9.11495 12.3543 9.27934 12.2896 9.40951 12.16C9.53906 12.0298 9.60384 11.8654 9.60384 11.6668C9.60384 11.4682 9.53906 11.3038 9.40951 11.1737C9.27934 11.0441 9.11495 10.9793 8.91634 10.9793H4.33301C4.1344 10.9793 3.97031 11.0441 3.84076 11.1737C3.71059 11.3038 3.64551 11.4682 3.64551 11.6668C3.64551 11.8654 3.71059 12.0298 3.84076 12.16C3.97031 12.2896 4.1344 12.3543 4.33301 12.3543ZM4.33301 8.68766H11.6663C11.865 8.68766 12.0293 8.62258 12.1595 8.49241C12.2891 8.36286 12.3538 8.19877 12.3538 8.00016C12.3538 7.80155 12.2891 7.63716 12.1595 7.507C12.0293 7.37744 11.865 7.31266 11.6663 7.31266H4.33301C4.1344 7.31266 3.97031 7.37744 3.84076 7.507C3.71059 7.63716 3.64551 7.80155 3.64551 8.00016C3.64551 8.19877 3.71059 8.36286 3.84076 8.49241C3.97031 8.62258 4.1344 8.68766 4.33301 8.68766ZM4.33301 5.021H11.6663C11.865 5.021 12.0293 4.95591 12.1595 4.82575C12.2891 4.69619 12.3538 4.53211 12.3538 4.3335C12.3538 4.13488 12.2891 3.9708 12.1595 3.84125C12.0293 3.71108 11.865 3.646 11.6663 3.646H4.33301C4.1344 3.646 3.97031 3.71108 3.84076 3.84125C3.71059 3.9708 3.64551 4.13488 3.64551 4.3335C3.64551 4.53211 3.71059 4.69619 3.84076 4.82575C3.97031 4.95591 4.1344 5.021 4.33301 5.021ZM1.85801 15.7918C1.39967 15.7918 1.01009 15.6314 0.689258 15.3106C0.368425 14.9897 0.208008 14.6002 0.208008 14.1418V1.8585C0.208008 1.40016 0.368425 1.01058 0.689258 0.689746C1.01009 0.368913 1.39967 0.208496 1.85801 0.208496H14.1413C14.5997 0.208496 14.9893 0.368913 15.3101 0.689746C15.6309 1.01058 15.7913 1.40016 15.7913 1.8585V14.1418C15.7913 14.6002 15.6309 14.9897 15.3101 15.3106C14.9893 15.6314 14.5997 15.7918 14.1413 15.7918H1.85801ZM1.85801 14.4168H14.1413C14.2025 14.4168 14.2636 14.3863 14.3247 14.3252C14.3858 14.2641 14.4163 14.2029 14.4163 14.1418V1.8585C14.4163 1.79739 14.3858 1.73627 14.3247 1.67516C14.2636 1.61405 14.2025 1.5835 14.1413 1.5835H1.85801C1.7969 1.5835 1.73579 1.61405 1.67467 1.67516C1.61356 1.73627 1.58301 1.79739 1.58301 1.8585V14.1418C1.58301 14.2029 1.61356 14.2641 1.67467 14.3252C1.73579 14.3863 1.7969 14.4168 1.85801 14.4168ZM1.58301 14.4168V1.5835V14.4168Z"
+};
+function _sfc_render$q(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$g);
+}
+var IconDocs = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$q]]);
+const _sfc_main$p = {};
+const _hoisted_1$f = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -780,12 +798,12 @@ const _hoisted_2$5 = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$4 = [
   _hoisted_2$5
 ];
-function _sfc_render$l(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$c, _hoisted_3$4);
+function _sfc_render$p(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$f, _hoisted_3$4);
 }
-var IconDocument = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$l]]);
-const _sfc_main$k = {};
-const _hoisted_1$b = {
+var IconDocument = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$p]]);
+const _sfc_main$o = {};
+const _hoisted_1$e = {
   width: "32",
   height: "32",
   viewBox: "0 0 32 32",
@@ -798,21 +816,30 @@ const _hoisted_4$2 = [
   _hoisted_2$4,
   _hoisted_3$3
 ];
-function _sfc_render$k(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$b, _hoisted_4$2);
+function _sfc_render$o(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$e, _hoisted_4$2);
 }
-var IconExternalLink = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k]]);
-const _sfc_main$j = {};
-const _hoisted_1$a = {
+var IconExternalLink = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o]]);
+const _sfc_main$n = {};
+const _hoisted_1$d = {
+  fill: "currentColor",
+  d: "M0.700195 13.15V1.375C0.700195 1.125 0.783529 0.916667 0.950195 0.75C1.11686 0.583333 1.3252 0.5 1.5752 0.5H14.0502C14.3002 0.5 14.5085 0.583333 14.6752 0.75C14.8419 0.916667 14.9252 1.125 14.9252 1.375V9.85C14.9252 10.1 14.8419 10.3083 14.6752 10.475C14.5085 10.6417 14.3002 10.725 14.0502 10.725H4.2252L1.4752 13.475C1.3252 13.6417 1.15853 13.6833 0.975195 13.6C0.791862 13.5167 0.700195 13.3667 0.700195 13.15V13.15ZM2.2002 2V9.225V2ZM5.1252 15.125C4.8752 15.125 4.66286 15.0377 4.4882 14.863C4.31286 14.6877 4.2252 14.475 4.2252 14.225V12.725H16.6002L16.9252 13.05V4H18.4252C18.6752 4 18.8835 4.08333 19.0502 4.25C19.2169 4.41667 19.3002 4.625 19.3002 4.875V17.55C19.3002 17.75 19.2085 17.8917 19.0252 17.975C18.8419 18.0583 18.6752 18.025 18.5252 17.875L15.7752 15.125H5.1252ZM13.4252 2H2.2002V9.925L2.8752 9.225H13.4252V2Z"
+};
+function _sfc_render$n(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$d);
+}
+var IconForum = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$n]]);
+const _sfc_main$m = {};
+const _hoisted_1$c = {
   fill: "currentColor",
   d: "M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
 };
-function _sfc_render$j(_ctx, _cache) {
-  return openBlock(), createElementBlock("path", _hoisted_1$a);
+function _sfc_render$m(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$c);
 }
-var IconGithub = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$j]]);
-const _sfc_main$i = {};
-const _hoisted_1$9 = {
+var IconGithub = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$m]]);
+const _sfc_main$l = {};
+const _hoisted_1$b = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -847,45 +874,54 @@ const _hoisted_6 = [
   _hoisted_4$1,
   _hoisted_5$1
 ];
-function _sfc_render$i(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$9, _hoisted_6);
+function _sfc_render$l(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$b, _hoisted_6);
 }
-var IconNetwork = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$i]]);
-const _sfc_main$h = {};
-const _hoisted_1$8 = {
+var IconNetwork = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$l]]);
+const _sfc_main$k = {};
+const _hoisted_1$a = {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   "stroke-width": "2",
   d: "M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
 };
-function _sfc_render$h(_ctx, _cache) {
-  return openBlock(), createElementBlock("path", _hoisted_1$8);
+function _sfc_render$k(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$a);
 }
-var IconOutlineMoon = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$h]]);
-const _sfc_main$g = {};
-const _hoisted_1$7 = {
+var IconOutlineMoon = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k]]);
+const _sfc_main$j = {};
+const _hoisted_1$9 = {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   "stroke-width": "2",
   d: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
 };
-function _sfc_render$g(_ctx, _cache) {
-  return openBlock(), createElementBlock("path", _hoisted_1$7);
+function _sfc_render$j(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$9);
 }
-var IconOutlineSun = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$g]]);
-const _sfc_main$f = {};
-const _hoisted_1$6 = {
+var IconOutlineSun = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$j]]);
+const _sfc_main$i = {};
+const _hoisted_1$8 = {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   "stroke-width": "2",
   d: "M12 6v6m0 0v6m0-6h6m-6 0H6"
 };
-function _sfc_render$f(_ctx, _cache) {
-  return openBlock(), createElementBlock("path", _hoisted_1$6);
+function _sfc_render$i(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$8);
 }
-var IconPlus = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f]]);
-const _sfc_main$e = {};
-const _hoisted_1$5 = {
+var IconPlus = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$i]]);
+const _sfc_main$h = {};
+const _hoisted_1$7 = {
+  fill: "currentColor",
+  d: "M20 8.14917C20 6.93333 19.0067 5.945 17.7858 5.945C17.19 5.945 16.65 6.18333 16.2525 6.56667C14.7442 5.57417 12.7033 4.9425 10.4433 4.86167L11.6792 0.970833L15.0258 1.755L15.0208 1.80333C15.0208 2.7975 15.8333 3.60583 16.8325 3.60583C17.8308 3.60583 18.6425 2.7975 18.6425 1.80333C18.6425 0.809167 17.83 0 16.8325 0C16.0658 0 15.4125 0.478333 15.1483 1.14917L11.5408 0.303333C11.3833 0.265 11.2233 0.355833 11.1742 0.510833L9.79583 4.85C7.43083 4.87833 5.28833 5.515 3.7125 6.5375C3.3175 6.1725 2.79333 5.94417 2.21333 5.94417C0.9925 5.94417 0 6.93333 0 8.14917C0 8.9575 0.444167 9.65833 1.0975 10.0417C1.05417 10.2767 1.02583 10.5142 1.02583 10.7558C1.02583 14.015 5.0325 16.6667 9.95833 16.6667C14.8842 16.6667 18.8917 14.015 18.8917 10.7558C18.8917 10.5275 18.8675 10.3025 18.8292 10.0808C19.5225 9.70833 20 8.9875 20 8.14917ZM5.64667 9.6625C5.64667 8.93917 6.23833 8.35 6.965 8.35C7.69167 8.35 8.2825 8.93917 8.2825 9.6625C8.2825 10.3858 7.69167 10.9742 6.965 10.9742C6.23833 10.9742 5.64667 10.3858 5.64667 9.6625ZM13.1975 13.5533C12.5333 14.2142 11.4908 14.5358 10.0108 14.5358L10 14.5333L9.98917 14.5358C8.50833 14.5358 7.46583 14.2142 6.8025 13.5533C6.68167 13.4333 6.68167 13.2375 6.8025 13.1175C6.92333 12.9967 7.12 12.9967 7.24083 13.1175C7.7825 13.6567 8.68167 13.9183 9.98917 13.9183L10 13.9208L10.0108 13.9183C11.3183 13.9183 12.2175 13.6558 12.7592 13.1167C12.88 12.9958 13.0767 12.9967 13.1975 13.1167C13.3183 13.2375 13.3183 13.4325 13.1975 13.5533ZM13.04 10.9742C12.3133 10.9742 11.7225 10.3858 11.7225 9.6625C11.7225 8.93917 12.3133 8.35 13.04 8.35C13.7667 8.35 14.3575 8.93917 14.3575 9.6625C14.3575 10.3858 13.7667 10.9742 13.04 10.9742Z"
+};
+function _sfc_render$h(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$7);
+}
+var IconReddit = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$h]]);
+const _sfc_main$g = {};
+const _hoisted_1$6 = {
   width: "22",
   height: "22",
   viewBox: "0 0 22 22",
@@ -901,40 +937,40 @@ const _hoisted_2$2 = /* @__PURE__ */ createElementVNode("path", {
 const _hoisted_3$1 = [
   _hoisted_2$2
 ];
-function _sfc_render$e(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$5, _hoisted_3$1);
+function _sfc_render$g(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$6, _hoisted_3$1);
 }
-var IconSearch = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$e]]);
-const _sfc_main$d = {};
-const _hoisted_1$4 = {
+var IconSearch = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$g]]);
+const _sfc_main$f = {};
+const _hoisted_1$5 = {
   "fill-rule": "evenodd",
   d: "M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z",
   "clip-rule": "evenodd"
 };
-function _sfc_render$d(_ctx, _cache) {
-  return openBlock(), createElementBlock("path", _hoisted_1$4);
+function _sfc_render$f(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$5);
 }
-var IconSolidSelector = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$d]]);
-const _sfc_main$c = {};
-const _hoisted_1$3 = {
+var IconSolidSelector = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f]]);
+const _sfc_main$e = {};
+const _hoisted_1$4 = {
   fill: "currentColor",
   d: "M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
 };
-function _sfc_render$c(_ctx, _cache) {
-  return openBlock(), createElementBlock("path", _hoisted_1$3);
+function _sfc_render$e(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$4);
 }
-var IconTelegram = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$c]]);
-const _sfc_main$b = {};
-const _hoisted_1$2 = {
+var IconTelegram = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$e]]);
+const _sfc_main$d = {};
+const _hoisted_1$3 = {
   fill: "currentColor",
   d: "M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
 };
-function _sfc_render$b(_ctx, _cache) {
-  return openBlock(), createElementBlock("path", _hoisted_1$2);
+function _sfc_render$d(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1$3);
 }
-var IconTwitter = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$b]]);
-const _sfc_main$a = {};
-const _hoisted_1$1 = {
+var IconTwitter = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$d]]);
+const _sfc_main$c = {};
+const _hoisted_1$2 = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -961,23 +997,67 @@ const _hoisted_5 = [
   _hoisted_3,
   _hoisted_4
 ];
-function _sfc_render$a(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$1, _hoisted_5);
+function _sfc_render$c(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$2, _hoisted_5);
 }
-var IconWallet = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a]]);
-const _sfc_main$9 = {};
-const _hoisted_1 = /* @__PURE__ */ createElementVNode("link", {
+var IconWallet = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$c]]);
+const _sfc_main$b = {};
+const _hoisted_1$1 = /* @__PURE__ */ createElementVNode("link", {
   rel: "stylesheet",
   href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
 }, null, -1);
 const _hoisted_2 = [
-  _hoisted_1
+  _hoisted_1$1
 ];
-function _sfc_render$9(_ctx, _cache) {
+function _sfc_render$b(_ctx, _cache) {
   return openBlock(), createElementBlock("head", null, _hoisted_2);
 }
-var GoogleMaterialIcon = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9]]);
+var GoogleMaterialIcon = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$b]]);
 var IconHide_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$a = defineComponent({
+  components: { GoogleMaterialIcon },
+  props: {
+    size: {
+      type: String,
+      required: false,
+      default: ""
+    }
+  }
+});
+function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_GoogleMaterialIcon = resolveComponent("GoogleMaterialIcon");
+  return openBlock(), createElementBlock(Fragment, null, [
+    createVNode(_component_GoogleMaterialIcon),
+    createElementVNode("span", {
+      class: "material-symbols-outlined icon",
+      style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
+    }, " visibility_off ", 4)
+  ], 64);
+}
+var IconHide = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a], ["__scopeId", "data-v-de41f99c"]]);
+var IconUnhide_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$9 = defineComponent({
+  components: { GoogleMaterialIcon },
+  props: {
+    size: {
+      type: String,
+      required: false,
+      default: ""
+    }
+  }
+});
+function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_GoogleMaterialIcon = resolveComponent("GoogleMaterialIcon");
+  return openBlock(), createElementBlock(Fragment, null, [
+    createVNode(_component_GoogleMaterialIcon),
+    createElementVNode("span", {
+      class: "material-symbols-outlined icon",
+      style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
+    }, " visibility ", 4)
+  ], 64);
+}
+var IconUnhide = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9], ["__scopeId", "data-v-3c696569"]]);
+var IconHelp_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$8 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -995,11 +1075,11 @@ function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined icon",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " visibility_off ", 4)
+    }, " help ", 4)
   ], 64);
 }
-var IconHide = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8], ["__scopeId", "data-v-de41f99c"]]);
-var IconUnhide_vue_vue_type_style_index_0_scoped_true_lang = "";
+var IconHelp = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8], ["__scopeId", "data-v-4ebdb290"]]);
+var IconVert_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$7 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1017,11 +1097,11 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined icon",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " visibility ", 4)
+    }, " more_vert ", 4)
   ], 64);
 }
-var IconUnhide = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-3c696569"]]);
-var IconHelp_vue_vue_type_style_index_0_scoped_true_lang = "";
+var IconVert = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-1e3f3540"]]);
+var IconGroup_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$6 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1039,11 +1119,11 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined icon",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " help ", 4)
+    }, " group ", 4)
   ], 64);
 }
-var IconHelp = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$6], ["__scopeId", "data-v-4ebdb290"]]);
-var IconVert_vue_vue_type_style_index_0_scoped_true_lang = "";
+var IconGroup = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$6], ["__scopeId", "data-v-b6204a88"]]);
+var IconHistory_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$5 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1061,11 +1141,10 @@ function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined icon",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " more_vert ", 4)
+    }, " history ", 4)
   ], 64);
 }
-var IconVert = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$5], ["__scopeId", "data-v-1e3f3540"]]);
-var IconGroup_vue_vue_type_style_index_0_scoped_true_lang = "";
+var IconHistory = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$5], ["__scopeId", "data-v-18e12448"]]);
 const _sfc_main$4 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1081,13 +1160,13 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock(Fragment, null, [
     createVNode(_component_GoogleMaterialIcon),
     createElementVNode("span", {
-      class: "material-symbols-outlined icon",
+      class: "material-symbols-outlined",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " group ", 4)
+    }, " sync ", 4)
   ], 64);
 }
-var IconGroup = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$4], ["__scopeId", "data-v-b6204a88"]]);
-var IconHistory_vue_vue_type_style_index_0_scoped_true_lang = "";
+var IconSync = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$4]]);
+var IconCircleCheck_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$3 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1105,10 +1184,10 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined icon",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " history ", 4)
+    }, " check_circle ", 4)
   ], 64);
 }
-var IconHistory = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-18e12448"]]);
+var IconCircleCheck = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-7133019d"]]);
 const _sfc_main$2 = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1126,32 +1205,21 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " sync ", 4)
+    }, " expand_more ", 4)
   ], 64);
 }
-var IconSync = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2]]);
-var IconCircleCheck_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$1 = defineComponent({
-  components: { GoogleMaterialIcon },
-  props: {
-    size: {
-      type: String,
-      required: false,
-      default: ""
-    }
-  }
-});
-function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_GoogleMaterialIcon = resolveComponent("GoogleMaterialIcon");
-  return openBlock(), createElementBlock(Fragment, null, [
-    createVNode(_component_GoogleMaterialIcon),
-    createElementVNode("span", {
-      class: "material-symbols-outlined icon",
-      style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " check_circle ", 4)
-  ], 64);
+var IconExpand = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2]]);
+const _sfc_main$1 = {};
+const _hoisted_1 = {
+  fill: "currentColor",
+  "fill-rule": "evenodd",
+  "clip-rule": "evenodd",
+  d: "M4.00837 1.15101C5.95329 0.994162 8.25026 0.91748 10 0.91748C11.7497 0.91748 14.0084 0.994162 15.9916 1.15101C18.2886 1.3462 19.4563 1.7331 19.7665 4.03006C19.9233 5.07921 20 6.51873 20 8.00009C20 9.47795 19.9233 10.9558 19.7665 11.9701C19.4563 14.3054 18.2886 14.654 15.9916 14.8492C14.0084 15.0444 11.7497 15.0827 10 15.0827C8.25026 15.0827 5.95329 15.0444 4.00837 14.8492C1.7114 14.654 0.505402 14.3054 0.19519 11.9701C0.0801671 10.9593 0 9.48144 0 8.00009C0 6.52222 0.0766816 5.08269 0.19519 4.03006C0.505402 1.7331 1.7114 1.3462 4.00837 1.15101ZM7.97829 5.00252L13.1926 8.00008L7.97829 11.036V5.00252Z"
+};
+function _sfc_render$1(_ctx, _cache) {
+  return openBlock(), createElementBlock("path", _hoisted_1);
 }
-var IconCircleCheck = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-7133019d"]]);
+var IconYoutube = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1]]);
 const _sfc_main = defineComponent({
   components: { GoogleMaterialIcon },
   props: {
@@ -1169,10 +1237,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("span", {
       class: "material-symbols-outlined",
       style: normalizeStyle(_ctx.size && `font-size: ${_ctx.size}px`)
-    }, " expand_more ", 4)
+    }, " play_circle ", 4)
   ], 64);
 }
-var IconExpand = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+var IconPlay = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
 const IconsPlugin = {
   install(app) {
     app.component("astar-icon-base", IconBase);
@@ -1181,17 +1249,21 @@ const IconsPlugin = {
     app.component("astar-icon-assets", IconAssets);
     app.component("astar-icon-bridge", IconBridge);
     app.component("astar-icon-close", IconClose);
+    app.component("astar-icon-community", IconCommunity);
     app.component("astar-icon-copy", IconCopy);
     app.component("astar-icon-dapp-staking", IconDappStaking);
     app.component("astar-icon-dashboard", IconDashboard);
     app.component("astar-icon-discord", IconDiscord);
+    app.component("astar-icon-docs", IconDocs);
     app.component("astar-icon-document", IconDocument);
     app.component("astar-icon-external-link", IconExternalLink);
+    app.component("astar-icon-forum", IconForum);
     app.component("astar-icon-github", IconGithub);
     app.component("astar-icon-network", IconNetwork);
     app.component("astar-icon-outline-moon", IconOutlineMoon);
     app.component("astar-icon-outline-sun", IconOutlineSun);
     app.component("astar-icon-plus", IconPlus);
+    app.component("astar-icon-reddit", IconReddit);
     app.component("astar-icon-search", IconSearch);
     app.component("astar-icon-solid-selector", IconSolidSelector);
     app.component("astar-icon-telegram", IconTelegram);
@@ -1206,6 +1278,8 @@ const IconsPlugin = {
     app.component("astar-icon-sync", IconSync);
     app.component("astar-icon-expand", IconExpand);
     app.component("astar-icon-circle-check", IconCircleCheck);
+    app.component("astar-icon-youtube", IconYoutube);
+    app.component("astar-icon-play", IconPlay);
   }
 };
 const AstarUIPlugin = {
@@ -1220,4 +1294,4 @@ const AstarUIPlugin = {
     (_g = IconsPlugin.install) == null ? void 0 : _g.call(IconsPlugin, app);
   }
 };
-export { ActionBtn, Button, ButtonsPlugin, ConnectionIndicator, Header, HeaderPlugin, Icon3dots, IconAccountSample, IconAssets, IconBase, IconBridge, IconButtonsPlugin, IconCircleCheck, IconClose, IconCloseBtn, IconCopy, IconCopyBtn, IconDappStaking, IconDashboard, IconDiscord, IconDocument, IconExpand, IconExternalLink, IconGithub, IconGroup, IconHelp, IconHide, IconHistory, IconNetwork, IconOutlineMoon, IconOutlineSun, IconPlus, IconSearch, IconShareBtn, IconSolidSelector, IconSync, IconTelegram, IconTwitter, IconUnhide, IconVert, IconWallet, IconsPlugin, ModalDrawer, ModalsPlugin, RadioBtn, SideNav, SimpleModal, Spinner, SpinnerPlugin, Text, TextPlugin, AstarUIPlugin as default, fadeDuration };
+export { ActionBtn, Button, ButtonsPlugin, ConnectionIndicator, Header, HeaderPlugin, Icon3dots, IconAccountSample, IconAssets, IconBase, IconBridge, IconButtonsPlugin, IconCircleCheck, IconClose, IconCloseBtn, IconCommunity, IconCopy, IconCopyBtn, IconDappStaking, IconDashboard, IconDiscord, IconDocs, IconDocument, IconExpand, IconExternalLink, IconForum, IconGithub, IconGroup, IconHelp, IconHide, IconHistory, IconNetwork, IconOutlineMoon, IconOutlineSun, IconPlay, IconPlus, IconReddit, IconSearch, IconShareBtn, IconSolidSelector, IconSync, IconTelegram, IconTwitter, IconUnhide, IconVert, IconWallet, IconYoutube, IconsPlugin, ModalDrawer, ModalsPlugin, RadioBtn, SideNav, SimpleModal, Spinner, SpinnerPlugin, Text, TextPlugin, AstarUIPlugin as default, fadeDuration };
