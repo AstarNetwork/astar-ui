@@ -35,6 +35,7 @@ import IconSync from "./src/IconSync.vue";
 import IconCircleCheck from "./src/IconCircleCheck.vue";
 import IconExpand from "./src/IconExpand.vue";
 import IconYoutube from "./src/IconYoutube.vue";
+import IconPlay from "./src/IconPlay.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -74,6 +75,7 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-expand", IconExpand);
     app.component("astar-icon-circle-check", IconCircleCheck);
     app.component("astar-icon-youtube", IconYoutube);
+    app.component("astar-icon-play", IconPlay);
   },
 };
 
@@ -113,5 +115,6 @@ export {
   IconSync,
   IconCircleCheck,
   IconExpand,
-  IconYoutube 
+  IconYoutube,
+  IconPlay,
 };
