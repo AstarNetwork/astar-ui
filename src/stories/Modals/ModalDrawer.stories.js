@@ -20,6 +20,6 @@ DefaultModal.args = {
   isClosing: false,
 };
 
-export const DefaultModalDark = Template.bind({});
-DefaultModalDark.args = DefaultModal.args;
-DefaultModalDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
+// export const DefaultModalDark = Template.bind({});
+// DefaultModalDark.args = DefaultModal.args;
+// DefaultModalDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];

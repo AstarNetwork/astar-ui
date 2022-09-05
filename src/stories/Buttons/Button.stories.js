@@ -20,9 +20,9 @@ DefaultButton32.args = {
   height: 32,
 };
 
-export const DefaultButtonDark = Template.bind({});
-DefaultButtonDark.args = DefaultButton32.args;
-DefaultButtonDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
+// export const DefaultButtonDark = Template.bind({});
+// DefaultButtonDark.args = DefaultButton32.args;
+// DefaultButtonDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
 
 export const Button24 = Template.bind({});
 Button24.args = {

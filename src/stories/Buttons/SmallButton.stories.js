@@ -18,6 +18,6 @@ DefaultButton20.args = {
   disabled: false,
 };
 
-export const DefaultButton20Dark = Template.bind({});
-DefaultButton20Dark.args = DefaultButton20.args;
-DefaultButton20Dark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
+// export const DefaultButton20Dark = Template.bind({});
+// DefaultButton20Dark.args = DefaultButton20.args;
+// DefaultButton20Dark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];

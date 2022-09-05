@@ -20,9 +20,9 @@ DefaultButton24.args = {
   height: 24,
 };
 
-export const DefaultButtonDark = Template.bind({});
-DefaultButtonDark.args = DefaultButton24.args;
-DefaultButtonDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
+// export const DefaultButtonDark = Template.bind({});
+// DefaultButtonDark.args = DefaultButton24.args;
+// DefaultButtonDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
 
 const Template2 = (args) => ({
   components: { IrregularButton },
