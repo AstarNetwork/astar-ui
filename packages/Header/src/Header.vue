@@ -39,11 +39,13 @@ export default defineComponent({
   justify-content: space-between;
   height: 6rem;
   padding: 1.25rem 0.625rem;
-  background: $gray-1;
+  // background: $gray-1;
   mix-blend-mode: normal;
-  opacity: 0.8;
   backdrop-filter: blur(200px);
   border-bottom: 1px solid $gray-3;
+  @supports (-moz-appearance: none) {
+    background: $backdrop-transparent-dark-firefox !important;
+  }
   @media (min-width: $lg) {
     padding-left: 28px;
     padding-right: 28px;
@@ -57,7 +59,7 @@ export default defineComponent({
   font-weight: 590;
   font-size: 1.625rem;
   padding: 0.75rem;
-  color: $gray-5;
+  color: $gray-5-selected;
 }
 
 .header-right {
@@ -69,8 +71,7 @@ export default defineComponent({
 
 .body--dark {
   .header {
-    background: $gray-6;
-    opacity: 0.8;
+    // background: $gray-6;
     border-bottom: 1px solid $gray-6;
   }
   .header-left {

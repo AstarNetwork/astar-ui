@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :style="`width: ${width}px; height: ${height}px;`" :disabled="disabled">
+  <button type="button" :disabled="disabled">
     <slot></slot>
   </button>
 </template>
@@ -13,13 +13,7 @@ export default defineComponent({
     disabled: {
       type: Boolean,
       default: false
-    },
-    width: {
-      type: Number
-    },
-    height: {
-      type: Number
-    },
+    }
   },
   setup(props) {
     return {
@@ -44,37 +38,19 @@ button {
   font-size: 14px;
 
   display: inline-block;
-  width: auto;
 
+  background: transparent;
   border: none;
   cursor: pointer;
-  background: $astar-blue;
-  border-radius: 500px;
-  color: $gray-1;
-
-  transition: 0.5s;
-  background: linear-gradient(100.62deg, var(--c1, $astar-blue), var(--c2, #0297FB) 51%, var(--c1, #0070EB)) var(--x, 0)/ 200%;
-}
-
-button:hover {
-  // background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), $astar-blue;
-  --x: 100%;
-}
-
-button:focus {
-  background: #0085FF;
-  color: #fff;
+  color: $astar-blue;
 }
 
 button:disabled {
-  border: 1px solid $gray-3;
-  background: transparent;
   color: $gray-3;
 }
 
 .body--dark {
   button:disabled {
-    border: 1px solid $gray-4;
     color: $gray-4;
   }
 }

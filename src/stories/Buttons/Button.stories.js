@@ -10,7 +10,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<Button v-bind="args"><div v-html="args.slotContent"></Button>',
+  template: '<Button v-bind="args">Button</Button>',
 });
 
 export const DefaultButton32 = Template.bind({});
@@ -18,28 +18,25 @@ DefaultButton32.args = {
   disabled: false,
   width: 77,
   height: 32,
-  slotContent: 'Button'
 };
 
-export const DefaultButton32Dark = Template.bind({});
-DefaultButton32Dark.args = DefaultButton32.args;
-DefaultButton32Dark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
+// export const DefaultButtonDark = Template.bind({});
+// DefaultButtonDark.args = DefaultButton32.args;
+// DefaultButtonDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
 
 export const Button24 = Template.bind({});
 Button24.args = {
   disabled: false,
   width: 97,
   height: 24,
-  slotContent: 'Withdraw'
-}
+};
 
 export const Button52 = Template.bind({});
 Button52.args = {
   disabled: false,
   width: 200,
   height: 57,
-  slotContent: '<div style="font-size: 20px">Confirm</div>'
-}
+};
 
 const Template2 = (args) => ({
   components: { Button },
@@ -54,4 +51,4 @@ RoundButton.args = {
   disabled: false,
   width: 32,
   height: 32
-}
+};

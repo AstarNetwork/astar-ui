@@ -12,5 +12,5 @@ const Template = () => ({
 
 export const DefaultButton = Template.bind({});
 
-export const DefaultButtonDark = Template.bind({});
-DefaultButtonDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
+// export const DefaultButtonDark = Template.bind({});
+// DefaultButtonDark.decorators = [() => ({ template: '<div class="body--dark"><story /></div>' })];
