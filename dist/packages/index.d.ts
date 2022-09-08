@@ -4,7 +4,6 @@ export default AstarUIPlugin;
 export * from './Text';
 export * from './Spinner';
 export * from './Modals';
-export * from './IconButtons';
 export * from './Header';
 export * from './Buttons';
 export * from './Icons';

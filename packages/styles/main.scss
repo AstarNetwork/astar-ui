@@ -2,12 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900&display=swap");
 
 $gray-1: #f7f7f8;
-$gray-3: #b1b7c1;
+$gray-3: #9da3ae;
 $gray-4: #5f656f;
 $gray-5: #2c3335;
 $gray-5-selected: #3c4649;
 $gray-5-selected-dark: #222829;
 $gray-6: #191d1f;
+$gray-7: #222829;
 
 $object-light: #e6e9ee;
 
@@ -19,13 +20,16 @@ $warning-red: #ff5621;
 $warning-yellow: #d8a400;
 $connected-green: #56f566;
 
-$body-bg-dark: #000000;
+$neon-blue: rgb(33, 89, 254);
+
+$body-bg-dark: #181d20;
 $body-bg-light: #ffffff;
 $container-bg-dark: $gray-5-selected-dark;
 $container-bg-white: #ffffff;
 $item--bg--hover-dark: $gray-5-selected-dark;
 $border-separator-dark: $gray-6;
 $border-separator-light: $object-light;
+$border-yellow: #f0b90b;
 $backdrop-transparent-dark: rgba(44, 51, 53, 0.5);
 $backdrop-transparent-dark-firefox: rgba(44, 51, 53, 0.9);
 $backdrop-transparent-light: rgba(44, 51, 53, 0.2);
@@ -33,6 +37,11 @@ $backdrop-transparent-light-firefox: rgba(44, 51, 53, 0.8);
 
 $container-border-shadow-dark: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 $container-border-shadow-light: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+
+$box-red: rgba(255, 86, 33, 0.8);
+$box-red-dark: rgba(255, 86, 33, 0.6);
+$transparent-red: rgba(255, 86, 33, 0.2);
+$transparent-yellow: rgba(242, 201, 76, 0.2);
 
 $xs: 375px;
 $sm: 640px;

@@ -36,7 +36,7 @@ var EnumType;
   EnumType2[EnumType2["H6"] = 5] = "H6";
   EnumType2[EnumType2["H7"] = 6] = "H7";
 })(EnumType || (EnumType = {}));
-const _sfc_main$P = defineComponent({
+const _sfc_main$N = defineComponent({
   name: "Text",
   props: {
     type: {
@@ -49,66 +49,66 @@ const _sfc_main$P = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-function _sfc_render$P(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$N(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("span", {
     class: normalizeClass(`text_${_ctx.type}`)
   }, [
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 2);
 }
-var Text = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["render", _sfc_render$P], ["__scopeId", "data-v-76874ba1"]]);
+var Text = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["render", _sfc_render$N], ["__scopeId", "data-v-76874ba1"]]);
 const TextPlugin = {
   install(app) {
     app.component("astar-text", Text);
   }
 };
 var Spinner_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$O = defineComponent({});
-const _withScopeId$3 = (n) => (pushScopeId("data-v-6b0ec7d8"), n = n(), popScopeId(), n);
-const _hoisted_1$E = { class: "loader" };
-const _hoisted_2$m = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createElementVNode("div", { class: "one" }, null, -1));
-const _hoisted_3$h = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createElementVNode("div", { class: "two" }, null, -1));
-const _hoisted_4$5 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createElementVNode("div", { class: "three" }, null, -1));
-const _hoisted_5$3 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createElementVNode("div", { class: "four" }, null, -1));
+const _sfc_main$M = defineComponent({});
+const _withScopeId$1 = (n) => (pushScopeId("data-v-6b0ec7d8"), n = n(), popScopeId(), n);
+const _hoisted_1$C = { class: "loader" };
+const _hoisted_2$j = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("div", { class: "one" }, null, -1));
+const _hoisted_3$f = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("div", { class: "two" }, null, -1));
+const _hoisted_4$5 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("div", { class: "three" }, null, -1));
+const _hoisted_5$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("div", { class: "four" }, null, -1));
 const _hoisted_6$1 = [
-  _hoisted_2$m,
-  _hoisted_3$h,
+  _hoisted_2$j,
+  _hoisted_3$f,
   _hoisted_4$5,
   _hoisted_5$3
 ];
-function _sfc_render$O(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$E, _hoisted_6$1);
+function _sfc_render$M(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$C, _hoisted_6$1);
 }
-var Spinner = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["render", _sfc_render$O], ["__scopeId", "data-v-6b0ec7d8"]]);
+var Spinner = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["render", _sfc_render$M], ["__scopeId", "data-v-6b0ec7d8"]]);
 const SpinnerPlugin = {
   install(app) {
     app.component("astar-spinner", Spinner);
   }
 };
-const _sfc_main$N = {};
-const _hoisted_1$D = {
+const _sfc_main$L = {};
+const _hoisted_1$B = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
   fill: "none",
   xmlns: "http://www.w3.org/2000/svg"
 };
-const _hoisted_2$l = /* @__PURE__ */ createElementVNode("path", {
+const _hoisted_2$i = /* @__PURE__ */ createElementVNode("path", {
   d: "M12.9399 11.9995L18.4666 6.47281C18.5758 6.34527 18.6329 6.18122 18.6264 6.01344C18.6199 5.84565 18.5504 5.68649 18.4317 5.56776C18.3129 5.44903 18.1538 5.37948 17.986 5.373C17.8182 5.36652 17.6541 5.42359 17.5266 5.53281L11.9999 11.0595L6.47327 5.52614C6.34774 5.4006 6.17748 5.33008 5.99994 5.33008C5.82241 5.33008 5.65214 5.4006 5.52661 5.52614C5.40107 5.65168 5.33055 5.82194 5.33055 5.99947C5.33055 6.17701 5.40107 6.34727 5.52661 6.47281L11.0599 11.9995L5.52661 17.5261C5.45682 17.5859 5.40014 17.6594 5.36012 17.7422C5.32011 17.8249 5.29762 17.915 5.29408 18.0068C5.29053 18.0986 5.306 18.1901 5.33952 18.2757C5.37303 18.3612 5.42387 18.4389 5.48884 18.5039C5.55381 18.5689 5.63151 18.6197 5.71706 18.6532C5.80261 18.6867 5.89416 18.7022 5.98598 18.6987C6.07779 18.6951 6.16788 18.6726 6.25059 18.6326C6.3333 18.5926 6.40684 18.5359 6.46661 18.4661L11.9999 12.9395L17.5266 18.4661C17.6541 18.5754 17.8182 18.6324 17.986 18.6259C18.1538 18.6195 18.3129 18.5499 18.4317 18.4312C18.5504 18.3125 18.6199 18.1533 18.6264 17.9855C18.6329 17.8177 18.5758 17.6537 18.4666 17.5261L12.9399 11.9995Z",
   fill: "#B1B7C1"
 }, null, -1);
-const _hoisted_3$g = [
-  _hoisted_2$l
+const _hoisted_3$e = [
+  _hoisted_2$i
 ];
-function _sfc_render$N(_ctx, _cache) {
-  return openBlock(), createElementBlock("svg", _hoisted_1$D, _hoisted_3$g);
+function _sfc_render$L(_ctx, _cache) {
+  return openBlock(), createElementBlock("svg", _hoisted_1$B, _hoisted_3$e);
 }
-var IconClose$1 = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["render", _sfc_render$N]]);
+var IconClose$1 = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["render", _sfc_render$L]]);
 var SimpleModal_vue_vue_type_style_index_0_scoped_true_lang = "";
 const fadeInClass = "fade-in";
 const fadeOutClass = "fade-out";
 const zoomInClass = "zoom-in";
-const _sfc_main$M = defineComponent({
+const _sfc_main$K = defineComponent({
   components: { IconClose: IconClose$1 },
   name: "SimpleModal",
   props: {
@@ -161,12 +161,12 @@ const _sfc_main$M = defineComponent({
     });
   }
 });
-const _hoisted_1$C = {
+const _hoisted_1$A = {
   key: 0,
   class: "row--close"
 };
-const _hoisted_2$k = { class: "column--close" };
-function _sfc_render$M(_ctx, _cache, $props, $setup, $data, $options) {
+const _hoisted_2$h = { class: "column--close" };
+function _sfc_render$K(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_IconClose = resolveComponent("IconClose");
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(["modal", [_ctx.isShow && "show", _ctx.isClosing ? _ctx.fadeOutClass : _ctx.fadeInClass]]),
@@ -176,8 +176,8 @@ function _sfc_render$M(_ctx, _cache, $props, $setup, $data, $options) {
       class: normalizeClass(["modal-content", _ctx.zoomInClass]),
       style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`)
     }, [
-      _ctx.isCloseIcon ? (openBlock(), createElementBlock("div", _hoisted_1$C, [
-        createElementVNode("div", _hoisted_2$k, [
+      _ctx.isCloseIcon ? (openBlock(), createElementBlock("div", _hoisted_1$A, [
+        createElementVNode("div", _hoisted_2$h, [
           createVNode(_component_IconClose)
         ])
       ])) : createCommentVNode("", true),
@@ -188,11 +188,11 @@ function _sfc_render$M(_ctx, _cache, $props, $setup, $data, $options) {
     ], 6)
   ], 2);
 }
-var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["render", _sfc_render$M], ["__scopeId", "data-v-1c83a04c"]]);
+var SimpleModal = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["render", _sfc_render$K], ["__scopeId", "data-v-1c83a04c"]]);
 var ModalDrawer_vue_vue_type_style_index_0_scoped_true_lang = "";
 const slideInClass = "animate__slideInRight";
 const slideOutClass = "animate__slideOutRight";
-const _sfc_main$L = defineComponent({
+const _sfc_main$J = defineComponent({
   name: "ModalDrawer",
   props: {
     show: {
@@ -226,13 +226,13 @@ const _sfc_main$L = defineComponent({
     });
   }
 });
-const _withScopeId$2 = (n) => (pushScopeId("data-v-ec15507a"), n = n(), popScopeId(), n);
-const _hoisted_1$B = { class: "modal-content" };
-const _hoisted_2$j = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createElementVNode("div", { class: "row--close" }, [
+const _withScopeId = (n) => (pushScopeId("data-v-ec15507a"), n = n(), popScopeId(), n);
+const _hoisted_1$z = { class: "modal-content" };
+const _hoisted_2$g = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createElementVNode("div", { class: "row--close" }, [
   /* @__PURE__ */ createElementVNode("span", { class: "close" }, "\xD7")
 ], -1));
-const _hoisted_3$f = { class: "title" };
-function _sfc_render$L(_ctx, _cache, $props, $setup, $data, $options) {
+const _hoisted_3$d = { class: "title" };
+function _sfc_render$J(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(_ctx.show && "wrapper--modal-drawer"),
     onClick: _cache[0] || (_cache[0] = (...args) => _ctx.closeHandler && _ctx.closeHandler(...args))
@@ -240,15 +240,15 @@ function _sfc_render$L(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("div", {
       class: normalizeClass(["animate__animated animate__faster modal", [_ctx.isClosing ? _ctx.slideOutClass : _ctx.slideInClass, _ctx.show && "show"]])
     }, [
-      createElementVNode("div", _hoisted_1$B, [
-        _hoisted_2$j,
-        createElementVNode("div", _hoisted_3$f, toDisplayString(_ctx.title), 1),
+      createElementVNode("div", _hoisted_1$z, [
+        _hoisted_2$g,
+        createElementVNode("div", _hoisted_3$d, toDisplayString(_ctx.title), 1),
         renderSlot(_ctx.$slots, "default", {}, void 0, true)
       ])
     ], 2)
   ], 2);
 }
-var ModalDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["render", _sfc_render$L], ["__scopeId", "data-v-ec15507a"]]);
+var ModalDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["render", _sfc_render$J], ["__scopeId", "data-v-ec15507a"]]);
 const fadeDuration = 200;
 const ModalsPlugin = {
   install(app) {
@@ -256,83 +256,8 @@ const ModalsPlugin = {
     app.component("astar-modal-drawer", ModalDrawer);
   }
 };
-var IconCloseBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$K = defineComponent({
-  name: "IconCloseBtn",
-  setup(props) {
-    return __spreadValues({}, toRefs(props));
-  }
-});
-const _hoisted_1$A = { type: "button" };
-function _sfc_render$K(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", _hoisted_1$A, " \xD7 ");
-}
-var IconCloseBtn = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["render", _sfc_render$K], ["__scopeId", "data-v-6d08595c"]]);
-var IconCopyBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$J = defineComponent({
-  name: "IconCopyBtn",
-  setup(props) {
-    return __spreadValues({}, toRefs(props));
-  }
-});
-const _withScopeId$1 = (n) => (pushScopeId("data-v-03b4d7e4"), n = n(), popScopeId(), n);
-const _hoisted_1$z = { type: "button" };
-const _hoisted_2$i = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  fill: "none",
-  viewBox: "0 0 24 24",
-  stroke: "currentColor"
-}, [
-  /* @__PURE__ */ createElementVNode("path", {
-    "stroke-linecap": "round",
-    "stroke-linejoin": "round",
-    "stroke-width": "2",
-    d: "M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
-  })
-], -1));
-const _hoisted_3$e = [
-  _hoisted_2$i
-];
-function _sfc_render$J(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", _hoisted_1$z, _hoisted_3$e);
-}
-var IconCopyBtn = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["render", _sfc_render$J], ["__scopeId", "data-v-03b4d7e4"]]);
-var IconShareBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$I = defineComponent({
-  name: "IconShareBtn",
-  setup(props) {
-    return __spreadValues({}, toRefs(props));
-  }
-});
-const _withScopeId = (n) => (pushScopeId("data-v-4c791d2f"), n = n(), popScopeId(), n);
-const _hoisted_1$y = { type: "button" };
-const _hoisted_2$h = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createElementVNode("svg", {
-  viewBox: "0 0 24 22",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg",
-  stroke: "currentColor"
-}, [
-  /* @__PURE__ */ createElementVNode("path", {
-    d: "M21 12V22H0V3H12V5H2V20H19V12H21ZM24 0H13.012L17.047 4L10.07 11.07L12.898 13.898L19.875 6.828L24 11V0Z",
-    fill: "currentColor"
-  })
-], -1));
-const _hoisted_3$d = [
-  _hoisted_2$h
-];
-function _sfc_render$I(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", _hoisted_1$y, _hoisted_3$d);
-}
-var IconShareBtn = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["render", _sfc_render$I], ["__scopeId", "data-v-4c791d2f"]]);
-const IconButtonsPlugin = {
-  install(app) {
-    app.component("astar-icon-close-btn", IconCloseBtn);
-    app.component("astar-icon-copy-btn", IconCopyBtn);
-    app.component("astar-icon-share-btn", IconShareBtn);
-  }
-};
 var Header_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$H = defineComponent({
+const _sfc_main$I = defineComponent({
   name: "Header",
   props: {
     title: {
@@ -343,14 +268,14 @@ const _sfc_main$H = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-const _hoisted_1$x = { class: "header" };
-const _hoisted_2$g = { class: "header-left" };
+const _hoisted_1$y = { class: "header" };
+const _hoisted_2$f = { class: "header-left" };
 const _hoisted_3$c = { key: 0 };
 const _hoisted_4$4 = { key: 1 };
 const _hoisted_5$2 = { class: "header-right" };
-function _sfc_render$H(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$x, [
-    createElementVNode("div", _hoisted_2$g, [
+function _sfc_render$I(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$y, [
+    createElementVNode("div", _hoisted_2$f, [
       _ctx.title ? (openBlock(), createElementBlock("div", _hoisted_3$c, toDisplayString(_ctx.title), 1)) : (openBlock(), createElementBlock("div", _hoisted_4$4, [
         renderSlot(_ctx.$slots, "left", {}, void 0, true)
       ]))
@@ -360,9 +285,9 @@ function _sfc_render$H(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var Header = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["render", _sfc_render$H], ["__scopeId", "data-v-14d375ca"]]);
+var Header = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["render", _sfc_render$I], ["__scopeId", "data-v-1623922b"]]);
 var ConnectionIndicator_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$G = defineComponent({
+const _sfc_main$H = defineComponent({
   props: {
     connectionType: {
       type: String,
@@ -396,10 +321,10 @@ const _sfc_main$G = defineComponent({
     }
   }
 });
-const _hoisted_1$w = { class: "wrapper--indicator" };
-const _hoisted_2$f = { key: 0 };
-function _sfc_render$G(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$w, [
+const _hoisted_1$x = { class: "wrapper--indicator" };
+const _hoisted_2$e = { key: 0 };
+function _sfc_render$H(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$x, [
     createElementVNode("div", {
       class: normalizeClass(["dot", _ctx.getDotClass(_ctx.connectionType)])
     }, null, 2),
@@ -409,22 +334,52 @@ function _sfc_render$G(_ctx, _cache, $props, $setup, $data, $options) {
       createElementVNode("div", null, [
         createElementVNode("span", null, toDisplayString(_ctx.capitalize(_ctx.connectionType)), 1)
       ]),
-      _ctx.connectionType === "connected" ? (openBlock(), createElementBlock("div", _hoisted_2$f, [
+      _ctx.connectionType === "connected" ? (openBlock(), createElementBlock("div", _hoisted_2$e, [
         createElementVNode("span", null, " v" + toDisplayString(_ctx.version), 1)
       ])) : createCommentVNode("", true)
     ], 2)
   ]);
 }
-var ConnectionIndicator = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["render", _sfc_render$G], ["__scopeId", "data-v-7663861b"]]);
+var ConnectionIndicator = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["render", _sfc_render$H], ["__scopeId", "data-v-7663861b"]]);
 const HeaderPlugin = {
   install(app) {
     app.component("astar-header", Header);
     app.component("astar-connection-indicator", ConnectionIndicator);
   }
 };
-var ActionBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
+var Button_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$G = defineComponent({
+  name: "Button",
+  props: {
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    width: {
+      type: Number
+    },
+    height: {
+      type: Number
+    }
+  },
+  setup(props) {
+    return __spreadValues({}, toRefs(props));
+  }
+});
+const _hoisted_1$w = ["disabled"];
+function _sfc_render$G(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("button", {
+    type: "button",
+    style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`),
+    disabled: _ctx.disabled
+  }, [
+    renderSlot(_ctx.$slots, "default", {}, void 0, true)
+  ], 12, _hoisted_1$w);
+}
+var Button = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["render", _sfc_render$G], ["__scopeId", "data-v-bacb0178"]]);
+var IrregularButton_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$F = defineComponent({
-  name: "ActionBtn",
+  name: "IrregularButton",
   props: {
     disabled: {
       type: Boolean,
@@ -451,39 +406,9 @@ function _sfc_render$F(_ctx, _cache, $props, $setup, $data, $options) {
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ], 12, _hoisted_1$v);
 }
-var ActionBtn = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["render", _sfc_render$F], ["__scopeId", "data-v-056ab269"]]);
-var Button_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$E = defineComponent({
-  name: "Button",
-  props: {
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    width: {
-      type: Number
-    },
-    height: {
-      type: Number
-    }
-  },
-  setup(props) {
-    return __spreadValues({}, toRefs(props));
-  }
-});
-const _hoisted_1$u = ["disabled"];
-function _sfc_render$E(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", {
-    type: "button",
-    style: normalizeStyle(`width: ${_ctx.width}px; height: ${_ctx.height}px;`),
-    disabled: _ctx.disabled
-  }, [
-    renderSlot(_ctx.$slots, "default", {}, void 0, true)
-  ], 12, _hoisted_1$u);
-}
-var Button = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["render", _sfc_render$E], ["__scopeId", "data-v-0a8720d2"]]);
+var IrregularButton = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["render", _sfc_render$F], ["__scopeId", "data-v-514bcf1b"]]);
 var RadioBtn_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$D = defineComponent({
+const _sfc_main$E = defineComponent({
   name: "RadioBtn",
   props: {
     checked: {
@@ -501,23 +426,20 @@ const _sfc_main$D = defineComponent({
     });
   }
 });
-const _hoisted_1$t = ["checked"];
-function _sfc_render$D(_ctx, _cache, $props, $setup, $data, $options) {
+const _hoisted_1$u = ["checked"];
+function _sfc_render$E(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("input", {
     type: "radio",
     checked: _ctx.checked,
     onChange: _cache[0] || (_cache[0] = (...args) => _ctx.change && _ctx.change(...args))
-  }, null, 40, _hoisted_1$t);
+  }, null, 40, _hoisted_1$u);
 }
-var RadioBtn = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["render", _sfc_render$D], ["__scopeId", "data-v-3c63e1a2"]]);
-var SideNav_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$C = defineComponent({
-  name: "SideNav",
+var RadioBtn = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["render", _sfc_render$E], ["__scopeId", "data-v-3c63e1a2"]]);
+var SmallButton_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$D = defineComponent({
+  name: "Button",
   props: {
-    title: {
-      type: String
-    },
-    selected: {
+    disabled: {
       type: Boolean,
       default: false
     }
@@ -526,26 +448,46 @@ const _sfc_main$C = defineComponent({
     return __spreadValues({}, toRefs(props));
   }
 });
-const _hoisted_1$s = { class: "fa" };
-const _hoisted_2$e = { class: "title" };
+const _hoisted_1$t = ["disabled"];
+function _sfc_render$D(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("button", {
+    type: "button",
+    disabled: _ctx.disabled
+  }, [
+    renderSlot(_ctx.$slots, "default", {}, void 0, true)
+  ], 8, _hoisted_1$t);
+}
+var SmallButton = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["render", _sfc_render$D], ["__scopeId", "data-v-410f8138"]]);
+var TextButton_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$C = defineComponent({
+  name: "Button",
+  props: {
+    disabled: {
+      type: Boolean,
+      default: false
+    }
+  },
+  setup(props) {
+    return __spreadValues({}, toRefs(props));
+  }
+});
+const _hoisted_1$s = ["disabled"];
 function _sfc_render$C(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("button", {
     type: "button",
-    class: normalizeClass(_ctx.selected ? "selected" : "")
+    disabled: _ctx.disabled
   }, [
-    createElementVNode("i", _hoisted_1$s, [
-      renderSlot(_ctx.$slots, "default", {}, void 0, true)
-    ]),
-    createElementVNode("span", _hoisted_2$e, toDisplayString(_ctx.title), 1)
-  ], 2);
+    renderSlot(_ctx.$slots, "default", {}, void 0, true)
+  ], 8, _hoisted_1$s);
 }
-var SideNav = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["render", _sfc_render$C], ["__scopeId", "data-v-1b9dbc97"]]);
+var TextButton = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["render", _sfc_render$C], ["__scopeId", "data-v-076c5a1c"]]);
 const ButtonsPlugin = {
   install(app) {
-    app.component("astar-action-btn", ActionBtn);
     app.component("astar-button", Button);
+    app.component("astar-irregular-button", IrregularButton);
     app.component("astar-radio-btn", RadioBtn);
-    app.component("astar-side-nav", SideNav);
+    app.component("astar-small-button", SmallButton);
+    app.component("astar-text-button", TextButton);
   }
 };
 const _sfc_main$B = defineComponent({
@@ -1284,14 +1226,13 @@ const IconsPlugin = {
 };
 const AstarUIPlugin = {
   install(app) {
-    var _a, _b, _c, _d, _e, _f, _g;
+    var _a, _b, _c, _d, _e, _f;
     (_a = TextPlugin.install) == null ? void 0 : _a.call(TextPlugin, app);
     (_b = SpinnerPlugin.install) == null ? void 0 : _b.call(SpinnerPlugin, app);
     (_c = ModalsPlugin.install) == null ? void 0 : _c.call(ModalsPlugin, app);
-    (_d = IconButtonsPlugin.install) == null ? void 0 : _d.call(IconButtonsPlugin, app);
-    (_e = HeaderPlugin.install) == null ? void 0 : _e.call(HeaderPlugin, app);
-    (_f = ButtonsPlugin.install) == null ? void 0 : _f.call(ButtonsPlugin, app);
-    (_g = IconsPlugin.install) == null ? void 0 : _g.call(IconsPlugin, app);
+    (_d = HeaderPlugin.install) == null ? void 0 : _d.call(HeaderPlugin, app);
+    (_e = ButtonsPlugin.install) == null ? void 0 : _e.call(ButtonsPlugin, app);
+    (_f = IconsPlugin.install) == null ? void 0 : _f.call(IconsPlugin, app);
   }
 };
-export { ActionBtn, Button, ButtonsPlugin, ConnectionIndicator, Header, HeaderPlugin, Icon3dots, IconAccountSample, IconAssets, IconBase, IconBridge, IconButtonsPlugin, IconCircleCheck, IconClose, IconCloseBtn, IconCommunity, IconCopy, IconCopyBtn, IconDappStaking, IconDashboard, IconDiscord, IconDocs, IconDocument, IconExpand, IconExternalLink, IconForum, IconGithub, IconGroup, IconHelp, IconHide, IconHistory, IconNetwork, IconOutlineMoon, IconOutlineSun, IconPlay, IconPlus, IconReddit, IconSearch, IconShareBtn, IconSolidSelector, IconSync, IconTelegram, IconTwitter, IconUnhide, IconVert, IconWallet, IconYoutube, IconsPlugin, ModalDrawer, ModalsPlugin, RadioBtn, SideNav, SimpleModal, Spinner, SpinnerPlugin, Text, TextPlugin, AstarUIPlugin as default, fadeDuration };
+export { Button, ButtonsPlugin, ConnectionIndicator, Header, HeaderPlugin, Icon3dots, IconAccountSample, IconAssets, IconBase, IconBridge, IconCircleCheck, IconClose, IconCommunity, IconCopy, IconDappStaking, IconDashboard, IconDiscord, IconDocs, IconDocument, IconExpand, IconExternalLink, IconForum, IconGithub, IconGroup, IconHelp, IconHide, IconHistory, IconNetwork, IconOutlineMoon, IconOutlineSun, IconPlay, IconPlus, IconReddit, IconSearch, IconSolidSelector, IconSync, IconTelegram, IconTwitter, IconUnhide, IconVert, IconWallet, IconYoutube, IconsPlugin, IrregularButton, ModalDrawer, ModalsPlugin, RadioBtn, SimpleModal, SmallButton, Spinner, SpinnerPlugin, Text, TextButton, TextPlugin, AstarUIPlugin as default, fadeDuration };
