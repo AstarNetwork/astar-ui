@@ -1,7 +1,8 @@
 import { Plugin } from 'vue';
-import ActionBtn from './src/ActionBtn.vue';
 import Button from './src/Button.vue';
+import IrregularButton from './src/IrregularButton.vue';
 import RadioBtn from './src/RadioBtn.vue';
-import SideNav from './src/SideNav.vue';
+import SmallButton from './src/SmallButton.vue';
+import TextButton from './src/TextButton.vue';
 export declare const ButtonsPlugin: Plugin;
-export { ActionBtn, Button, RadioBtn, SideNav };
+export { Button, IrregularButton, RadioBtn, SmallButton, TextButton };
