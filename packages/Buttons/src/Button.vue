@@ -57,13 +57,7 @@ button {
 }
 
 button:hover {
-  // background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), $astar-blue;
   --x: 100%;
-}
-
-button:focus {
-  background: #0085FF;
-  color: #fff;
 }
 
 button:disabled {
