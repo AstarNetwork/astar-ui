@@ -17,5 +17,6 @@ const Template = (args) => ({
 export const DefaultIconBase = Template.bind({});
 DefaultIconBase.args = {
   width: 25,
-  height: 25
+  height: 25,
+  stroke: '#000'
 };
