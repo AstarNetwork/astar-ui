@@ -36,6 +36,11 @@ import IconCircleCheck from "./src/IconCircleCheck.vue";
 import IconExpand from "./src/IconExpand.vue";
 import IconYoutube from "./src/IconYoutube.vue";
 import IconPlay from "./src/IconPlay.vue";
+import IconHome from "./src/IconHome.vue";
+import IconDesktop from "./src/IconDesktop.vue";
+import IconArrowLeft from "./src/IconArrowLeft.vue";
+import IconArrowRight from "./src/IconArrowRight.vue";
+import IconVerified from "./src/IconVerified.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -76,6 +81,11 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-circle-check", IconCircleCheck);
     app.component("astar-icon-youtube", IconYoutube);
     app.component("astar-icon-play", IconPlay);
+    app.component("astar-icon-home", IconHome);
+    app.component("astar-icon-desktop", IconDesktop);
+    app.component("astar-icon-arrow-left", IconArrowLeft);
+    app.component("astar-icon-arrow-right", IconArrowRight);
+    app.component("astar-icon-verified", IconVerified);
   },
 };
 
@@ -117,4 +127,9 @@ export {
   IconExpand,
   IconYoutube,
   IconPlay,
+  IconHome,
+  IconDesktop,
+  IconArrowLeft,
+  IconArrowRight,
+  IconVerified,
 };
