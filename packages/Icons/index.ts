@@ -41,6 +41,8 @@ import IconDesktop from "./src/IconDesktop.vue";
 import IconArrowLeft from "./src/IconArrowLeft.vue";
 import IconArrowRight from "./src/IconArrowRight.vue";
 import IconVerified from "./src/IconVerified.vue";
+import IconArrowRightLong from "./src/IconArrowRightLong.vue";
+import IconArrowLeftLong from "./src/IconArrowLeftLong.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -85,6 +87,8 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-desktop", IconDesktop);
     app.component("astar-icon-arrow-left", IconArrowLeft);
     app.component("astar-icon-arrow-right", IconArrowRight);
+    app.component("astar-icon-arrow-right-long", IconArrowRightLong);
+    app.component("astar-icon-arrow-left-long", IconArrowLeftLong);
     app.component("astar-icon-verified", IconVerified);
   },
 };
@@ -132,4 +136,6 @@ export {
   IconArrowLeft,
   IconArrowRight,
   IconVerified,
+  IconArrowRightLong,
+  IconArrowLeftLong,
 };
