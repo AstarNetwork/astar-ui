@@ -1,9 +1,9 @@
 <template>
-  <div :class="`modalbg ${isShow ? 'show' : ''}`">
-    <div class="modal-content">
+  <div class="modalbg" :class="[isShow && 'show', isClosing? fadeOutClass: fadeInClass]">
+    <div class="modal-content" :class="zoomInClass" :style="`width: ${width}px; height: ${height}px;`">
       <div class="modal-header">
         <div class="modal-title">{{ title }}</div>
-        <div class="modal-close" @click="close">&times;</div>
+        <div class="modal-close" @click="close"><IconCloseWithColor  /></div>
       </div>
       <slot />
     </div>
@@ -11,10 +11,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref, watchEffect, toRefs } from "vue";
+import IconCloseWithColor from "./IconCloseWithColor.vue";
+const fadeInClass = "fade-in";
+const fadeOutClass = "fade-out";
+const zoomInClass = "zoom-in";
 
 export default defineComponent({
   name: "DefaultModal",
+  components: { IconCloseWithColor },
   props: {
     show: {
       type: Boolean,
@@ -22,16 +27,38 @@ export default defineComponent({
     },
     title: {
       type: String
-    }
+    },
+    width: {
+      type: Number
+    },
+    height: {
+      type: Number
+    },
+    isClosing: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
   },
-  setup(props) {
+  emits: ["close"],
+  setup(props, { emit }) {
     const isShow = ref(props.show);
     const close = () => {
-      isShow.value = false;
+      emit("close");
     };
 
+    watchEffect(() => {
+      if (isShow.value !== props.show) {
+        isShow.value = props.show;
+      }
+    });
+
     return {
+      ...toRefs(props),
       isShow,
+      zoomInClass,
+      fadeInClass,
+      fadeOutClass,
       close
     };
   }
@@ -40,6 +67,23 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import '../../styles/main.scss';
+@import "../../styles/animation.scss";
+@import "../../styles/utils.scss";
+
+.fade-in {
+  @include fade-in-animation;
+}
+
+.fade-out {
+  @include fade-out-animation;
+}
+
+.zoom-in {
+  @media screen and (min-width: $sm) {
+    animation: zoom-in-animation 0.2s ease-in;
+  }
+}
+
 .modalbg {
   display: none; /* Hidden by default */
   position: fixed;
@@ -51,6 +95,9 @@ export default defineComponent({
   overflow: auto;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(50px);
+  @supports (-moz-appearance: none) {
+    background: $backdrop-transparent-dark-firefox !important;
+  }
 }
 .modalbg.show {
   display: block;
@@ -62,7 +109,8 @@ export default defineComponent({
   background: #fff;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 40px;
-  width: 24.688rem;
+  min-width: 200px;
+  min-height: 50px;
   height: auto;
   color: $gray-5-selected;
 }
@@ -95,10 +143,11 @@ export default defineComponent({
   display: block;
   text-align: center;
   line-height: 44px;
-}
-.modal-close:hover {
-  color: $astar-blue;
-  border-color: $astar-blue;
+
+  &:hover {
+    color: $astar-blue;
+    border-color: $astar-blue;
+  }
 }
 
 .body--dark {
@@ -116,10 +165,24 @@ export default defineComponent({
   .modal-close {
     color: $gray-4;
     border-color: $gray-4;
+    &:hover {
+      color: $astar-blue;
+      border-color: $astar-blue;
+    }
   }
-  .modal-close:hover {
-    color: $astar-blue;
-    border-color: $astar-blue;
+}
+
+@media screen and (max-width: $sm) {
+  .modal-content {
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0 !important;
+    box-shadow: -5px 2px 8px 4px rgba(0, 0, 0, 0.5);
+  }
+  .modal-header {
+    margin: 35px;
   }
 }
 </style>
