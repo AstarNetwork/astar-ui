@@ -44,6 +44,7 @@ export default defineComponent({
   setup(props, { emit }) {
     const isShow = ref(props.show);
     const close = () => {
+      isShow.value = false;
       emit("close");
     };
 
