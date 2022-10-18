@@ -3,7 +3,7 @@
     <div class="modal-content" :class="zoomInClass" :style="`width: ${width}px; height: ${height}px;`">
       <div class="modal-header">
         <div class="modal-title">{{ title }}</div>
-        <div class="modal-close" @click="close"><IconCloseWithColor  /></div>
+        <div class="modal--close" @click="close"><IconCloseWithColor  /></div>
       </div>
       <slot />
     </div>
@@ -130,8 +130,7 @@ export default defineComponent({
   color: $gray-5-selected;
 }
 
-.modal-close {
-  font-family: 'SF Pro Text';
+.modal--close {
   width: 40px;
   height: 40px;
   border: 1px solid $gray-3;
@@ -140,9 +139,9 @@ export default defineComponent({
   font-size: 30px;
   font-weight: 10;
   cursor: pointer;
-  display: block;
-  text-align: center;
-  line-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     color: $astar-blue;
@@ -162,7 +161,7 @@ export default defineComponent({
   .modal-title {
     color: $gray-1;
   }
-  .modal-close {
+  .modal--close {
     color: $gray-4;
     border-color: $gray-4;
     &:hover {
