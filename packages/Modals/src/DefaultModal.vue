@@ -86,7 +86,7 @@ export default defineComponent({
 }
 
 .modalbg {
-  display: none; /* Hidden by default */
+  display: flex !important;
   position: fixed;
   z-index: 10;
   left: 0;
@@ -108,7 +108,7 @@ export default defineComponent({
   box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   background: #fff;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: auto;
   padding: 40px;
   min-width: 200px;
   min-height: 50px;
