@@ -340,7 +340,7 @@ function _sfc_render$R(_ctx, _cache, $props, $setup, $data, $options) {
     ], 6)
   ], 2);
 }
-var DefaultModal = /* @__PURE__ */ _export_sfc(_sfc_main$R, [["render", _sfc_render$R], ["__scopeId", "data-v-82a2bcda"]]);
+var DefaultModal = /* @__PURE__ */ _export_sfc(_sfc_main$R, [["render", _sfc_render$R], ["__scopeId", "data-v-393868e4"]]);
 const fadeDuration = 200;
 const ModalsPlugin = {
   install(app) {
