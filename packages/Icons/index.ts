@@ -44,6 +44,8 @@ import IconVerified from "./src/IconVerified.vue";
 import IconArrowRightLong from "./src/IconArrowRightLong.vue";
 import IconArrowLeftLong from "./src/IconArrowLeftLong.vue";
 import IconLinkedIn from "./src/IconLinkedIn.vue";
+import IconFacebook from "./src/IconFacebook.vue";
+import IconInstagram from "./src/IconInstagram.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -92,6 +94,8 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-arrow-left-long", IconArrowLeftLong);
     app.component("astar-icon-verified", IconVerified);
     app.component("astar-icon-linkedin", IconLinkedIn);
+    app.component("astar-icon-facebook", IconFacebook);
+    app.component("astar-icon-instagram", IconInstagram);
   },
 };
 
@@ -141,4 +145,6 @@ export {
   IconArrowRightLong,
   IconArrowLeftLong,
   IconLinkedIn,
+  IconFacebook,
+  IconInstagram,
 };
