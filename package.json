@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "rm -rf node_modules",
     "build:types": "vue-tsc --project tsconfig.build-types.json --declaration --emitDeclarationOnly --outDir dist/types ",
-    "build:lib": "npm run build:types && vue-tsc --noEmit && vite build --config ./build/lib.config.ts",
+    "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.config.ts && npm run build:types",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic --project-token=af2bfd147de5 --auto-accept-changes",
