@@ -6,14 +6,11 @@
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
+    "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowJs": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
     "lib": ["esnext", "dom"],
-    "outDir": "types",
-    "declarationMap": true,
     "skipLibCheck": true,
     "paths": {
       "packages/*": ["./packages/*"]
@@ -25,11 +22,5 @@
     "packages/**/*.d.ts",
     "packages/**/*.tsx",
     "packages/**/*.vue"
-  ],
-  // type check test tool configuration
-  "tsd": {
-    "testFiles": [
-      "types/**/*.test-d.ts"
-    ]
-  }
+  ]
 }
