@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
-    "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.config.ts",
+    "build:lib": "vue-tsc && vite build --config ./build/lib.config.ts",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic --project-token=af2bfd147de5 --auto-accept-changes",
@@ -43,5 +43,6 @@
     "vue-loader": "^16.8.3",
     "vue-router": "^4.0.12",
     "vue-tsc": "^0.28.10"
-  }
+  },
+  "types": "types/index.d.ts"
 }
