@@ -46,7 +46,5 @@
     "vue-loader": "^16.8.3",
     "vue-router": "^4.0.12",
     "vue-tsc": "^0.28.10"
-  },
-  "types": "dist/packages/index.d.ts",
-  "typings": "dist/packages/index.d.ts"
+  }
 }
