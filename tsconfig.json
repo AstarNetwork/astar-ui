@@ -18,10 +18,6 @@
   },
   "include": [
     "*.ts",
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
     "packages/**/*.ts",
     "packages/**/*.d.ts",
     "packages/**/*.tsx",
