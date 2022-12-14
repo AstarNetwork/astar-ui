@@ -21,7 +21,7 @@ export default defineComponent({
 
 <style scoped>
 .icon {
-  cursor: default;
+  cursor: pointer;
 }
 </style>
 
