@@ -32,9 +32,9 @@
 
 <script lang="ts">
 import { defineComponent, toRefs, PropType, computed } from 'vue';
-import Button from 'packages/Buttons/src/Button.vue';
-import IconCircleCheck from 'packages/Icons/src/IconCircleCheck.vue';
-import IconWarning from 'packages/Icons/src/IconWarning.vue';
+import Button from '../../Buttons/src/Button.vue';
+import IconCircleCheck from '../../Icons/src/IconCircleCheck.vue';
+import IconWarning from '../../Icons/src/IconWarning.vue';
 import IconClose from './IconClose.vue';
 
 export enum AlertType {
