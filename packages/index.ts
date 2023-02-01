@@ -28,3 +28,5 @@ export * from './Modals'
 export * from './Header'
 export * from './Buttons'
 export * from './Icons'
+
+export * from './export_type'
