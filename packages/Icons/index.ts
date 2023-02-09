@@ -49,6 +49,7 @@ import IconInstagram from "./src/IconInstagram.vue";
 import IconDelete from "./src/IconDelete.vue";
 import IconWarning from "./src/IconWarning.vue";
 import IconCircleClose from "./src/IconCircleClose.vue";
+import IconSocial from "./src/IconSocial.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -102,6 +103,7 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-delete", IconDelete);
     app.component("astar-icon-warning", IconWarning);
     app.component("astar-icon-circle-close", IconCircleClose);
+    app.component("astar-icon-social", IconSocial);
   },
 };
 
@@ -155,5 +157,6 @@ export {
   IconInstagram,
   IconDelete,
   IconWarning,
-  IconCircleClose
+  IconCircleClose,
+  IconSocial
 };
