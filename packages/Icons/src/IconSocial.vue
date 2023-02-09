@@ -17,7 +17,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
 
-enum SocialIcon {
+export enum SocialIcon {
   Twitter = "twitter",
   Discord = 'discord',
   Reddit = 'reddit',

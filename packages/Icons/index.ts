@@ -50,6 +50,7 @@ import IconDelete from "./src/IconDelete.vue";
 import IconWarning from "./src/IconWarning.vue";
 import IconCircleClose from "./src/IconCircleClose.vue";
 import IconSocial from "./src/IconSocial.vue";
+import { SocialIcon } from "./src/IconSocial.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -158,5 +159,6 @@ export {
   IconDelete,
   IconWarning,
   IconCircleClose,
-  IconSocial
+  IconSocial,
+  SocialIcon
 };
