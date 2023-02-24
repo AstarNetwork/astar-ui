@@ -51,7 +51,9 @@ import IconWarning from "./src/IconWarning.vue";
 import IconCircleClose from "./src/IconCircleClose.vue";
 import IconSocial from "./src/IconSocial.vue";
 import { SocialIcon } from "./src/IconSocial.vue";
-import  IconValid from "./src/IconValid.vue";
+import IconValid from "./src/IconValid.vue";
+import IconShare from "./src/IconShare.vue";
+import IconRefresh from "./src/IconRefresh.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -107,6 +109,8 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-circle-close", IconCircleClose);
     app.component("astar-icon-social", IconSocial);
     app.component("astar-icon-valid", IconValid);
+    app.component("astar-icon-share", IconShare);
+    app.component("astar-icon-refresh", IconRefresh);
   },
 };
 
@@ -163,5 +167,7 @@ export {
   IconCircleClose,
   IconSocial,
   SocialIcon,
-  IconValid
+  IconValid,
+  IconRefresh,
+  IconShare,
 };
