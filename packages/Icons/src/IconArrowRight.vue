@@ -1,23 +1,24 @@
 <template>
-  <GoogleMaterialIcon />
-  <span class="material-symbols-outlined" :style="size && `font-size: ${size}px`"> keyboard_arrow_right </span>
+  <IconKeyboardArrowRight
+    class="material-symbols"
+    :style="size && `font-size: ${size}px`"
+  />
 </template>
 
-
 <script lang="ts">
-import { defineComponent } from 'vue';
-import GoogleMaterialIcon from './GoogleMaterialIcon.vue'
-
+import { defineComponent } from "vue";
+import { IconKeyboardArrowRight } from "@iconify-prerendered/vue-ic";
 export default defineComponent({
-  components:{ GoogleMaterialIcon },
-  props:{
+  components: { IconKeyboardArrowRight },
+  props: {
     size: {
       type: String,
       required: false,
-      default:""
+      default: "",
     },
-  }
+  },
 });
 </script>
-
-
+<style scoped lang="scss">
+@use 'packages/styles/main.scss';
+</style>

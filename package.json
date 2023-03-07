@@ -22,6 +22,7 @@
     "dev": "vite --config ./build/base.config.ts"
   },
   "dependencies": {
+    "@iconify-prerendered/vue-ic": "^0.21.1672653513",
     "vue": "^3.2.23"
   },
   "devDependencies": {

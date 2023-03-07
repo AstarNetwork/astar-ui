@@ -1,27 +1,24 @@
 <template>
-  <GoogleMaterialIcon />
-  <span class="material-symbols-outlined icon" :style="size && `font-size: ${size}px`"> check_circle </span>
+  <IconRoundCheckCircleOutline
+    class="material-symbols"
+    :style="size && `font-size: ${size}px`"
+  />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import GoogleMaterialIcon from './GoogleMaterialIcon.vue'
-
+import { defineComponent } from "vue";
+import { IconRoundCheckCircleOutline } from "@iconify-prerendered/vue-ic";
 export default defineComponent({
-  components:{ GoogleMaterialIcon },
-  props:{
+  components: { IconRoundCheckCircleOutline },
+  props: {
     size: {
       type: String,
       required: false,
-      default:""
+      default: "",
     },
-  }
+  },
 });
 </script>
-
-
-<style scoped>
-.icon {
-  cursor: default;
-}
+<style scoped lang="scss">
+@use 'packages/styles/main.scss';
 </style>
