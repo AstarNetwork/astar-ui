@@ -54,6 +54,8 @@ import { SocialIcon } from "./src/IconSocial.vue";
 import IconValid from "./src/IconValid.vue";
 import IconShare from "./src/IconShare.vue";
 import IconRefresh from "./src/IconRefresh.vue";
+import IconEquip from "./src/IconEquip.vue";
+import IconUnequip from "./src/IconUnequip.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -111,6 +113,8 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-valid", IconValid);
     app.component("astar-icon-share", IconShare);
     app.component("astar-icon-refresh", IconRefresh);
+    app.component("astar-icon-equip", IconEquip);
+    app.component("astar-icon-unequip", IconUnequip);
   },
 };
 
@@ -170,4 +174,6 @@ export {
   IconValid,
   IconRefresh,
   IconShare,
+  IconEquip,
+  IconUnequip,
 };
