@@ -1,14 +1,16 @@
 <template>
-  <div :class="show && 'wrapper--modal-drawer'" @click="closeHandler">
+  <div :class="show && 'wrapper--modal-drawer'">
     <div
       class="animate__animated animate__faster modal"
       :class="[isClosing ? slideOutClass : slideInClass, show && 'show']"
     >
       <div class="modal-content">
-        <div class="row--close">
-          <span class="close">&times;</span>
+        <div class="row-title-close">
+          <div class="title">{{ title }}</div>
+          <div class="modal-close" @click="closeHandler">
+            <IconCloseWithColor />
+          </div>
         </div>
-        <div class="title">{{ title }}</div>
         <slot />
       </div>
     </div>
@@ -17,12 +19,14 @@
 
 <script lang="ts">
 import { defineComponent, ref, toRefs } from "vue";
+import IconCloseWithColor from "./IconCloseWithColor.vue";
 
 const slideInClass = "animate__slideInRight";
 const slideOutClass = "animate__slideOutRight";
 
 export default defineComponent({
   name: "ModalDrawer",
+  components: { IconCloseWithColor },
   props: {
     show: {
       type: Boolean,
@@ -42,13 +46,8 @@ export default defineComponent({
   setup(props, { emit }) {
     const animation = ref<string>(slideInClass);
 
-    const closeHandler = (e: any) => {
-      const closeClass =
-        e.target.className === "wrapper--modal-drawer" ||
-        e.target.className === "close";
-      if (closeClass) {
-        emit("close");
-      }
+    const closeHandler = (): void => {
+      emit("close");
     };
 
     return {
@@ -115,6 +114,13 @@ export default defineComponent({
   }
 }
 
+.row-title-close {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
 .title {
   font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
   display: flex;
@@ -125,30 +131,26 @@ export default defineComponent({
   line-height: 27px;
   letter-spacing: -0.02em;
   margin-left: 5px;
-  margin-top: -17px;
   color: $gray-5;
 }
 
-.row--close {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.close {
-  display: flex;
-  color: #b1b7c1;
-  justify-content: flex-end;
-  font-size: rem(32);
-  font-weight: 330;
+.modal-close {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $gray-3;
+  border-radius: 30px;
+  color: $gray-3;
+  font-size: 30px;
+  font-weight: 10;
   cursor: pointer;
-  margin-top: 3px;
-  margin-right: 12px;
-  @media (min-width: $sm) {
-    margin-right: 12.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: $astar-blue;
+    border-color: $astar-blue;
   }
-}
-.close:hover {
-  color: #d8e2f1;
 }
 
 .body--dark {
@@ -163,6 +165,14 @@ export default defineComponent({
       .title {
         color: $gray-1;
       }
+    }
+  }
+  .modal-close {
+    color: $gray-4;
+    border-color: $gray-4;
+    &:hover {
+      color: $astar-blue;
+      border-color: $astar-blue;
     }
   }
 }
@@ -195,7 +205,7 @@ export default defineComponent({
   .title {
     margin-left: 45px;
   }
-  .close {
+  .modal-close {
     margin-right: 40px;
   }
 }
