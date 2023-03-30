@@ -16,13 +16,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, toRefs } from 'vue';
+import { defineComponent, ref, toRefs } from "vue";
 
-const slideInClass = 'animate__slideInRight';
-const slideOutClass = 'animate__slideOutRight';
+const slideInClass = "animate__slideInRight";
+const slideOutClass = "animate__slideOutRight";
 
 export default defineComponent({
-  name: 'ModalDrawer',
+  name: "ModalDrawer",
   props: {
     show: {
       type: Boolean,
@@ -30,7 +30,7 @@ export default defineComponent({
     },
     title: {
       type: String,
-      default: '',
+      default: "",
     },
     isClosing: {
       type: Boolean,
@@ -38,15 +38,16 @@ export default defineComponent({
       default: false,
     },
   },
-  emits: ['close'],
+  emits: ["close"],
   setup(props, { emit }) {
     const animation = ref<string>(slideInClass);
 
     const closeHandler = (e: any) => {
       const closeClass =
-        e.target.className === 'wrapper--modal-drawer' || e.target.className === 'close';
+        e.target.className === "wrapper--modal-drawer" ||
+        e.target.className === "close";
       if (closeClass) {
-        emit('close');
+        emit("close");
       }
     };
 
@@ -89,7 +90,7 @@ export default defineComponent({
   background: rgba(255, 255, 255, 0.5);
   box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.1);
   @media (min-width: $lg) {
-    top: 96px;
+    top: 104px;
   }
 }
 .modal.show {
@@ -155,7 +156,8 @@ export default defineComponent({
     box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.25);
 
     .modal-content {
-      background-color: $gray-5;
+      background-color: $modal-bg-dark;
+      box-shadow: -5px 0px 20px 5px rgba(0, 0, 0, 0.8);
 
       .title {
         color: $gray-1;
