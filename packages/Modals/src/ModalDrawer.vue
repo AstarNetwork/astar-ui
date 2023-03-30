@@ -74,7 +74,7 @@ export default defineComponent({
   background: transparent;
   z-index: 100;
   @media (min-width: $lg) {
-    height: calc(100vh - 96px);
+    height: calc(100vh - 110px);
   }
 }
 
@@ -85,12 +85,13 @@ export default defineComponent({
   top: 104px;
   right: 0px;
   width: 395px;
-  height: 100%;
+  height: calc(100% - 104px);
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.1);
   @media (min-width: $lg) {
-    top: 104px;
+    top: 110px;
+    height: calc(100% - 110px);
   }
 }
 .modal.show {
@@ -101,7 +102,7 @@ export default defineComponent({
   border-radius: 6px;
   background-color: $gray-1;
   border: 0px solid transparent;
-  padding: 20px 35px;
+  padding: 8px 35px;
   width: 100%;
   height: 100%;
   overflow-y: auto;
