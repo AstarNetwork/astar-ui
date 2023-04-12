@@ -29,6 +29,7 @@ import {
   IconDiscord,
   IconDocs,
   IconDocument,
+  IconEcosystem,
   IconExpand,
   IconExternalLink,
   IconFacebook,
@@ -48,6 +49,7 @@ import {
   IconPlus,
   IconReddit,
   IconSearch,
+  IconSideNFT,
   IconSolidSelector,
   IconSync,
   IconTelegram,
@@ -97,6 +99,7 @@ export interface GlobalComponents {
   'astar-icon-discord': typeof IconDiscord;
   'astar-icon-docs': typeof IconDocs;
   'astar-icon-document': typeof IconDocument;
+  'astar-icon-ecosystem': typeof IconEcosystem;
   'astar-icon-expand': typeof IconExpand;
   'astar-icon-external-link': typeof IconExternalLink;
   'astar-icon-facebook': typeof IconFacebook;
@@ -116,6 +119,7 @@ export interface GlobalComponents {
   'astar-icon-plus': typeof IconPlus;
   'astar-icon-reddit': typeof IconReddit;
   'astar-icon-search': typeof IconSearch;
+  'astar-icon-side-nft': typeof IconSideNFT;
   'astar-icon-solid-selector': typeof IconSolidSelector;
   'astar-icon-sync': typeof IconSync;
   'astar-icon-telegram': typeof IconTelegram;
