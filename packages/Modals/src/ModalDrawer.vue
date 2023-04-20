@@ -83,7 +83,7 @@ export default defineComponent({
   z-index: 10;
   top: 104px;
   right: 0px;
-  width: 395px;
+  width: 512px;
   height: calc(100% - 104px);
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
@@ -101,7 +101,7 @@ export default defineComponent({
   border-radius: 6px;
   background-color: $gray-1;
   border: 0px solid transparent;
-  padding: 8px 35px;
+  padding: 46px 40px;
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -118,7 +118,6 @@ export default defineComponent({
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 26px;
 }
 
 .title {
@@ -130,7 +129,6 @@ export default defineComponent({
   font-size: rem(22);
   line-height: 27px;
   letter-spacing: -0.02em;
-  margin-left: 5px;
   color: $gray-5;
 }
 
