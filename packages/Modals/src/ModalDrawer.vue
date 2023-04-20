@@ -110,7 +110,7 @@ export default defineComponent({
     width: 375px;
   }
   @media (min-width: $sm) {
-    width: 395px;
+    width: 512px;
   }
 }
 
