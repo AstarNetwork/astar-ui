@@ -7,8 +7,13 @@
       <div class="modal-content">
         <div class="row-title-close">
           <div class="title">{{ title }}</div>
-          <div class="modal-close" @click="closeHandler">
-            <IconCloseWithColor />
+          <div class="column-right-buttons">
+            <div v-if="isBack" class="modal-close" @click="backHandler">
+              <IconBackWithColor />
+            </div>
+            <div class="modal-close" @click="closeHandler">
+              <IconCloseWithColor />
+            </div>
           </div>
         </div>
         <slot />
@@ -20,13 +25,14 @@
 <script lang="ts">
 import { defineComponent, ref, toRefs } from "vue";
 import IconCloseWithColor from "./IconCloseWithColor.vue";
+import IconBackWithColor from "./IconBackWithColor.vue";
 
 const slideInClass = "animate__slideInRight";
 const slideOutClass = "animate__slideOutRight";
 
 export default defineComponent({
   name: "ModalDrawer",
-  components: { IconCloseWithColor },
+  components: { IconCloseWithColor, IconBackWithColor },
   props: {
     show: {
       type: Boolean,
@@ -41,6 +47,15 @@ export default defineComponent({
       required: false,
       default: false,
     },
+    isBack: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    handleBack: {
+      type: Function,
+      required: false,
+    },
   },
   emits: ["close"],
   setup(props, { emit }) {
@@ -50,12 +65,17 @@ export default defineComponent({
       emit("close");
     };
 
+    const backHandler = (): void => {
+      props.handleBack && props.handleBack();
+    };
+
     return {
       ...toRefs(props),
       animation,
       slideOutClass,
       slideInClass,
       closeHandler,
+      backHandler,
     };
   },
 });
@@ -83,7 +103,7 @@ export default defineComponent({
   z-index: 10;
   top: 104px;
   right: 0px;
-  width: 512px;
+  width: 544px;
   height: calc(100% - 104px);
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
@@ -101,7 +121,7 @@ export default defineComponent({
   border-radius: 6px;
   background-color: $gray-1;
   border: 0px solid transparent;
-  padding: 46px 40px;
+  padding: 46px 40px !important;
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -110,7 +130,7 @@ export default defineComponent({
     width: 375px;
   }
   @media (min-width: $sm) {
-    width: 512px;
+    width: 544px;
   }
 }
 
@@ -149,6 +169,12 @@ export default defineComponent({
     color: $astar-blue;
     border-color: $astar-blue;
   }
+}
+
+.column-right-buttons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
 }
 
 .body--dark {
