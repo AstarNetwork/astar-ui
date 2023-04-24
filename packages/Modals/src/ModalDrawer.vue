@@ -121,10 +121,11 @@ export default defineComponent({
   border-radius: 6px;
   background-color: $gray-1;
   border: 0px solid transparent;
-  padding: 24px 30px !important;
-  width: 100%;
+  padding: 24px 30px;
+  width: 100% !important;
   height: 100%;
   overflow-y: auto;
+  box-shadow: -5px 2px 8px 4px rgba(0, 0, 0, 0.5);
 
   @media (min-width: $xs) {
     width: 375px;
@@ -215,17 +216,6 @@ export default defineComponent({
     @supports (-moz-appearance: none) {
       background: $backdrop-transparent-dark-firefox !important;
     }
-  }
-  .modal-content {
-    width: 100% !important;
-    height: auto;
-    position: absolute;
-    top: 0;
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 40px;
-    box-shadow: -5px 2px 8px 4px rgba(0, 0, 0, 0.5);
   }
 }
 </style>
