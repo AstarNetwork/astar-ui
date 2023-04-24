@@ -121,7 +121,7 @@ export default defineComponent({
   border-radius: 6px;
   background-color: $gray-1;
   border: 0px solid transparent;
-  padding: 46px 40px !important;
+  padding: 24px 30px !important;
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -131,6 +131,7 @@ export default defineComponent({
   }
   @media (min-width: $sm) {
     width: 544px;
+    padding: 46px 40px !important;
   }
 }
 
@@ -225,12 +226,6 @@ export default defineComponent({
     padding-right: 0;
     padding-bottom: 40px;
     box-shadow: -5px 2px 8px 4px rgba(0, 0, 0, 0.5);
-  }
-  .title {
-    margin-left: 45px;
-  }
-  .modal-close {
-    margin-right: 40px;
   }
 }
 </style>
