@@ -10,6 +10,10 @@ $gray-5-selected-dark: #222829;
 $gray-6: #191d1f;
 $gray-7: #222829;
 
+$navy-1: #080f2e;
+$navy-2: #060b23;
+$navy-3: #1f2f5f;
+
 $object-light: #e6e9ee;
 
 $astar-blue: #0085ff;
@@ -23,9 +27,9 @@ $connected-green: #56f566;
 $neon-blue: rgb(33, 89, 254);
 $modal-bg-dark: #081029;
 
-$body-bg-dark: #181d20;
+$body-bg-dark: $navy-1;
 $body-bg-light: #ffffff;
-$container-bg-dark: $gray-5-selected-dark;
+$container-bg-dark: $navy-2;
 $container-bg-white: #ffffff;
 $item--bg--hover-dark: $gray-5-selected-dark;
 $border-separator-dark: $gray-6;

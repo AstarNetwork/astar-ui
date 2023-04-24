@@ -1,9 +1,16 @@
 <template>
-  <div class="modalbg" :class="[isShow && 'show', isClosing? fadeOutClass: fadeInClass]">
-    <div class="modal-content" :class="zoomInClass" :style="`width: ${width}px; height: ${height}px;`">
+  <div
+    class="modalbg"
+    :class="[isShow && 'show', isClosing ? fadeOutClass : fadeInClass]"
+  >
+    <div
+      class="modal-content"
+      :class="zoomInClass"
+      :style="`width: ${width}px; height: ${height}px;`"
+    >
       <div class="modal-header">
         <div class="modal-title">{{ title }}</div>
-        <div class="modal--close" @click="close"><IconCloseWithColor  /></div>
+        <div class="modal--close" @click="close"><IconCloseWithColor /></div>
       </div>
       <slot />
     </div>
@@ -23,16 +30,16 @@ export default defineComponent({
   props: {
     show: {
       type: Boolean,
-      default: false
+      default: false,
     },
     title: {
-      type: String
+      type: String,
     },
     width: {
-      type: Number
+      type: Number,
     },
     height: {
-      type: Number
+      type: Number,
     },
     isClosing: {
       type: Boolean,
@@ -60,14 +67,14 @@ export default defineComponent({
       zoomInClass,
       fadeInClass,
       fadeOutClass,
-      close
+      close,
     };
-  }
+  },
 });
 </script>
 
 <style lang="scss" scoped>
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 @import "../../styles/animation.scss";
 @import "../../styles/utils.scss";
 
@@ -122,7 +129,7 @@ export default defineComponent({
   margin-bottom: 32px;
 }
 .modal-title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -156,7 +163,7 @@ export default defineComponent({
     backdrop-filter: blur(50px);
   }
   .modal-content {
-    background: $gray-6;
+    background: $navy-1;
     color: $gray-1;
   }
   .modal-title {
