@@ -46,9 +46,9 @@ button {
 }
 
 button:disabled {
-  border: 1px solid $gray-3;
+  border: 1px solid $gray-4;
   background: transparent;
-  color: $gray-3;
+  color: $gray-4;
 }
 
 .body--dark {

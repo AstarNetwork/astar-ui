@@ -40,7 +40,7 @@ input[type='radio'] {
   width: rem(16);
   height: rem(16);
   border-radius: 50%;
-  box-shadow: 0 0 0 1px $gray-3;
+  box-shadow: 0 0 0 1px $gray-4;
   -webkit-appearance: none;
   display: flex;
   align-items: center;

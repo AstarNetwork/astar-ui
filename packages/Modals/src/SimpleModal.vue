@@ -142,7 +142,7 @@ export default defineComponent({
   line-height: rem(26);
   letter-spacing: -0.02em;
   margin-top: rem(-8);
-  color: $gray-5;
+  color: $navy-1;
 }
 
 .title--no-close-icon {

@@ -46,7 +46,7 @@ button {
 }
 
 button:disabled {
-  color: $gray-3;
+  color: $gray-4;
 }
 
 .body--dark {

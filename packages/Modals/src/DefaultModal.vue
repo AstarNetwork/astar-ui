@@ -120,7 +120,7 @@ export default defineComponent({
   min-width: 200px;
   min-height: 50px;
   height: auto;
-  color: $gray-5-selected;
+  color: $navy-1;
 }
 .modal-header {
   display: flex;
@@ -135,15 +135,15 @@ export default defineComponent({
   font-size: 22px;
   line-height: 27px;
   letter-spacing: -0.02em;
-  color: $gray-5-selected;
+  color: $navy-1;
 }
 
 .modal--close {
   width: 40px;
   height: 40px;
-  border: 1px solid $gray-3;
+  border: 1px solid $gray-4;
   border-radius: 30px;
-  color: $gray-3;
+  color: $gray-4;
   font-size: 30px;
   font-weight: 10;
   cursor: pointer;
