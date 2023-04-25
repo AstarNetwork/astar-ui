@@ -67,7 +67,7 @@ button:focus {
 
 button:disabled {
   background: transparent;
-  color: $gray-3;
+  color: $gray-4;
 }
 
 .body--dark {

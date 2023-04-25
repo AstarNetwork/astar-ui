@@ -78,7 +78,7 @@ export default defineComponent({
   font-size: 9px;
   line-height: 11px;
   text-align: left;
-  color: $gray-5;
+  color: $navy-1;
   margin-left: 5px;
 
   @media (max-width: $sm) {

@@ -42,7 +42,7 @@ export default defineComponent({
   // background: $gray-1;
   mix-blend-mode: normal;
   backdrop-filter: blur(200px);
-  border-bottom: 1px solid $gray-3;
+  border-bottom: 1px solid $gray-4;
   @supports (-moz-appearance: none) {
     background: $backdrop-transparent-dark-firefox !important;
   }
@@ -59,7 +59,7 @@ export default defineComponent({
   font-weight: 590;
   font-size: 1.625rem;
   padding: 0.75rem;
-  color: $gray-5-selected;
+  color: $navy-1;
 }
 
 .header-right {
