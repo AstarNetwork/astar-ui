@@ -159,7 +159,7 @@ export default defineComponent({
 
 .body--dark {
   .modalbg {
-    background: rgba(25, 29, 31, 0.7);
+    background: #080f2e80;
     backdrop-filter: blur(50px);
   }
   .modal-content {
