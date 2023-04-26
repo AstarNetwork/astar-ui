@@ -14,23 +14,23 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
   props: {
     connectionType: {
       type: String,
-      default: 'connected',
+      default: "connected",
       required: true,
     },
     version: {
       type: String,
-      default: '0.0.0',
+      default: "0.0.0",
     },
   },
   setup() {
     const capitalize = (str: string): string => {
-      if (typeof str !== 'string' || !str) return str;
+      if (typeof str !== "string" || !str) return str;
       return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
     };
 
@@ -40,19 +40,19 @@ export default defineComponent({
   },
   methods: {
     getDotClass(connectionType: string) {
-      if (connectionType === 'connecting') {
-        return 'orange';
-      } else if (connectionType === 'connected') {
-        return 'green';
-      } else if (connectionType === 'offline') {
-        return 'red';
+      if (connectionType === "connecting") {
+        return "orange";
+      } else if (connectionType === "connected") {
+        return "green";
+      } else if (connectionType === "offline") {
+        return "red";
       }
     },
   },
 });
 </script>
 <style lang="scss" scoped>
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .wrapper--indicator {
   display: flex;
@@ -78,11 +78,14 @@ export default defineComponent({
   font-size: 9px;
   line-height: 11px;
   text-align: left;
-  color: $navy-1;
+  color: $gray-1;
   margin-left: 5px;
 
   @media (max-width: $sm) {
     display: none;
+  }
+  @media (min-width: $lg) {
+    color: $navy-1;
   }
 }
 
