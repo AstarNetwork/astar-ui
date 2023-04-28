@@ -124,7 +124,8 @@ export default defineComponent({
   width: 100% !important;
   height: 100%;
   overflow-y: auto;
-  box-shadow: -2px 10px 10px 0px #000c;
+  box-shadow: -2px 10px 10px 0px #9999;
+  background: white;
 
   @media (min-width: $xs) {
     width: 375px;
@@ -185,6 +186,7 @@ export default defineComponent({
 
     .modal-content {
       background-color: $modal-bg-dark;
+      box-shadow: -2px 10px 10px 0px #000c;
 
       .title {
         color: $gray-1;
