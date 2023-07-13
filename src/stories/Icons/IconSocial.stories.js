@@ -10,7 +10,7 @@ export const DefaultIcon = () => ({
   template: `
     <div style="display: flex; column-gap: 8px;">
       <div v-for="(icon, index) in
-        ['twitter', 'discord', 'reddit', 'facebook', 'youtube', 'instagram', 'tiktok']"
+        ['twitter', 'discord', 'reddit', 'facebook', 'youtube', 'instagram', 'tiktok', 'github']"
         :key="index"
       >
         <IconSocial :icon="icon" />
