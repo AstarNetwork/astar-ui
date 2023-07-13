@@ -12,6 +12,8 @@
   <img v-if="icon===SocialIcon.Instagram" src="../img/instagram.png" :alt="`${icon} icon`" :class="!isClass && 'default'" />
 
   <img v-if="icon===SocialIcon.Ticktok" src="../img/tiktok.png" :alt="`${icon} icon`" :class="!isClass && 'default'" />
+
+  <img v-if="icon===SocialIcon.Github" src="../img/github.png" :alt="`${icon} icon`" :class="!isClass && 'default'" />
 </template>
 
 <script lang="ts">
@@ -24,7 +26,8 @@ export enum SocialIcon {
   Facebook = 'facebook',
   Youtube = 'youtube',
   Instagram = 'instagram',
-  Ticktok = 'tiktok'
+  Ticktok = 'tiktok',
+  Github = 'github'
 }
 
 export default defineComponent({
