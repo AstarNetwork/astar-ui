@@ -58,6 +58,7 @@ import IconEquip from "./src/IconEquip.vue";
 import IconUnequip from "./src/IconUnequip.vue";
 import IconSideNFT from "./src/IconSideNFT.vue";
 import IconEcosystem from "./src/IconEcosystem.vue";
+import IconInfo from "./src/IconInfo.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -119,6 +120,7 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-unequip", IconUnequip);
     app.component("astar-icon-side-nft", IconSideNFT);
     app.component("astar-icon-ecosystem", IconEcosystem);
+    app.component("astar-icon-info", IconInfo);
   },
 };
 
@@ -182,4 +184,5 @@ export {
   IconUnequip,
   IconSideNFT,
   IconEcosystem,
+  IconInfo,
 };
