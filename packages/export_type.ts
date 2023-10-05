@@ -45,14 +45,17 @@ import {
   IconNetwork,
   IconOutlineMoon,
   IconOutlineSun,
+  IconPerson,
   IconPlay,
   IconPlus,
   IconReddit,
   IconSearch,
   IconSideNFT,
   IconSolidSelector,
+  IconStar,
   IconSync,
   IconTelegram,
+  IconTransfer,
   IconTwitter,
   IconUnhide,
   IconVerified,
@@ -115,14 +118,17 @@ export interface GlobalComponents {
   'astar-icon-network': typeof IconNetwork;
   'astar-icon-outline-moon': typeof IconOutlineMoon;
   'astar-icon-outline-sun': typeof IconOutlineSun;
+  'astar-icon-person': typeof IconPerson;
   'astar-icon-play': typeof IconPlay;
   'astar-icon-plus': typeof IconPlus;
   'astar-icon-reddit': typeof IconReddit;
   'astar-icon-search': typeof IconSearch;
   'astar-icon-side-nft': typeof IconSideNFT;
   'astar-icon-solid-selector': typeof IconSolidSelector;
+  'astar-icon-star': typeof IconStar;
   'astar-icon-sync': typeof IconSync;
   'astar-icon-telegram': typeof IconTelegram;
+  'astar-icon-transfer': typeof IconTransfer;
   'astar-icon-twitter': typeof IconTwitter;
   'astar-icon-unhide': typeof IconUnhide;
   'astar-icon-verified': typeof IconVerified;
