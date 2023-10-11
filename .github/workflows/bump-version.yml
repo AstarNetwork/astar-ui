@@ -11,13 +11,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - run: git config --global user.email ${{ secrets.GIT_EMAIL }}
+        with:
+          persist-credentials: false
+      - run: git config --global user.email ${{ secrets.GIT_USER_EMAIL }}
       - run: git config --global user.name "GitHub Actions"
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm version patch
-      - run: git push origin main --tags -f
+      - name: Git push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GIT_USER_TOKEN }}
+          branch: main
       - uses: actions/upload-artifact@v3
         with:
           name: src
