@@ -11,7 +11,7 @@ concurrency:
 jobs:
   bump-version:
     runs-on: ubuntu-latest
-    if: github.event.head_commit.author.name != 'GitHubActions'
+    if: github.event.head_commit.author.name != 'github-actions[bot]'
     steps:
       - uses: actions/checkout@v4
         with:
