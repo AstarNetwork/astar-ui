@@ -4,11 +4,14 @@ on:
   push:
     branches:
       - main
-
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+  
 jobs:
   bump-version:
     runs-on: ubuntu-latest
-
+    if: github.event.head_commit.author.name != 'github-actions[bot]'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,4 +22,8 @@ jobs:
         with:
           node-version: 16
       - run: npm version patch
-      - run: git push origin main --tags
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GIT_TOKEN }}
+          branch: main
