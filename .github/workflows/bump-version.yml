@@ -20,7 +20,3 @@ jobs:
           node-version: 16
       - run: npm version patch
       - run: git push origin main --tags
-      - uses: actions/upload-artifact@v3
-        with:
-          name: src
-          path: ./
