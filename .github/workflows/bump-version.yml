@@ -19,12 +19,7 @@ jobs:
         with:
           node-version: 16
       - run: npm version patch
-      - name: Git push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GIT_USER_TOKEN }}
-          branch: main
-          tags: true
+      - run: git push origin main --tags
       - uses: actions/upload-artifact@v3
         with:
           name: src
