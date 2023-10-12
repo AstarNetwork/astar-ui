@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.head_commit.author.name != 'GitHubActions' && github.event.pull_request.merged == true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
           token: ${{ secrets.GIT_USER_TOKEN }}
       - run: git config --global user.email 'github-actions[bot]@users.noreply.github.com'
