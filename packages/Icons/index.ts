@@ -66,6 +66,7 @@ import IconFaucet from "./src/IconFaucet.vue";
 import IconQuestion from "./src/IconQuestion.vue";
 import IconArrowUpRight from "./src/IconArrowUpRight.vue";
 import IconProject from "./src/IconProject.vue";
+import IconHeart from "./src/IconHeart.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -135,6 +136,7 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-question", IconQuestion);
     app.component("astar-icon-arrow-up-right", IconArrowUpRight);
     app.component("astar-icon-project", IconProject);
+    app.component("astar-icon-heart", IconHeart);
   },
 };
 
@@ -204,4 +206,5 @@ export {
   IconPerson,
   IconArrowUpRight,
   IconProject,
+  IconHeart
 };
