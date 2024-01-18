@@ -103,12 +103,19 @@ export default defineComponent({
   z-index: 10;
   top: 104px;
   right: 0px;
-  width: 544px;
+  width: 100%;
   height: calc(100% - 104px);
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.1);
+  @media (min-width: $xs) {
+    width: 375px;
+  }
+  @media (min-width: $sm) {
+    width: 544px;
+  }
   @media (min-width: $lg) {
+    width: 928px;
     top: 96px;
     height: calc(100% - 96px);
   }
@@ -120,19 +127,15 @@ export default defineComponent({
 .modal-content {
   background-color: $gray-1;
   border: 0px solid transparent;
-  padding: 24px 30px;
+  padding: 32px 8px;
   width: 100% !important;
   height: 100%;
   overflow-y: auto;
   box-shadow: -2px 10px 10px 0px #9999;
   background: white;
 
-  @media (min-width: $xs) {
-    width: 375px;
-  }
   @media (min-width: $sm) {
-    width: 544px;
-    padding: 46px 40px !important;
+    padding: 24px 30px;
   }
 }
 

@@ -1,13 +1,13 @@
 /* eslint-disable */
 
-import { App, Plugin } from 'vue';
+import { App, Plugin } from "vue";
 
-import { TextPlugin } from './Text';
-import { SpinnerPlugin } from './Spinner';
-import { ModalsPlugin } from './Modals';
-import { HeaderPlugin } from './Header';
-import { ButtonsPlugin } from './Buttons';
-import { IconsPlugin } from './Icons';
+import { TextPlugin } from "./Text";
+import { SpinnerPlugin } from "./Spinner";
+import { ModalsPlugin } from "./Modals";
+import { HeaderPlugin } from "./Header";
+import { ButtonsPlugin } from "./Buttons";
+import { IconsPlugin } from "./Icons";
 
 const AstarUIPlugin: Plugin = {
   install(app: App) {
@@ -22,11 +22,11 @@ const AstarUIPlugin: Plugin = {
 
 export default AstarUIPlugin;
 
-export * from './Text'
-export * from './Spinner'
-export * from './Modals'
-export * from './Header'
-export * from './Buttons'
-export * from './Icons'
+export * from "./Text";
+export * from "./Spinner";
+export * from "./Modals";
+export * from "./Header";
+export * from "./Buttons";
+export * from "./Icons";
 
-export * from './export_type'
+export * from "./export_type";
