@@ -22,11 +22,11 @@ const AstarUIPlugin: Plugin = {
 
 export default AstarUIPlugin;
 
-export * from './Text'
-export * from './Spinner'
-export * from './Modals'
-export * from './Header'
-export * from './Buttons'
-export * from './Icons'
+export * from './Text';
+export * from './Spinner';
+export * from './Modals';
+export * from './Header';
+export * from './Buttons';
+export * from './Icons';
 
-export * from './export_type'
+export * from './export_type';

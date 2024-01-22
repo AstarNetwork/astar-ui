@@ -1,14 +1,5 @@
-import {
-  Button,
-  IrregularButton,
-  RadioBtn,
-  SmallButton,
-  TextButton,
-} from './Buttons';
-import {
-  ConnectionIndicator,
-  Header 
-} from './Header';
+import { Button, IrregularButton, RadioBtn, SmallButton, TextButton } from './Buttons';
+import { ConnectionIndicator, Header } from './Header';
 import {
   Icon3dots,
   IconAccountSample,
@@ -63,17 +54,9 @@ import {
   IconWallet,
   IconYoutube,
 } from './Icons';
-import {
-  DefaultModal,
-  ModalDrawer,
-  SimpleModal
-} from './Modals';
-import {
-  Spinner
-} from './Spinner';
-import {
-  Text
-} from './Text';
+import { DefaultModal, ModalDrawer, SimpleModal, IconBackWithColor } from './Modals';
+import { Spinner } from './Spinner';
+import { Text } from './Text';
 
 export interface GlobalComponents {
   'astar-button': typeof Button;
@@ -139,5 +122,6 @@ export interface GlobalComponents {
   'astar-modal-drawer': typeof ModalDrawer;
   'astar-simple-modal': typeof SimpleModal;
   'astar-spinner': typeof Spinner;
-  'astar-text': typeof Text;      
+  'astar-text': typeof Text;
+  'astar-icon-back-with-color': typeof IconBackWithColor;
 }
