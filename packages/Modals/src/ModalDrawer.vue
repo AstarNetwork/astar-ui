@@ -23,15 +23,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, toRefs } from "vue";
-import IconCloseWithColor from "./IconCloseWithColor.vue";
-import IconBackWithColor from "./IconBackWithColor.vue";
+import { defineComponent, ref, toRefs } from 'vue';
+import IconCloseWithColor from './IconCloseWithColor.vue';
+import IconBackWithColor from './IconBackWithColor.vue';
 
-const slideInClass = "animate__slideInRight";
-const slideOutClass = "animate__slideOutRight";
+const slideInClass = 'animate__slideInRight';
+const slideOutClass = 'animate__slideOutRight';
 
 export default defineComponent({
-  name: "ModalDrawer",
+  name: 'ModalDrawer',
   components: { IconCloseWithColor, IconBackWithColor },
   props: {
     show: {
@@ -40,7 +40,7 @@ export default defineComponent({
     },
     title: {
       type: String,
-      default: "",
+      default: '',
     },
     isClosing: {
       type: Boolean,
@@ -57,12 +57,12 @@ export default defineComponent({
       required: false,
     },
   },
-  emits: ["close"],
+  emits: ['close'],
   setup(props, { emit }) {
     const animation = ref<string>(slideInClass);
 
     const closeHandler = (): void => {
-      emit("close");
+      emit('close');
     };
 
     const backHandler = (): void => {
@@ -82,8 +82,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/main.scss";
-@import "../../styles/utils.scss";
+@import '../../styles/main.scss';
+@import '../../styles/utils.scss';
 
 .wrapper--modal-drawer {
   position: absolute;
@@ -135,7 +135,7 @@ export default defineComponent({
   background: white;
 
   @media (min-width: $sm) {
-    padding: 24px 30px;
+    padding: 24px 40px;
   }
 }
 
@@ -146,7 +146,7 @@ export default defineComponent({
 }
 
 .title {
-  font-family: "Inter", "SF Pro Text", "Noto Sans KR", sans-serif;
+  font-family: 'Inter', 'SF Pro Text', 'Noto Sans KR', sans-serif;
   display: flex;
   justify-content: flex-start;
   font-style: normal;
