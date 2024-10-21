@@ -26,6 +26,7 @@ import {
   IconFacebook,
   IconForum,
   IconGithub,
+  IconGovernance,
   IconGroup,
   IconHelp,
   IconHide,
@@ -91,6 +92,7 @@ export interface GlobalComponents {
   'astar-icon-facebook': typeof IconFacebook;
   'astar-icon-forum': typeof IconForum;
   'astar-icon-github': typeof IconGithub;
+  'astar-icon-governance': typeof IconGovernance;
   'astar-icon-group': typeof IconGroup;
   'astar-icon-geko': typeof IconHelp;
   'astar-icon-hide': typeof IconHide;
