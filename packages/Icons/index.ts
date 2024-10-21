@@ -68,6 +68,7 @@ import IconArrowUpRight from "./src/IconArrowUpRight.vue";
 import IconProject from "./src/IconProject.vue";
 import IconHeart from "./src/IconHeart.vue";
 import IconCheck from "./src/IconCheck.vue";
+import IconGovernance from "./src/IconGovernance.vue";
 
 export const IconsPlugin: Plugin = {
   install(app: App) {
@@ -102,6 +103,7 @@ export const IconsPlugin: Plugin = {
     app.component("astar-icon-help", IconHelp);
     app.component("astar-icon-vert", IconVert);
     app.component("astar-icon-history", IconHistory);
+    app.component("astar-icon-governance", IconGovernance);
     app.component("astar-icon-group", IconGroup);
     app.component("astar-icon-sync", IconSync);
     app.component("astar-icon-expand", IconExpand);
@@ -209,5 +211,5 @@ export {
   IconArrowUpRight,
   IconProject,
   IconHeart,
-  IconCheck
+  IconCheck,
 };
