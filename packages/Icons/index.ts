@@ -212,4 +212,5 @@ export {
   IconProject,
   IconHeart,
   IconCheck,
+  IconGovernance,
 };
